@@ -1,1 +1,0 @@
-Worker: mode bot.js
