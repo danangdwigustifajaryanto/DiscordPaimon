@@ -22,8 +22,8 @@ client.on("message", msg => {
 
 // Character Build
 client.on("message", msg => {
-  if (msg.content === "!build yoimiya") {
-    msg.reply("https://i.ibb.co/hLqY1j5/Yoimiya.jpg");
+  if (msg.content === "!build miya") {
+    msg.reply("[img]https://i.ibb.co/hLqY1j5/Yoimiya.jpg[/img]");
   }
 })
 
