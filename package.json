@@ -2,16 +2,16 @@
   "name": "paimonbot",
   "version": "1.0.0",
   "main": "bot.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bot.js"
+    "start": "node your-script.js"
   },
   "keywords": [],
   "author": "Nevada",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1"
   }
 }
