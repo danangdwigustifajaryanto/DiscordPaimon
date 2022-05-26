@@ -23,7 +23,7 @@ client.on("message", msg => {
 // Character Build
 client.on("message", msg => {
   if (msg.content === "!build yoimiya") {
-    msg.reply("https://i.ibb.co/q7ZJFfG/Yoimiya.jpg");
+    msg.reply("https://ibb.co/CmrPsZd");
   }
 })
 
