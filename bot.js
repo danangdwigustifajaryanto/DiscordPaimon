@@ -24,7 +24,7 @@ client.on("message", msg => {
 // Character Build
 client.on("message", msg => {
   if (msg.content === "p build bennett") {
-    msg.reply("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/db23f655-bcc8-406e-918f-37c2a9fc5d8b/df64ofy-03b30a72-f55a-445d-8ca5-43b581557810.jpg/v1/fill/w_1280,h_1796,q_75,strp/bennet_by_dayonyte_df64ofy-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc5NiIsInBhdGgiOiJcL2ZcL2RiMjNmNjU1LWJjYzgtNDA2ZS05MThmLTM3YzJhOWZjNWQ4YlwvZGY2NG9meS0wM2IzMGE3Mi1mNTVhLTQ0NWQtOGNhNS00M2I1ODE1NTc4MTAuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.HMM2uQqWYOlA4qY03InCbx2Z9LAs4n3psrABu5HOBiU");
+    msg.reply("https://mega.nz/file/qxUXlYrb#rz74kBL96pEZd670gAGxzBKNTN_6wEGP3U5tJvg2oOY");
   }
 })
 
