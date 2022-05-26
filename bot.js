@@ -15,4 +15,4 @@ client.on("message", msg => {
 
 
 
-client.login(process.env.DISCORD_TOKEN);
+client.login("OTc4NjE1ODcwNzE4ODY5NTk0.G9lIoW.-4sg46mmtVK-8OU9nuhgtuATjptnlonZJBy2vk");
