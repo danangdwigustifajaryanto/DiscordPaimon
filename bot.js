@@ -8,13 +8,12 @@ client.on("ready", () => {
 // Dialogue
 client.on("message", msg => {
   if (msg.content === "paimon?") {
-    const image = new Discord.MessageAttachment("https://s.imgur.com/images/logo-1200-630.jpg?2","img.png");
-    msg.reply({ files : [image] })
+    msg.reply("Paimon Ready Traveler :)");
   }
 })
 
 
-
+//Build character
 client.on("message", msg => {
   if (msg.content === "Thank you paimon") {
     msg.reply("urwellcome traveler ^^");
@@ -23,8 +22,8 @@ client.on("message", msg => {
 
 // Character Build
 client.on("message", msg => {
-  if (msg.content === "p build bennett") {
-    msg.reply("https://mega.nz/file/qxUXlYrb#rz74kBL96pEZd670gAGxzBKNTN_6wEGP3U5tJvg2oOY");
+  if (msg.content === "!build yoimiya") {
+    msg.reply("https://i.ibb.co/q7ZJFfG/Yoimiya.jpg");
   }
 })
 
