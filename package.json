@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "Nevada",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
 }
