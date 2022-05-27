@@ -15,8 +15,8 @@ client.on("message", msg => {
 
 //Build character
 client.on("message", msg => {
-  if (msg.content === "Thank you paimon") {
-    msg.reply("urwellcome traveler ^^");
+  if (msg.content === "selamat malam paimon") {
+    msg.reply("Selamat malam sayang ^^");
   }
 })
 
