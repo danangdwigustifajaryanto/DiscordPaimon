@@ -12,6 +12,12 @@ client.on("message", msg => {
   }
 })
 
+client.on("message", msg => {
+  if (msg.content === "!credit") {
+    msg.reply("Author : Nevada");
+    msg.reply("Version : 1.0.2");
+  }
+})
 
 //Build character
 client.on("message", msg => {
