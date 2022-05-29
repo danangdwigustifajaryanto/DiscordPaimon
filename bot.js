@@ -14,7 +14,7 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "!credit") {
-    msg.reply("Author : Nevada", "Version : 1.0.2");
+    msg.reply(" '\u00A9' Nevada 2022");
     
   }
 })
