@@ -14,8 +14,8 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "!credit") {
-    msg.send("Author : Nevada");
-    msg.send("Version : 1.0.2");
+    msg.reply("Author : Nevada", "Version : 1.0.2");
+    
   }
 })
 
