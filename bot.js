@@ -14,22 +14,16 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "!credit") {
-    msg.reply(" '\u00A9' Nevada 2022");
+    msg.reply(" \u00A9 Nevada 2022");
     
   }
 })
 
-client.on("message", msg => {
-  if (msg.content === "paimon siapa ketua wastek kelompok 4 ?") {
-    msg.reply("Nasrul cok >:( ");
-    
-  }
-})
 
 //Build character
 client.on("message", msg => {
-  if (msg.content === "selamat malam paimon") {
-    msg.reply("Selamat malam sayang ^^");
+  if (msg.content === "Terimakasih paimon") {
+    msg.reply("Sama sama traveler ^_^");
   }
 })
 
