@@ -19,6 +19,13 @@ client.on("message", msg => {
   }
 })
 
+client.on("message", msg => {
+  if (msg.content === "paimon siapa ketua wastek kelompok 4 ?") {
+    msg.reply("Nasrul cok >:( ");
+    
+  }
+})
+
 //Build character
 client.on("message", msg => {
   if (msg.content === "selamat malam paimon") {
