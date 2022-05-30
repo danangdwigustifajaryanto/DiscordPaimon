@@ -19,11 +19,24 @@ client.on("message", msg => {
   }
 })
 
-
 //Build character
 client.on("message", msg => {
   if (msg.content === "Terimakasih paimon") {
     msg.reply("Sama sama traveler ^_^");
+  }
+})
+
+//Build character
+client.on("message", msg => {
+  if (msg.content === "build kaeya") {
+    msg.reply("Sama sama traveler ^_^");
+  }
+})
+
+//Build character
+client.on("message", msg => {
+  if (msg.content === "!ping") {
+    msg.reply("On");
   }
 })
 
