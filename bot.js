@@ -5,7 +5,7 @@ client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
 })
 
-// Dialogue
+// Dialogue Indo
 client.on("message", msg => {
   if (msg.content === "paimon?") {
     msg.reply("Paimon Ready Traveler :)");
@@ -15,6 +15,25 @@ client.on("message", msg => {
   }
   else if (msg.content === "Terimakasih paimon"){
     msg.reply(" Sama sama Traveer ^^");
+  }
+  else if (msg.content === "Halo paimon"){
+    msg.reply("Iya traveler ada apa ?");
+  }
+})
+
+// Dialogue English
+client.on("message", msg => {
+  if (msg.content === "paimon?") {
+    msg.reply("Paimon Ready Traveler :)");
+  }
+  else if (msg.content === "!credit"){
+    msg.reply(" \u00A9 Nevada 2022");
+  }
+  else if (msg.content === "Thank you paimon"){
+    msg.reply(" Urwellcome Traveler ^^");
+  }
+  else if (msg.content === "Hello paimon"){
+    msg.reply("Paimon Here traveler :)");
   }
 })
 
