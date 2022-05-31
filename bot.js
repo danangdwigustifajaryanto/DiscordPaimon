@@ -19,7 +19,7 @@ client.on("message", msg => {
   }
 })
 
-//Build character
+
 client.on("message", msg => {
   if (msg.content === "Terimakasih paimon") {
     msg.reply("Sama Sama Traveler ^^");
@@ -32,27 +32,29 @@ client.on("message", msg => {
   }
 })
 
+
+//Build charcter
 client.on("message", msg => {
-  if (msg.content === "!build albedo") {
-    msg.reply("https://drive.google.com/uc?id=1KMSHvMqen-VFdXMU9FYFz8LjZrIiqbI3");
+  if (msg.content === "!build aloy") {
+    msg.reply("https://drive.google.com/uc?id=154StRKmWsW5YyZWSYL_oY8nIfUwV90rv");
   }
 })
 
-//Build character
+
 client.on("message", msg => {
   if (msg.content === "build kaeya") {
     msg.reply("Sama sama traveler ^_^");
   }
 })
 
-//Build character
+
 client.on("message", msg => {
   if (msg.content === "!ping") {
     msg.reply("On");
   }
 })
 
-// Character Build
+
 client.on("message", msg => {
   if (msg.content === "!build miya") {
     msg.reply("https://i.ibb.co/hLqY1j5/Yoimiya.jpg");
