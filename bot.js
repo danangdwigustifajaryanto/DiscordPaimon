@@ -13,6 +13,9 @@ client.on("message", msg => {
   else if (msg.content === "Terimakasih paimon"){
     msg.reply(" Sama sama Traveer ^^");
   }
+   else if (msg.content === "p"){
+    msg.reply("Paimon here >.<");
+  }
   else if (msg.content === "Halo paimon"){
     msg.reply("Iya traveler ada apa ?");
   }
