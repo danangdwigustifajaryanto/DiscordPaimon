@@ -8,7 +8,7 @@ client.on("ready", () => {
 //Test
 client.on("message", msg => {
   if (msg.content === "!arti echoes"){
-    msg.reply("https://drive.google.com/uc?id=1jLaCdYn0xNzdp5LbAl5Bg6p4YJ-KZTeu");
+    msg.reply("https://drive.google.com/uc?id=1y4GbCdSIAjbfBEV6ENNWbFxFzjcUAipV");
   }
 })
 
