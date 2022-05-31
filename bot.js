@@ -7,10 +7,7 @@ client.on("ready", () => {
 
 // Dialogue Indo
 client.on("message", msg => {
-  if (msg.content === "paimon?") {
-    msg.reply("Paimon Ready Traveler :)");
-  }
-  else if (msg.content === "!credit"){
+  if (msg.content === "!credit"){
     msg.reply(" \u00A9 Nevada 2022");
   }
   else if (msg.content === "Terimakasih paimon"){
@@ -23,10 +20,7 @@ client.on("message", msg => {
 
 // Dialogue English
 client.on("message", msg => {
-  if (msg.content === "paimon?") {
-    msg.reply("Paimon Ready Traveler :)");
-  }
-  else if (msg.content === "!credit"){
+  if (msg.content === "!credit"){
     msg.reply(" \u00A9 Nevada 2022");
   }
   else if (msg.content === "Thank you paimon"){
