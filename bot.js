@@ -36,137 +36,161 @@ client.on("message", msg => {
   else if (msg.content === "!build ayato") { // AYATO
     msg.reply("https://drive.google.com/uc?id=1RTLLXDbN9jK6sqOoo6A34pIC_f1jBZ6P");
   }
-  else if (msg.content === "!build ") { // BARBARA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build barbara") { // BARBARA
+    msg.reply("https://drive.google.com/uc?id=1NXWL4hDseCd84VSch4CFYqa3kyNWJaz5");
   }
-  else if (msg.content === "!build ") { // BEIDOU
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build beidou") { // BEIDOU
+    msg.reply("https://drive.google.com/uc?id=1MZIqDKZW8Gzra7R-fOaRh6wLH9QBtQr0");
   }
-  else if (msg.content === "!build ") { // BENNET
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build bennett") { // BENNET
+    msg.reply("https://drive.google.com/uc?id=1ysv6Mj34MMnRvjfON92ixJmh7fJFqXqo");
   }
-  else if (msg.content === "!build ") { // ChHILDE
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build childe") { // ChHILDE
+    msg.reply("https://drive.google.com/uc?id=1eYcLUOkCRCfZ1vpAcdMxmYoVxTNuLqcx");
   }
-  else if (msg.content === "!build ") { // CHONGYUN
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build chongyun") { // CHONGYUN
+    msg.reply("https://drive.google.com/uc?id=1HA2TkFCdKQLIAfxAi7IQIb9MZY4SQVv5");
   }
-  else if (msg.content === "!build ") { // DIONA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build diona") { // DIONA
+    msg.reply("https://drive.google.com/uc?id=18CDNh9qB49XikoTFjUCRsPPR7uFtAkiV");
   }
-  else if (msg.content === "!build ") { // EULA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build eula") { // EULA
+    msg.reply("https://drive.google.com/uc?id=1Cnul4kQVrGZG-i3BcCyNM4ofF-Ba_5FX");
   }
-  else if (msg.content === "!build ") { // FISCHL
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build fischl") { // FISCHL
+    msg.reply("https://drive.google.com/uc?id=1qDE-r33aIuVVQ_Am0PFbocs2dhYU2IXI");
   }
-  else if (msg.content === "!build ") { // GANYU
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build ganyu") { // GANYU
+    msg.reply("https://drive.google.com/uc?id=1B34o8n5EHdjQao3CusT5GUg2rtVV4vgg");
   }
-  else if (msg.content === "!build ") { // GOROU
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build gorou") { // GOROU
+    msg.reply("https://drive.google.com/uc?id=13FPcfsQv2FViMVumNBFicO5cL5NPvq5t");
   }
-  else if (msg.content === "!build ") { // HUTAO
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build hutao") { // HUTAO
+    msg.reply("https://drive.google.com/uc?id=122I8wg-piMxuUwhBJ_jrM_LuTvAwIhh-");
   }
-  else if (msg.content === "!build ") { // ITTO
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build itto") { // ITTO
+    msg.reply("https://drive.google.com/uc?id=1MACcxXD9ta5iMUPNIE28ch1rN5Nej0mi");
   }
-  else if (msg.content === "!build ") { // JEAN
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build jean") { // JEAN
+    msg.reply("https://drive.google.com/uc?id=1qqs_xmTnjoFJHoJ9yZswhvGem5k5ByrS");
   }
-  else if (msg.content === "!build ") { // KAEYA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build kaeya") { // KAEYA
+    msg.reply("https://drive.google.com/uc?id=16RHKggrKPK49exEV1qVvBx2zQiVZCozu");
   }
-  else if (msg.content === "!build ") { // KAZUHA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build kazuha") { // KAZUHA
+    msg.reply("https://drive.google.com/uc?id=13vmEJTjP1Vct9qVf7aUEg50aH9JDd3o_");
   }
-  else if (msg.content === "!build ") { // KEQING
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build keqing") { // KEQING
+    msg.reply("https://drive.google.com/uc?id=1uuqaD5JPgJ6Jq3ATgLAz775LPcpgiEgR");
   }
-  else if (msg.content === "!build ") { // KLEE
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build klee") { // KLEE
+    msg.reply("https://drive.google.com/uc?id=1C4xbsemiqctwxFQskn7HdTEIxLNT7dQw");
   }
-  else if (msg.content === "!build ") { // KOKOMI 
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build kokomi") { // KOKOMI 
+    msg.reply("https://drive.google.com/uc?id=1PgwQXo6EvcEBC5-ILjB0HAJKgPYdCh_W");
   }
-  else if (msg.content === "!build ") { // KUJOU
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build kujou sara") { // KUJOU
+    msg.reply("https://drive.google.com/uc?id=1BRlOBockwkk4szHwu7YsJgZokMNH6EhN");
   }
-  else if (msg.content === "!build ") { // LISA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build lisa") { // LISA
+    msg.reply("https://drive.google.com/uc?id=1rMoJE4nW0ernU9wYR-x2n7_eQYfpSAED");
   }
-  else if (msg.content === "!build ") { // MONA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build mona") { // MONA
+    msg.reply("https://drive.google.com/uc?id=18Gkt2cKCAA_hevjoW3rO1JaEnUbjl5sR");
   }
-  else if (msg.content === "!build ") { // NINGGUANG
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build ningguang") { // NINGGUANG
+    msg.reply("https://drive.google.com/uc?id=1bkOf-z18qC9WaoCxRjfeqDFG9efNfIaY");
   }
-  else if (msg.content === "!build ") { // NOELLE
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build noelle") { // NOELLE
+    msg.reply("https://drive.google.com/uc?id=1z2c-jI34tqv1k8lLJduVOsKyIRqFa9DD");
   }
-  else if (msg.content === "!build ") { // PAIMON
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build paimon") { // PAIMON
+    msg.reply("https://drive.google.com/uc?id=1X_Eo_nwLWBVHylFTE7oxQTr2IOUZSWe6");
   }
-  else if (msg.content === "!build ") { // QIQI
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build qiqi") { // QIQI
+    msg.reply("https://drive.google.com/uc?id=1JZIMukYwAAuDyv_nT_BA6RYWMvFBrzvr");
   } 
-  else if (msg.content === "!build ") { // RAZOR
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build razor") { // RAZOR
+    msg.reply("https://drive.google.com/uc?id=1T9te3RorXZXVn4C95L0uy0oqvgZYbanU");
   }
-  else if (msg.content === "!build ") { // ROSARIA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build rosaria") { // ROSARIA
+    msg.reply("https://drive.google.com/uc?id=1h8v-VxOvCU7J4q6pM4RyBY0Tz7KRJIgz");
   }
-  else if (msg.content === "!build ") { // SAYU
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build sayu") { // SAYU
+    msg.reply("https://drive.google.com/uc?id=17hurOitj-Aov_73zT7C3fFQ1N1HvSJzR");
   }
-  else if (msg.content === "!build ") { // SHENHE
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build shenhe") { // SHENHE
+    msg.reply("https://drive.google.com/uc?id=1QOTbw7MJd2rbxu67lliemLAscGIB8Hi2");
   }
-  else if (msg.content === "!build ") { // SHOGUN
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build raiden shogun") { // SHOGUN
+    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
   }
-  else if (msg.content === "!build ") { // SUCROSE
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build raiden") { // SHOGUN
+    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
   }
-  else if (msg.content === "!build ") { // THOMA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build mami baal") { // SHOGUN
+    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
   }
-  else if (msg.content === "!build ") { // VENTI
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build baal") { // SHOGUN
+    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
   }
-  else if (msg.content === "!build ") { // XIANGLING
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build ei") { // SHOGUN
+    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
   }
-  else if (msg.content === "!build ") { // XIAO
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build raiden ei") { // SHOGUN
+    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
   }
-  else if (msg.content === "!build ") { // XINQIU
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build sucrose") { // SUCROSE
+    msg.reply("https://drive.google.com/uc?id=1AFXjZSDemvhrDOx3mXWmhfHPUhKkYqNq");
   }
-  else if (msg.content === "!build ") { // XINYAN
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build thoma") { // THOMA
+    msg.reply("https://drive.google.com/uc?id=1s_Wb2zYiPUHkfdpmCKD2Jlcztw1ULOt5");
   }
-  else if (msg.content === "!build ") { // YAE
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build venti") { // VENTI
+    msg.reply("https://drive.google.com/uc?id=1CS42wlVeuhXbyEjBaQeq72s2wjp0qASx");
   }
-  else if (msg.content === "!build ") { // YANFEI
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build barbatos") { // VENTI
+    msg.reply("https://drive.google.com/uc?id=1CS42wlVeuhXbyEjBaQeq72s2wjp0qASx");
   }
-  else if (msg.content === "!build ") { // YELAN
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build xiangling") { // XIANGLING
+    msg.reply("https://drive.google.com/uc?id=1WbbXZoBXef95Ye2NGkX78ahagG6iZWuE");
   }
-  else if (msg.content === "!build ") { // YOIMIYA
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build xiao") { // XIAO
+    msg.reply("https://drive.google.com/uc?id=1m8iOVa7_CHnR51Jw2fv3k0OR0M1PcL55");
   }
-  else if (msg.content === "!build ") { // YUNJIN
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build xinqiu") { // XINQIU
+    msg.reply("https://drive.google.com/uc?id=1kLTFhtVx4dLgnm2UvG--txAGgE2x8g3h");
+  }
+  else if (msg.content === "!build xinyan") { // XINYAN
+    msg.reply("https://drive.google.com/uc?id=1ANmrXD6jJ0hehvwzPv-smO5-vEsutaSj");
+  }
+  else if (msg.content === "!build yae miko") { // YAE
+    msg.reply("https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag");
+  }
+  else if (msg.content === "!build yae") { // YAE
+    msg.reply("https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag");
+  }
+  else if (msg.content === "!build yaemiko") { // YAE
+    msg.reply("https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag");
+  }
+  else if (msg.content === "!build yanfei") { // YANFEI
+    msg.reply("https://drive.google.com/uc?id=1yoB3GKw6PY4r2S0Ude84AUVOzQxvsqwG");
+  }
+  else if (msg.content === "!build yelan") { // YELAN
+    msg.reply("https://drive.google.com/uc?id=1-svfaw3rEwGXgxLTMc7Ze8B0cKEKBG0j");
+  }
+  else if (msg.content === "!build yoimiya") { // YOIMIYA
+    msg.reply("https://drive.google.com/uc?id=1Le9UJ9Eb8d5HKK9wGcWTjsFh6H-pnVif");
+  }
+  else if (msg.content === "!build yunjin") { // YUNJIN
+    msg.reply("https://drive.google.com/uc?id=1BfudeuJbQld6H8LirlPWWTReSJn1L1FF");
   }
   else if (msg.content === "!build ") { // ZHONGLI
-    msg.reply("https://drive.google.com/uc?id=");
+    msg.reply("https://drive.google.com/uc?id=11SAK6-VWgTHeZPHvutD6iNz4G1sp2u5n");
   }
-  else if (msg.content === "!build ") { // SHINOBU
-    msg.reply("https://drive.google.com/uc?id=");
+  else if (msg.content === "!build kuki shinobu") { // SHINOBU
+    msg.reply("Karakter belum rilis ya traveler mohon bersabar ^^");
   }
 
 })
