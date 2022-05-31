@@ -16,7 +16,7 @@ client.on("message", msg => {
   else if (msg.content === "Terimakasih paimon"){
     msg.reply(" Sama sama Traveer ^^");
   }
-  client.destroy()
+
 })
 
 
