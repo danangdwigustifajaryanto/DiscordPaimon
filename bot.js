@@ -8,7 +8,7 @@ client.on("ready", () => {
 //Test
 client.on("message", msg => {
   if (msg.content === "!arti echoes"){
-    msg.reply("https://drive.google.com/uc?id=1zuFgFCTUUxJq8Y4gdzjudggb482RsgP6");
+    msg.reply("https://drive.google.com/uc?id=1jLaCdYn0xNzdp5LbAl5Bg6p4YJ-KZTeu");
   }
 })
 
@@ -20,7 +20,7 @@ client.on("message", msg => {
   else if (msg.content === "Terimakasih paimon"){
     msg.reply(" Sama sama Traveer ^^");
   }
-   else if (msg.content === "p"){
+   else if (msg.content === "P"){
     msg.reply("Paimon here >.<");
   }
   else if (msg.content === "Halo paimon"){
