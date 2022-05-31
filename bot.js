@@ -22,7 +22,7 @@ client.on("message", msg => {
 //Build character
 client.on("message", msg => {
   if (msg.content === "Terimakasih paimon") {
-    msg.reply("Tumben banget");
+    msg.reply("Sama Sama Traveler ^^");
   }
 })
 
