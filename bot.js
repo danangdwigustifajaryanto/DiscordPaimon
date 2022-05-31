@@ -26,6 +26,12 @@ client.on("message", msg => {
   }
 })
 
+client.on("message", msg => {
+  if (msg.content === "!build albedo") {
+    msg.reply("https://drive.google.com/uc?id=1KMSHvMqen-VFdXMU9FYFz8LjZrIiqbI3");
+  }
+})
+
 //Build character
 client.on("message", msg => {
   if (msg.content === "build kaeya") {
