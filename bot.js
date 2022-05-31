@@ -5,6 +5,13 @@ client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
 })
 
+//Test
+client.on("message", msg => {
+  if (msg.content === "!arti echoes"){
+    msg.reply("1LdnHr18wltO9N4vPCw2fqHkmp7LyDHNQ");
+  }
+})
+
 // Dialogue Indo
 client.on("message", msg => {
   if (msg.content === "!credit"){
