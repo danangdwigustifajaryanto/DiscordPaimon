@@ -16,6 +16,7 @@ client.on("message", msg => {
   else if (msg.content === "Terimakasih paimon"){
     msg.reply(" Sama sama Traveer ^^");
   }
+  client.destroy()
 })
 
 
@@ -27,7 +28,8 @@ client.on("message", msg => {
   else if (msg.content === "!build aloy") {
     msg.reply("https://drive.google.com/uc?id=154StRKmWsW5YyZWSYL_oY8nIfUwV90rv");
   }
-
 })
 
 client.login("OTc4NjE1ODcwNzE4ODY5NTk0.G9lIoW.-4sg46mmtVK-8OU9nuhgtuATjptnlonZJBy2vk");
+
+client.destroy()
