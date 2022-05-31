@@ -20,10 +20,7 @@ client.on("message", msg => {
 
 // Dialogue English
 client.on("message", msg => {
-  if (msg.content === "!credit"){
-    msg.reply(" \u00A9 Nevada 2022");
-  }
-  else if (msg.content === "Thank you paimon"){
+  if (msg.content === "Thank you paimon"){
     msg.reply(" Urwellcome Traveler ^^");
   }
   else if (msg.content === "Hello paimon"){
@@ -191,7 +188,7 @@ client.on("message", msg => {
     msg.reply("https://drive.google.com/uc?id=1yoB3GKw6PY4r2S0Ude84AUVOzQxvsqwG");
   }
   else if (msg.content === "!build yelan") { // YELAN
-    msg.reply("https://drive.google.com/uc?id=1-svfaw3rEwGXgxLTMc7Ze8B0cKEKBG0j");
+    msg.reply("https://drive.google.com/uc?id=1-1-svfaw3rEwGXgxLTMc7Ze8B0cKEKBG0j");
   }
   else if (msg.content === "!build yoimiya") { // YOIMIYA
     msg.reply("https://drive.google.com/uc?id=1Le9UJ9Eb8d5HKK9wGcWTjsFh6H-pnVif");
