@@ -10,55 +10,24 @@ client.on("message", msg => {
   if (msg.content === "paimon?") {
     msg.reply("Paimon Ready Traveler :)");
   }
-})
-
-client.on("message", msg => {
-  if (msg.content === "!credit") {
+  else if (msg.content === "!credit"){
     msg.reply(" \u00A9 Nevada 2022");
-    
   }
-})
-
-
-client.on("message", msg => {
-  if (msg.content === "Terimakasih paimon") {
-    msg.reply("Sama Sama Traveler ^^");
-  }
-})
-
-client.on("message", msg => {
-  if (msg.content === "Lah kok ngamok") {
-    msg.reply("Ampun traveler :(");
+  else if (msg.content === "Terimakasih paimon"){
+    msg.reply(" Sama sama Traveer ^^");
   }
 })
 
 
 //Build charcter
 client.on("message", msg => {
-  if (msg.content === "!build aloy") {
+  if (msg.content === "!build albedo") {
+    msg.reply("https://drive.google.com/uc?id=1KMSHvMqen-VFdXMU9FYFz8LjZrIiqbI3");
+  }
+  else if (msg.content === "!build aloy") {
     msg.reply("https://drive.google.com/uc?id=154StRKmWsW5YyZWSYL_oY8nIfUwV90rv");
   }
-})
 
-
-client.on("message", msg => {
-  if (msg.content === "build kaeya") {
-    msg.reply("Sama sama traveler ^_^");
-  }
-})
-
-
-client.on("message", msg => {
-  if (msg.content === "!ping") {
-    msg.reply("On");
-  }
-})
-
-
-client.on("message", msg => {
-  if (msg.content === "!build miya") {
-    msg.reply("https://i.ibb.co/hLqY1j5/Yoimiya.jpg");
-  }
 })
 
 client.login("OTc4NjE1ODcwNzE4ODY5NTk0.G9lIoW.-4sg46mmtVK-8OU9nuhgtuATjptnlonZJBy2vk");
