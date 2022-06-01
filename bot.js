@@ -6,20 +6,12 @@ client.on("ready", () => {
 })
 
 
-// //Banlist
-// const BannedWords = ["Anjing","Ajg","ajg","anjg","Babi","B4b1","Monyet","monyet","Kunyuk","kunyuk","bajingan","Bajingan","Asu","asu","Bangsat","bgst","Bgst","bgst","kontol","Kntl","kntl","kontlo","Memek","memek","mmk","Mmk","Ngentod","Ngentot","ngentot","ngentot","ngewe","Ngewe","Perek","Pecun","Bencong","bencong","banci","Banci","Jablay","jablay","Bego","Goblok","goblok","gblk","Tolol","tolol","Sarap","sarap","Budek","budek","Budeg", "budeg", "Bolot", "Setan", "Setan", "Keparat", "Ngehe", "Bejad", "Gembel", "Brengsek"," Tai","tai"]
-// client.on("message", message => {
-//     if (BannedWords.some(word => message.toString().toLowerCase().includes(word))) {message.delete().catch(e => console.error("Couldn't delete message."));
-// });
- 
 //Banlist
-var badwords = ("swearwords","Anjing","Ajg","ajg","anjg","Babi","B4b1","Monyet","monyet","Kunyuk","kunyuk","bajingan","Bajingan","Asu","asu","Bangsat","bgst","Bgst","bgst","kontol","Kntl","kntl","kontlo","Memek","memek","mmk","Mmk","Ngentod","Ngentot","ngentot","ngentot","ngewe","Ngewe","Perek","Pecun","Bencong","bencong","banci","Banci","Jablay","jablay","Bego","Goblok","goblok","gblk","Tolol","tolol","Sarap","sarap","Budek","budek","Budeg", "budeg", "Bolot", "Setan", "Setan", "Keparat", "Ngehe", "Bejad", "Gembel", "Brengsek"," Tai","tai")
-badwords.search(bot.on('message', message => {
-    switch(message.content.toLowerCase()) {
-        case badwords:
-            message.delete()
-    }
-}));
+const BannedWords = ["69", "Anjing","Ajg","ajg","anjg","Babi","B4b1","Monyet","monyet","Kunyuk","kunyuk","bajingan","Bajingan","Asu","asu","Bangsat","bgst","Bgst","bgst","kontol","Kntl","kntl","kontlo","Memek","memek","mmk","Mmk","Ngentod","Ngentot","ngentot","ngentot","ngewe","Ngewe","Perek","Pecun","Bencong","bencong","banci","Banci","Jablay","jablay","Bego","Goblok","goblok","gblk","Tolol","tolol","Sarap","sarap","Budek","budek","Budeg", "budeg", "Bolot", "Setan", "Setan", "Keparat", "Ngehe", "Bejad", "Gembel", "Brengsek"," Tai","tai"]
+client.on("message", message => {
+    if (BannedWords.some(word => message.toString().toLowerCase().includes(word))) {message.delete().catch(e => console.error("Couldn't delete message."));
+});
+ 
 
 //Help
 client.on("message", msg => {
