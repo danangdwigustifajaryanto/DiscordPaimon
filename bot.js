@@ -165,7 +165,7 @@ client.on("message", msg => {
     msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
   }
   else if (msg.content === "!build sucrose") { // SUCROSE
-    msg.reply("https://drive.google.com/uc?id=1AFXjZSDemvhrDOx3mXWmhfHPUhKkYqNq");
+    msg.reply("https://drive.google.com/uc?id=1jEgbODYHgFDs-bqhKZXFwRv9nTBmQmM4");
   }
   else if (msg.content === "!build thoma") { // THOMA
     msg.reply("https://drive.google.com/uc?id=1s_Wb2zYiPUHkfdpmCKD2Jlcztw1ULOt5");
