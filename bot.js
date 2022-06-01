@@ -7,9 +7,9 @@ client.on("ready", () => {
 
 
 //Banlist
-const BannedWords = ["69", "Anjing","Ajg","ajg","anjg","Babi","B4b1","Monyet","monyet","Kunyuk","kunyuk","bajingan","Bajingan","Asu","asu","Bangsat","bgst","Bgst","bgst","kontol","Kntl","kntl","kontlo","Memek","memek","mmk","Mmk","Ngentod","Ngentot","ngentot","ngentot","ngewe","Ngewe","Perek","Pecun","Bencong","bencong","banci","Banci","Jablay","jablay","Bego","Goblok","goblok","gblk","Tolol","tolol","Sarap","sarap","Budek","budek","Budeg", "budeg", "Bolot", "Setan", "Setan", "Keparat", "Ngehe", "Bejad", "Gembel", "Brengsek"," Tai","tai"]
+const BannedWords = ["Anjing","Ajg","ajg","anjg","Babi","B4b1","Monyet","monyet","Kunyuk","kunyuk","bajingan","Bajingan","Asu","asu","Bangsat","bgst","Bgst","bgst","kontol","Kntl","kntl","kontlo","Memek","memek","mmk","Mmk","Ngentod","Ngentot","ngentot","ngentot","ngewe","Ngewe","Perek","Pecun","Bencong","bencong","banci","Banci","Jablay","jablay","Bego","Goblok","goblok","gblk","Tolol","tolol","Sarap","sarap","Budek","budek","Budeg", "budeg", "Bolot", "Setan", "Setan", "Keparat", "Ngehe", "Bejad", "Gembel", "Brengsek"," Tai","tai"]
 client.on("message", message => {
-    if (BannedWords.some(word => message.toString().toLowerCase().includes(word))) {message.delete().catch(e => console.error("Couldn't delete message."));
+    if (BannedWords.some(word => message.toString().toLowerCase().includes(word))) {message.delete().catch(e => console.error("Couldn't delete message.")); message.reply(`Please do not swear.`)};
 });
  
 
