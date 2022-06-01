@@ -33,7 +33,7 @@ client.on("message", msg => {
 
 //Artifact
 client.on("message", msg => {
-  else if (msg.content === "!arti adventurer") {
+  if (msg.content === "!arti adventurer") {
     msg.reply("https://drive.google.com/uc?id=1OH3frvEP42nvQtm9A1C5RIVEW9Zy3Krw");
   }
   else if (msg.content === "!arti archaic") {
