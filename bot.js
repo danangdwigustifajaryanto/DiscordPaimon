@@ -5,13 +5,6 @@ client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
 })
 
-//Test
-client.on("message", msg => {
-  if (msg.content === "!arti echoes"){
-    msg.reply("https://drive.google.com/uc?id=1y4GbCdSIAjbfBEV6ENNWbFxFzjcUAipV");
-  }
-})
-
 // Dialogue Indo
 client.on("message", msg => {
   if (msg.content === "!credit"){
@@ -38,6 +31,200 @@ client.on("message", msg => {
   }
 })
 
+//Artifact
+client.on("message", msg => {
+  if (msg.content === "!arti adventurer") {
+    msg.reply("https://drive.google.com/uc?id=1OH3frvEP42nvQtm9A1C5RIVEW9Zy3Krw");
+  }
+  else if (msg.content === "!arti archaic") {
+    msg.reply("https://drive.google.com/uc?id=1vYyFoVj5ZOgnfDs9H0a-6IbzTxOOT2rX");
+  }
+  else if (msg.content === "!arti berseker") {
+    msg.reply("https://drive.google.com/uc?id=1pOQf4cJ3n6DTTQDtMVqFdFxqr0VvdYIp");
+  }
+  else if (msg.content === "!arti blizzard") {
+    msg.reply("https://drive.google.com/uc?id=1sBlHXPYBEohmVFzXHgTdrcDVu51RYs4-");
+  }
+  else if (msg.content === "!arti bloodstained") {
+    msg.reply("https://drive.google.com/uc?id=13Ybn8kj0A1sYwUacLQ63dgLG4EB3Esen");
+  }
+  else if (msg.content === "!arti brave") {
+    msg.reply("https://drive.google.com/uc?id=13-p4gdz3UP8NS6ysFKVl5kWEaiWakUzS");
+  }
+  else if (msg.content === "!arti brave heart") {
+    msg.reply("https://drive.google.com/uc?id=13-p4gdz3UP8NS6ysFKVl5kWEaiWakUzS");
+  }
+  else if (msg.content === "!arti crimson") {
+    msg.reply("https://drive.google.com/uc?id=1ffXrl64aIzoEykwMt7_xoLjpxoBwSj-j");
+  }
+  else if (msg.content === "!arti defender's") {
+    msg.reply("https://drive.google.com/uc?id=1nP8k--BtcAL2mt4eJqlK97lx36umNbB0");
+  }
+  else if (msg.content === "!arti defender") {
+    msg.reply("https://drive.google.com/uc?id=1nP8k--BtcAL2mt4eJqlK97lx36umNbB0");
+  }
+  else if (msg.content === "!arti prayers to destiny") {
+    msg.reply("https://drive.google.com/uc?id=1MIqInO5YmXOSJLy9l6Pj4BTrw53taZQq");
+  }
+  else if (msg.content === "!arti destiny") {
+    msg.reply("https://drive.google.com/uc?id=1MIqInO5YmXOSJLy9l6Pj4BTrw53taZQq");
+  }
+  else if (msg.content === "!arti echoes") {
+    msg.reply("https://drive.google.com/uc?id=1y4GbCdSIAjbfBEV6ENNWbFxFzjcUAipV");
+  }
+  else if (msg.content === "!arti emblem") {
+    msg.reply("https://drive.google.com/uc?id=1RmcAVGptJKcKBRsb5rI2J_hWfXbEyDeG");
+  }
+  else if (msg.content === "!arti the exile") {
+    msg.reply("https://drive.google.com/uc?id=1Ba4Q5NwquPBh8CwxQ7vLwfcF5uZXVctC");
+  }
+  else if (msg.content === "!arti gambler") {
+    msg.reply("https://drive.google.com/uc?id=1Wr7mw9I2VZcR5ghScs9MPEIWcgO8QehM");
+  }
+  else if (msg.content === "!arti gladiator's finale") {
+    msg.reply("https://drive.google.com/uc?id=1pzFD-PxvqQnR8WatmRKDAFXPe5qRzZ6S");
+  }
+  else if (msg.content === "!arti gladi") {
+    msg.reply("https://drive.google.com/uc?id=1pzFD-PxvqQnR8WatmRKDAFXPe5qRzZ6S");
+  }
+  else if (msg.content === "!arti hod") {
+    msg.reply("https://drive.google.com/uc?id=1spXYCQmgYkmIDjWFECcSnhS61ar4T1Qg");
+  }
+  else if (msg.content === "!arti heart of depth") {
+    msg.reply("https://drive.google.com/uc?id=1spXYCQmgYkmIDjWFECcSnhS61ar4T1Qg");
+  }
+  else if (msg.content === "!arti husk") {
+    msg.reply("https://drive.google.com/uc?id=1FKpgcHfxuAWJLMrQ2y3kueyeWbTF_UmN");
+  }
+  else if (msg.content === "!arti husk of opulent dreams") {
+    msg.reply("https://drive.google.com/uc?id=1FKpgcHfxuAWJLMrQ2y3kueyeWbTF_UmN");
+  }
+  else if (msg.content === "!arti prayers to illumination") {
+    msg.reply("https://drive.google.com/uc?id=1PLd74r_iqH6i9XXWkY_dBxgHwyFooxvf");
+  }
+  else if (msg.content === "!arti illumination") {
+    msg.reply("https://drive.google.com/uc?id=1PLd74r_iqH6i9XXWkY_dBxgHwyFooxvf");
+  }
+  else if (msg.content === "!arti instructor") {
+    msg.reply("https://drive.google.com/uc?id=1vi6xZwMAaFC3ev5MmJcMSkFgD5OlA50P");
+  }
+  else if (msg.content === "!arti lavawalker") {
+    msg.reply("https://drive.google.com/uc?id=1z-dohAQMyZgc6ROdLXjss2YkHbYJKogI");
+  }
+  else if (msg.content === "!arti lucky dog") {
+    msg.reply("https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR");
+  }
+  else if (msg.content === "!arti lucky") {
+    msg.reply("https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR");
+  }
+  else if (msg.content === "!arti dog") {
+    msg.reply("https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR");
+  }
+  else if (msg.content === "!arti maiden beloved") {
+    msg.reply("https://drive.google.com/uc?id=1DRecg3Pf4kdy7w_y69nZSW9dul5C5Dab");
+  }
+  else if (msg.content === "!arti maiden") {
+    msg.reply("https://drive.google.com/uc?id=1DRecg3Pf4kdy7w_y69nZSW9dul5C5Dab");
+  }
+  else if (msg.content === "!arti nobless oblige") {
+    msg.reply("https://drive.google.com/uc?id=1pWFC3lZP09TmZZqZY3km0sPIUuyOrJnr");
+  }
+  else if (msg.content === "!arti nobless") {
+    msg.reply("https://drive.google.com/uc?id=1pWFC3lZP09TmZZqZY3km0sPIUuyOrJnr");
+  }
+  else if (msg.content === "!arti ocean") {
+    msg.reply("https://drive.google.com/uc?id=13pF2-ZbU_78ZyK5wLtblPp2vRtB2PxbO");
+  }
+  else if (msg.content === "!arti ocean hued") {
+    msg.reply("https://drive.google.com/uc?id=13pF2-ZbU_78ZyK5wLtblPp2vRtB2PxbO");
+  }
+  else if (msg.content === "!arti ocean-hued clam") {
+    msg.reply("https://drive.google.com/uc?id=13pF2-ZbU_78ZyK5wLtblPp2vRtB2PxbO");
+  }
+  else if (msg.content === "!arti pale flame") {
+    msg.reply("https://drive.google.com/uc?id=17K8e26VHojJHaIq30AheeQ4yozokWAHW");
+  }
+  else if (msg.content === "!arti resolution") {
+    msg.reply("https://drive.google.com/uc?id=1Y0nWwHBO7WWwtfVH_EYRQVF90L46PZiQ");
+  }
+  else if (msg.content === "!arti resolution of sojuner") {
+    msg.reply("https://drive.google.com/uc?id=1Y0nWwHBO7WWwtfVH_EYRQVF90L46PZiQ");
+  }
+  else if (msg.content === "!arti retracing bolide") {
+    msg.reply("https://drive.google.com/uc?id=1NdvOJD0LpAawuOzRIP8qMSG3Ebnhds6q");
+  }
+  else if (msg.content === "!arti retracing") {
+    msg.reply("https://drive.google.com/uc?id=1NdvOJD0LpAawuOzRIP8qMSG3Ebnhds6q");
+  }
+  else if (msg.content === "!arti scholar") {
+    msg.reply("https://drive.google.com/uc?id=1oJ76BXqTRY8ZOM-Sdk1Y9-RtMmvSEe03");
+  }
+  else if (msg.content === "!arti shimenawa") {
+    msg.reply("https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt");
+  }
+  else if (msg.content === "!arti shimenawa's") {
+    msg.reply("https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt");
+  }
+  else if (msg.content === "!arti shimenawa's reminiscence") {
+    msg.reply("https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt");
+  }
+  else if (msg.content === "!arti prayers to springtime") {
+    msg.reply("https://drive.google.com/uc?id=1v6iyFUxW6DlA6aXfeIYAOV81-YvNNTP2");
+  }
+  else if (msg.content === "!arti springtime") {
+    msg.reply("https://drive.google.com/uc?id=1v6iyFUxW6DlA6aXfeIYAOV81-YvNNTP2");
+  }
+  else if (msg.content === "!arti tenacity") {
+    msg.reply("https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN");
+  }
+  else if (msg.content === "!arti tenacity of millelith") {
+    msg.reply("https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN");
+  }
+  else if (msg.content === "!arti millelith") {
+    msg.reply("https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN");
+  }
+  else if (msg.content === "!arti thundering") {
+    msg.reply("https://drive.google.com/uc?id=1GPxLu2bY187pckM9CvSq-2o3JJ2mDxSM");
+  }
+  else if (msg.content === "!arti thundering fury") {
+    msg.reply("https://drive.google.com/uc?id=1GPxLu2bY187pckM9CvSq-2o3JJ2mDxSM");
+  }
+  else if (msg.content === "!arti thundershooter") {
+    msg.reply("https://drive.google.com/uc?id=1OjQrARzgo1z3jxQrLuV9Dwb7s3Y2tojN");
+  }
+  else if (msg.content === "!arti tiny miracle") {
+    msg.reply("https://drive.google.com/uc?id=1PQqRzB4lf46PqYITqx1_zkcF9kleI9SH");
+  }
+  else if (msg.content === "!arti traveling doctor") {
+    msg.reply("https://drive.google.com/uc?id=1uLGceJXoqhtmgso3U4rg9PS0wqYBWYe7");
+  }
+  else if (msg.content === "!arti vermillion") {
+    msg.reply("https://drive.google.com/uc?id=17Zdsny5fB-jB7rlH3pkGg7LJN-6zoDt-");
+  }
+  else if (msg.content === "!arti vermillion hereafter") {
+    msg.reply("https://drive.google.com/uc?id=17Zdsny5fB-jB7rlH3pkGg7LJN-6zoDt-");
+  }
+  else if (msg.content === "!arti viri") {
+    msg.reply("https://drive.google.com/uc?id=1tMHQFGVugDPkx4A_LjKSoHuKMpYAwiB-");
+  }
+  else if (msg.content === "!arti viridescent venerer") {
+    msg.reply("https://drive.google.com/uc?id=1tMHQFGVugDPkx4A_LjKSoHuKMpYAwiB-");
+  }
+  else if (msg.content === "!arti wanderer's troupe") {
+    msg.reply("https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_");
+  }
+  else if (msg.content === "!arti wanderer") {
+    msg.reply("https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_");
+  }
+  else if (msg.content === "!arti wanderer's") {
+    msg.reply("https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_");
+  }
+  else if (msg.content === "!arti prayers to wisdom") {
+    msg.reply("https://drive.google.com/uc?id=15RKtqYQBB5dUNyzH4bCrrrO2ZCDkGxqJ");
+  }
+  else if (msg.content === "!arti prayers to wisdom") {
+    msg.reply("https://drive.google.com/uc?id=15RKtqYQBB5dUNyzH4bCrrrO2ZCDkGxqJ");
+  }
 
 //Build charcter
 client.on("message", msg => {
