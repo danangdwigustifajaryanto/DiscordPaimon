@@ -29,11 +29,7 @@ client.on("message", msg => {
   else if (msg.content === "Hello paimon"){
     msg.reply("Paimon Here traveler :)");
   }
-})
-
-//Artifact
-client.on("message", msg => {
-  if (msg.content === "!arti adventurer") {
+  else if (msg.content === "!arti adventurer") {
     msg.reply("https://drive.google.com/uc?id=1OH3frvEP42nvQtm9A1C5RIVEW9Zy3Krw");
   }
   else if (msg.content === "!arti archaic") {
@@ -225,6 +221,7 @@ client.on("message", msg => {
   else if (msg.content === "!arti prayers to wisdom") {
     msg.reply("https://drive.google.com/uc?id=15RKtqYQBB5dUNyzH4bCrrrO2ZCDkGxqJ");
   }
+})
 
 //Build charcter
 client.on("message", msg => {
