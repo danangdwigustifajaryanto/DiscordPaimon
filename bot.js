@@ -5,6 +5,13 @@ client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
 })
 
+//Help
+client.on("message", msg => {
+  if (msg.content === "!help"){
+    msg.reply("Berikut adalah beberapa fitur paimon yang tersedia saat ini\n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Pencarian Artefak**\n***contoh***: `!arti shimenawa`");
+  }
+}) 
+
 // Dialogue Indo
 client.on("message", msg => {
   if (msg.content === "!credit"){
