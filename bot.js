@@ -71,8 +71,11 @@ client.on("message", msg => {
   else if (msg.content === "!build chongyun") { // CHONGYUN
     msg.reply("https://drive.google.com/uc?id=1HA2TkFCdKQLIAfxAi7IQIb9MZY4SQVv5");
   }
-  else if (msg.content === "!build diona") { // DIONA
+  else if (msg.content === "!build diluc") { // DILUC
     msg.reply("https://drive.google.com/uc?id=18CDNh9qB49XikoTFjUCRsPPR7uFtAkiV");
+  }
+  else if (msg.content === "!build diona") { // DIONA
+    msg.reply("https://drive.google.com/uc?id=1RQICYq5P2jxOxuHyCoqmAtLHRSeP54el");
   }
   else if (msg.content === "!build eula") { // EULA
     msg.reply("https://drive.google.com/uc?id=1Cnul4kQVrGZG-i3BcCyNM4ofF-Ba_5FX");
