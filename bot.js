@@ -7,8 +7,11 @@ client.on("ready", () => {
 
 //Help
 client.on("message", msg => {
-  if (msg.content === "!help"){
-    msg.reply("Berikut adalah beberapa fitur paimon yang tersedia saat ini\n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Pencarian Artefak**\n***contoh***: `!arti shimenawa`");
+  if (msg.content === "!bantu"){
+    msg.reply("Berikut adalah beberapa fitur paimon yang tersedia saat ini\n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`");
+  }
+  else if (msg.content === "!help"){
+    msg.reply("Here are some of Paimon's currently available features\n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`");
   }
 }) 
 
