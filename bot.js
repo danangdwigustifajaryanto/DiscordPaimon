@@ -111,7 +111,7 @@ client.on("message", msg => {
     msg.reply("https://drive.google.com/uc?id=13-p4gdz3UP8NS6ysFKVl5kWEaiWakUzS");
   }
   else if (msg.content === "!arti crimson") {
-    msg.reply("https://drive.google.com/uc?id=1ffXrl64aIzoEykwMt7_xoLjpxoBwSj-j");
+    msg.reply("Location: Domain of Guyun\nhttps://drive.google.com/uc?id=1ffXrl64aIzoEykwMt7_xoLjpxoBwSj-j");
   }
   else if (msg.content === "!arti defender's") {
     msg.reply("https://drive.google.com/uc?id=1nP8k--BtcAL2mt4eJqlK97lx36umNbB0");
