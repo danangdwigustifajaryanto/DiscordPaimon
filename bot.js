@@ -347,7 +347,7 @@ client.on("message", msg => {
     msg.reply("https://drive.google.com/uc?id=1h8v-VxOvCU7J4q6pM4RyBY0Tz7KRJIgz");
   }
   else if (msg.content === "!build sayu") { // SAYU
-    msg.reply("https://drive.google.com/uc?id=17hurOitj-Aov_73zT7C3fFQ1N1HvSJzR");
+    msg.reply("https://drive.google.com/uc?id=1FnvEbyugX262pZEpZjfJ1m0xWZSQ9YXU");
   }
   else if (msg.content === "!build shenhe") { // SHENHE
     msg.reply("https://drive.google.com/uc?id=1QOTbw7MJd2rbxu67lliemLAscGIB8Hi2");
