@@ -27,13 +27,13 @@ client.on("message", msg =>{
   if (msg.content === "!talent hari ini"){ ///Indo 
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1 || 4 ) { //Sening/Kamis
-      msg.reply("**Farming talent untuk karakter hari ini**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Freedom***\n`Amber,` `Barbara,` `Klee,` `Sucrose,` `Traveler Geo/Anemo,` `Childe,` `Klee,` `Diona.`\n\n***Prosperity***\n`Keqing,` `Ningguang,` `Qiqi,` `Shenhe,` `Xiao.`\n\n***Transience***\n`Electro Traveler,` `Kokomi,` `Thoma,` `Yoimiya.`");
     }
     else if (dayOfWeek === 2 || 5 ) { //Selasa/Jumat
-      msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n`Bennett,` `Diluc,` `Eula,` `Jean,` `Mona,` `Noelle,` `Razor.`\n\n***Diligence***\n`Chongyun,` `Ganyu,` `Hu-Tao,` `Kazuha,` `Xiangling,` `Yun-Jin.`\n\n***Elegance***\n`Ayaka,` `Ayato,` `Itto,` `Kujou-Sara.`");
     }
     else if (dayOfWeek === 3 || 6 ) { //Rabu/Sabtu
-      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xinqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n`Albedo,` `Fischl,` `Kaeya,` `Lisa,` `Rosaria,` `Venti.`\n\n***Gold***\n`Beidou,` `Xinqiu,` `Xinyan,` `Yanfei,` `Zhongli.`\n\n***Light***\n`Gorou,` `Raiden Shogun,` `Sayu,` `Yae Miko.`");
     } else if (dayOfWeek === 3 || 6 ){ //Minggu
       msg.reply("**Semua Karakter bisa Farming di hari Minggu Traveler :)***");
     }
@@ -45,7 +45,7 @@ client.on("message", msg =>{
   if (msg.content === "!today talent"){ ///Indo 
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1 || 4 ) { //Sening/Kamis
-      msg.reply("**Characters that can farm today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+      msg.reply("**Characters that can farm today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
     }
     else if (dayOfWeek === 2 || 5 ) { //Selasa/Jumat
       msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
