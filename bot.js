@@ -51,7 +51,7 @@ client.on("message", msg =>{
       msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
     }
     else if (dayOfWeek === 3 || 6 ) { //Rabu/Sabtu
-      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xinqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
     } else if (dayOfWeek === 3 || 6 ){ //Minggu
       msg.reply("**Semua Karakter bisa Farming di hari Minggu Traveler :)***");
     }
@@ -426,7 +426,7 @@ client.on("message", msg => {
   else if (msg.content === "!build xiao") { // XIAO
     msg.reply("https://drive.google.com/uc?id=1m8iOVa7_CHnR51Jw2fv3k0OR0M1PcL55");
   }
-  else if (msg.content === "!build xinqiu") { // XINQIU
+  else if (msg.content === "!build xingqiu") { // XINQIU
     msg.reply("https://drive.google.com/uc?id=1kLTFhtVx4dLgnm2UvG--txAGgE2x8g3h");
   }
   else if (msg.content === "!build xinyan") { // XINYAN
