@@ -27,13 +27,13 @@ client.on("message", msg =>{
   if (msg.content === "!talent hari ini"){ ///Indo 
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1 || 4 ) { //Sening/Kamis
-      msg.reply("**Farming talent untuk karakter hari ini**\n***Freedom***\n`Amber`\n `Barbara`\n `Klee`\n `Sucrose`\n `Traveler Geo/Anemo`\n `Childe`\n `Klee`\n `Diona`\n\n***Prosperity***\n`Keqing`\n `Ningguang`\n `Qiqi`\n `Shenhe`\n `Xiao`\n\n***Transience***\n`Electro Traveler`\n `Kokomi`\n `Thoma`\n `Yoimiya.`");
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Freedom***\n` Amber`\n `Barbara`\n `Klee`\n `Sucrose`\n `Traveler Geo/Anemo`\n `Childe`\n `Klee`\n `Diona`\n\n***Prosperity***\n` Keqing`\n `Ningguang`\n `Qiqi`\n `Shenhe`\n `Xiao`\n\n***Transience***\n` Electro Traveler`\n `Kokomi`\n `Thoma`\n `Yoimiya.`");
     }
     else if (dayOfWeek === 2 || 5 ) { //Selasa/Jumat
-      msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n`Bennett`\n `Diluc`\n `Eula`\n `Jean`\n `Mona`\n `Noelle`\n `Razor`\n\n***Diligence***\n`Chongyun`\n `Ganyu`\n `Hu-Tao`\n `Kazuha`\n `Xiangling`\n `Yun-Jin`\n\n***Elegance***\n`Ayaka`\n `Ayato`\n `Itto`\n `Kujou-Sara.`");
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n` Bennett`\n `Diluc`\n `Eula`\n `Jean`\n `Mona`\n `Noelle`\n `Razor`\n\n***Diligence***\n` Chongyun`\n `Ganyu`\n `Hu-Tao`\n `Kazuha`\n `Xiangling`\n `Yun-Jin`\n\n***Elegance***\n` Ayaka`\n `Ayato`\n `Itto`\n `Kujou-Sara.`");
     }
     else if (dayOfWeek === 3 || 6 ) { //Rabu/Sabtu
-      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n`Albedo`\n `Fischl`\n `Kaeya`\n `Lisa`\n `Rosaria`\n `Venti`\n\n***Gold***\n`Beidou`\n `Xinqiu`\n `Xinyan`\n `Yanfei`\n `Zhongli`\n\n***Light***\n`Gorou`\n `Raiden Shogun`\n `Sayu\n` `Yae Miko`");
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n` Albedo`\n `Fischl`\n `Kaeya`\n `Lisa`\n `Rosaria`\n `Venti`\n\n***Gold***\n` Beidou`\n `Xinqiu`\n `Xinyan`\n `Yanfei`\n `Zhongli`\n\n***Light***\n` Gorou`\n `Raiden Shogun`\n `Sayu\n` `Yae Miko`");
     } else if (dayOfWeek === 3 || 6 ){ //Minggu
       msg.reply("**Semua Karakter bisa Farming di hari Minggu Traveler :)***");
     }
