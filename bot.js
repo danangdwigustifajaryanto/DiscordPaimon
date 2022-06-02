@@ -72,6 +72,9 @@ client.on("message", msg => {
   else if (msg.content === "Halo paimon"){
     msg.reply("Iya traveler ada apa ?");
   }
+  else if (msg.content === "!tq"){
+    msg.reply("Urwellcome, Sama sama traveler ^^");
+  }
 })
 
 // Dialogue English
