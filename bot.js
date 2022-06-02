@@ -22,6 +22,14 @@ client.on("message", msg => {
   }
 })
 
+//Domain arti
+client.on("message", msg => {
+  if (msg.content === "!domain tenacity"){ // Help Indo
+    msg.reply("https://drive.google.com/uc?id=1fDseWQ4NE0Ec-CkFzCqWLOf8VzDX4ZVC");
+  }
+
+})
+
 // Day of farming
 client.on("message", msg =>{
   if (msg.content === "!talent sekarang"){ ///Indo 
@@ -33,7 +41,7 @@ client.on("message", msg =>{
       msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n> Bennett\n> Diluc\n> Eula\n> Jean\n> Mona\n> Noelle\n> Razor\n\n***Diligence***\n> Chongyun\n> Ganyu\n> Hu-Tao\n> Kazuha\n> Xiangling\n> Yun-Jin\n\n***Elegance***\n> Ayaka\n> Ayato\n> Itto\n> Kujou-Sara");
     }
     else if (dayOfWeek === 3 || 6 ) { //Rabu/Sabtu
-      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n> Albedo\n> Fischl>\n> Kaeya>\n> Lisa\n> Rosaria\n> Venti\n\n***Gold***\n> Beidou\n> Xinqiu\n> Xinyan\n> Yanfei\n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun> \n> Sayu\n> Yae Miko`");
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n> Albedo\n> Fischl>\n> Kaeya>\n> Lisa\n> Rosaria\n> Venti\n\n***Gold***\n> Beidou\n> Xingqiu\n> Xinyan\n> Yanfei\n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun> \n> Sayu\n> Yae Miko`");
     } else if (dayOfWeek === 3 || 6 ){ //Minggu
       msg.reply("**Semua Karakter bisa Farming di hari Minggu Traveler :)***");
     }
@@ -111,7 +119,7 @@ client.on("message", msg => {
     msg.reply("https://drive.google.com/uc?id=13-p4gdz3UP8NS6ysFKVl5kWEaiWakUzS");
   }
   else if (msg.content === "!arti crimson") {
-    msg.reply("https://drive.google.com/uc?id=1ffXrl64aIzoEykwMt7_xoLjpxoBwSj-j", "Location: Domain of Guyun");
+    msg.reply("https://drive.google.com/uc?id=1ffXrl64aIzoEykwMt7_xoLjpxoBwSj-j");
   }
   else if (msg.content === "!arti defender's") {
     msg.reply("https://drive.google.com/uc?id=1nP8k--BtcAL2mt4eJqlK97lx36umNbB0");
