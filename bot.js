@@ -332,7 +332,7 @@ client.on("message", msg => {
     msg.reply("https://drive.google.com/uc?id=1bkOf-z18qC9WaoCxRjfeqDFG9efNfIaY");
   }
   else if (msg.content === "!build noelle") { // NOELLE
-    msg.reply("https://drive.google.com/uc?id=1z2c-jI34tqv1k8lLJduVOsKyIRqFa9DD");
+    msg.reply("https://drive.google.com/uc?id=1Ve1ds8akwumw_gT_8fV_A2UWQs4oku7W");
   }
   else if (msg.content === "!build paimon") { // PAIMON
     msg.reply("https://drive.google.com/uc?id=1X_Eo_nwLWBVHylFTE7oxQTr2IOUZSWe6");
