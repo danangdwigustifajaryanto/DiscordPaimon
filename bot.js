@@ -15,16 +15,16 @@ client.on("ready", () => {
 //Help
 client.on("message", msg => {
   if (msg.content === "!bantu"){ // Help Indo
-    msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n\n> **Build Karakter** \n> ***contoh***: `!build amber` \n\n> **Informasi Artefak**\n> ***contoh***: `!arti shimenawa`\n\n> **Talent hari ini**\n> ***contoh***: `!talent hari ini`\n\n");
+    msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n");
   }
   else if (msg.content === "!help"){ // Help English
-    msg.reply("__**Here are some of Paimon's currently available features**__\n\n> **Build Character**\n> ***example***: `!build amber`\n\n> **Artifact Information**\n> ***example***: `!arti shimenawa`\n\n> **Today talent**\n> ***example***: `!today talent`\n\n");
+    msg.reply("__**Here are some of Paimon's currently available features**__\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`\n\n**Today talent**\n***example***: `!today talent`\n\n");
   }
 })
 
 // Day of farming
 client.on("message", msg =>{
-  if (msg.content === "!talent hari ini"){ ///Indo 
+  if (msg.content === "!talent sekarang"){ ///Indo 
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1 || 4 ) { //Sening/Kamis
       msg.reply("**Farming talent untuk karakter hari ini**\n***Freedom***\n> Amber\n> Barbara\n> Klee\n> Sucrose\n> Traveler Geo/Anemo\n> Childe\n> Klee\n> Diona\n\n***Prosperity***\n> Keqing\n> Ningguang\n> Qiqi\n> Shenhe\n> Xiao\n\n***Transience***\n> Electro Traveler\n> Kokomi\n> Thoma\n> Yoimiya");
