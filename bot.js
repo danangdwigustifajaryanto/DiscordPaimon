@@ -12,16 +12,51 @@ client.on("ready", () => {
 //     if (BannedWords.some(word => message.toString().toLowerCase().includes(word))) {message.delete().catch(e => console.error("Couldn't delete message.")); message.reply(`Please do not swear.`)};
 // });
  
-
 //Help
 client.on("message", msg => {
-  if (msg.content === "!bantu"){
-    msg.reply("Berikut adalah beberapa fitur paimon yang tersedia saat ini\n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n");
+  if (msg.content === "!bantu"){ // Help Indo
+    msg.reply("Berikut adalah beberapa fitur paimon yang tersedia saat ini\n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent hari ini`\n\n");
   }
-  else if (msg.content === "!help"){
-    msg.reply("Here are some of Paimon's currently available features\n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`\n\n");
+  else if (msg.content === "!help"){ // Help English
+    msg.reply("Here are some of Paimon's currently available features\n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`\n\n**Today talent**\n***example***: `!today talent`\n\n");
   }
-}) 
+})
+
+// Day of farming
+client.on("message", msg =>{
+  if (msg.content === "!talent hari ini"){ ///Indo 
+    const dayOfWeek = new Date().getDay();
+    if (dayOfWeek === 1 || 4 ) { //Sening/Kamis
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+    }
+    else if (dayOfWeek === 2 || 5 ) { //Selasa/Jumat
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+    }
+    else if (dayOfWeek === 3 || 6 ) { //Rabu/Sabtu
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xinqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+    } else if (dayOfWeek === 3 || 6 ){ //Minggu
+      msg.reply("**Semua Karakter bisa Farming di hari Minggu Traveler :)***");
+    }
+  }
+ });
+
+// Day of farming English
+client.on("message", msg =>{
+  if (msg.content === "!today talent"){ ///Indo 
+    const dayOfWeek = new Date().getDay();
+    if (dayOfWeek === 1 || 4 ) { //Sening/Kamis
+      msg.reply("**Characters that can farm today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+    }
+    else if (dayOfWeek === 2 || 5 ) { //Selasa/Jumat
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+    }
+    else if (dayOfWeek === 3 || 6 ) { //Rabu/Sabtu
+      msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xinqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+    } else if (dayOfWeek === 3 || 6 ){ //Minggu
+      msg.reply("**Semua Karakter bisa Farming di hari Minggu Traveler :)***");
+    }
+  }
+ });
 
 // Dialogue Indo
 client.on("message", msg => {
@@ -332,7 +367,7 @@ client.on("message", msg => {
     msg.reply("https://drive.google.com/uc?id=1bkOf-z18qC9WaoCxRjfeqDFG9efNfIaY");
   }
   else if (msg.content === "!build noelle") { // NOELLE
-    msg.reply("https://drive.google.com/uc?id=1Ve1ds8akwumw_gT_8fV_A2UWQs4oku7W");
+    msg.reply("https://drive.google.com/uc?id=1z2c-jI34tqv1k8lLJduVOsKyIRqFa9DD");
   }
   else if (msg.content === "!build paimon") { // PAIMON
     msg.reply("https://drive.google.com/uc?id=1X_Eo_nwLWBVHylFTE7oxQTr2IOUZSWe6");
@@ -347,7 +382,7 @@ client.on("message", msg => {
     msg.reply("https://drive.google.com/uc?id=1h8v-VxOvCU7J4q6pM4RyBY0Tz7KRJIgz");
   }
   else if (msg.content === "!build sayu") { // SAYU
-    msg.reply("https://drive.google.com/uc?id=1FnvEbyugX262pZEpZjfJ1m0xWZSQ9YXU");
+    msg.reply("https://drive.google.com/uc?id=17hurOitj-Aov_73zT7C3fFQ1N1HvSJzR");
   }
   else if (msg.content === "!build shenhe") { // SHENHE
     msg.reply("https://drive.google.com/uc?id=1QOTbw7MJd2rbxu67lliemLAscGIB8Hi2");
