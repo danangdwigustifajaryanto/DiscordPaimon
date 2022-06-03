@@ -4,15 +4,7 @@ const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
 })
-
-
-//Banlist
-// const BannedWords = ["Anjing","Ajg","ajg","anjg","Babi","B4b1","Monyet","monyet","Kunyuk","kunyuk","bajingan","Bajingan","Asu","asu","Bangsat","bgst","Bgst","bgst","kontol","Kntl","kntl","kontlo","Memek","memek","mmk","Mmk","Ngentod","Ngentot","ngentot","ngentot","ngewe","Ngewe","Perek","Pecun","Bencong","bencong","banci","Banci","Jablay","jablay","Bego","Goblok","goblok","gblk","Tolol","tolol","Sarap","sarap","Budek","budek","Budeg", "budeg", "Bolot", "Setan", "Setan", "Keparat", "Ngehe", "Bejad", "Gembel", "Brengsek"," Tai","tai"]
-// client.on("message", message => {
-//     if (BannedWords.some(word => message.toString().toLowerCase().includes(word))) {message.delete().catch(e => console.error("Couldn't delete message.")); message.reply(`Please do not swear.`)};
-// });
- 
-//Help
+//-------- HELP -------------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!bantu"){ // Help Indo
     msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n");
@@ -21,69 +13,58 @@ client.on("message", msg => {
     msg.reply("__**Here are some of Paimon's currently available features**__\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`\n\n**Today talent**\n***example***: `!today talent`\n\n");
   }
 })
-
-//Domain arti
+//-------- DOMAIN ARTI ---------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!domain tenacity"){ // Help Indo
     msg.reply("https://drive.google.com/uc?id=1fDseWQ4NE0Ec-CkFzCqWLOf8VzDX4ZVC");
   }
 
 })
-
-// DAY INDO ____________________________________________________________________________________________________
+// ------- TALENT INDO -----------------------------------------------------------------------------------------------------------------
 client.on("message", msg =>{
   if (msg.content === "!talent sekarang"){ ///Indo 
+    msg.reply("Berikut adalah beberapa karakter yang bisa farming hari ini");
     const dayOfWeek = new Date().getDay();
-    if (dayOfWeek === (1 && !4) || (4 && !1) ) { //Sening/Kamis
+    if (dayOfWeek === 1) { //Sening/Kamis
       msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
-    } else if (dayOfWeek === (2 && !5) || (5 && !2) ) { //Selasa/Jumat
+    } else if (dayOfWeek === 2) { //Sening/Kamis
       msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
-    } else if (dayOfWeek === (3 && !6) || (6 && !3) ) { //Rabu/Sabtu
+    } else if (dayOfWeek === 3) { //Sening/Kamis
       msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
-    } else if (dayOfWeek === 0 ) { //Minggu
-      msg.reply("Semua bisa farming hari ini traveler :)");
+    } else if (dayOfWeek === 4) { //Sening/Kamis
+      msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+    } else if (dayOfWeek === 5) { //Sening/Kamis
+      msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+    } else if (dayOfWeek === 6) { //Sening/Kamis
+      msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+    } else {
+      msg.reply("Semua bisa farming di hari minggu traveler :)")
     }
   }
  });
-//________________________________________________________________________________________________________________________
-// DAY ENGLISH
-// client.on("message", msg =>{
-//   if (msg.content === "!today talent"){ ///Indo 
-//     const dayOfWeek = new Date().getDay();
-//     if (dayOfWeek === 1 && 4 ) { //Sening/Kamis
-//       msg.reply("**Characters that can farm today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
-//     } else{
-//       console.log("Talent Day");
-//     }
-//   }
-//  });
-// client.on("message", msg =>{ //Selasa jumat
-//   if (msg.content === "!today talent"){ ///Indo 
-//     const dayOfWeek = new Date().getDay();
-//     if (dayOfWeek === 2 && 5 ) { //Selasa/Jumat
-//       msg.reply("**Farming talent untuk karakter hari ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
-//     } else{
-//       console.log("Talent Day");
-//     }
-//   }
-//  });
-// client.on("message", msg =>{ //Rabu sabtu
-//   if (msg.content === "!today talent"){ ///Indo 
-//     const dayOfWeek = new Date().getDay();
-//     if (dayOfWeek === 3 && 6 ) { //Rabu/Sabtu
-//       msg.reply("**Farming talent untuk karakter hari ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
-//     } else if (dayOfWeek === 0 ){ //Minggu
-//       msg.reply("**Semua Karakter bisa Farming di hari Minggu Traveler :)***");
-//     } else{
-//       console.log("Talent Day");
-//     }
-//   }
-//  });
-// ________________________________________________________________________________________________________________________
-
-
-
-// Dialogue Indo
+// ------- TALENT ENGLISH -----------------------------------------------------------------------------------------------------------------
+client.on("message", msg =>{
+  if (msg.content === "!today talent"){ ///English 
+    msg.reply("Here are some characters who can farm talent today");
+    const dayOfWeek = new Date().getDay();
+    if (dayOfWeek === 1) { //Sening/Kamis
+      msg.reply("**Characters that can farm talent today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+    } else if (dayOfWeek === 2) { //Sening/Kamis
+      msg.reply("**Characters that can farm talent today**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+    } else if (dayOfWeek === 3) { //Sening/Kamis
+      msg.reply("**Characters that can farm talent today**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+    } else if (dayOfWeek === 4) { //Sening/Kamis
+      msg.reply("**Characters that can farm talent today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+    } else if (dayOfWeek === 5) { //Sening/Kamis
+      msg.reply("**Characters that can farm talent today**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+    } else if (dayOfWeek === 6) { //Sening/Kamis
+      msg.reply("**Characters that can farm talent today**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+    } else {
+      msg.reply("Semua bisa farming di hari minggu traveler :)")
+    }
+  }
+ });
+// ------- DOMAIN INDO ---------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!credit"){
     msg.reply(" \u00A9 Nevada 2022");
@@ -102,7 +83,7 @@ client.on("message", msg => {
   }
 })
 
-// Dialogue English
+// ------ DIALOGUE INDO ------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "Thank you paimon"){
     msg.reply(" Urwellcome Traveler ^^");
@@ -112,7 +93,7 @@ client.on("message", msg => {
   }
 })
 
-//Artifact
+//------- ARTIFACT ------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!arti adventurer") {
     msg.reply("https://drive.google.com/uc?id=1OH3frvEP42nvQtm9A1C5RIVEW9Zy3Krw");
