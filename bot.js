@@ -23,7 +23,6 @@ client.on("message", msg => {
 // ------- TALENT INDO -----------------------------------------------------------------------------------------------------------------
 client.on("message", msg =>{
   if (msg.content === "!talent sekarang"){ ///Indo 
-    msg.reply("Berikut adalah beberapa karakter yang bisa farming hari ini");
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1) { //Sening/Kamis
       msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
@@ -45,7 +44,6 @@ client.on("message", msg =>{
 // ------- TALENT ENGLISH -----------------------------------------------------------------------------------------------------------------
 client.on("message", msg =>{
   if (msg.content === "!today talent"){ ///English 
-    msg.reply("Here are some characters who can farm talent today");
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1) { //Sening/Kamis
       msg.reply("**Characters that can farm talent today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
