@@ -36,9 +36,9 @@ client.on("message", msg =>{
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === (1 && !4) || (4 && !1) ) { //Sening/Kamis
       msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
-    } else if (dayOfWeek === 2 || 5 ) { //Selasa/Jumat
+    } else if (dayOfWeek === (2 && !5) || (5 && !2) ) { //Selasa/Jumat
       msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
-    } else if (dayOfWeek === 3 || 6 ) { //Rabu/Sabtu
+    } else if (dayOfWeek === (3 && !6) || (6 && !3) ) { //Rabu/Sabtu
       msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
     } else if (dayOfWeek === 0 ) { //Minggu
       msg.reply("Semua bisa farming hari ini traveler :)");
