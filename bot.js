@@ -43,7 +43,7 @@ client.on("message", msg =>{
  });
 // ------- TALENT ENGLISH -----------------------------------------------------------------------------------------------------------------
 client.on("message", msg =>{
-  if (msg.content === "!talent sekarang"){ ///English
+  if (msg.content === "!today talent"){ ///English
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1) { //Sening/Kamis
       msg.reply("**Characters that can farm talent today**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
