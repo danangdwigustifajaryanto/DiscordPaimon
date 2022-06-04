@@ -25,40 +25,40 @@ client.on("message", msg =>{
   if (msg.content === "!talent sekarang"){ ///Indo 
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+      msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
     } else if (dayOfWeek === 2) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+      msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara");
     } else if (dayOfWeek === 3) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+      msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko");
     } else if (dayOfWeek === 4) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+      msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
     } else if (dayOfWeek === 5) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+      msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara");
     } else if (dayOfWeek === 6) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
-    } else {
+      msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko");
+    } else if (dayOfWeek === 0) {
       msg.reply("Semua bisa farming di hari minggu traveler :)")
     }
   }
  });
 // ------- TALENT ENGLISH -----------------------------------------------------------------------------------------------------------------
 client.on("message", msg =>{
-  if (msg.content === "!today talent"){ ///English 
+  if (msg.content === "!talent sekarang"){ ///English
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+      msg.reply("**Characters that can farm talent today**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
     } else if (dayOfWeek === 2) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+      msg.reply("**Characters that can farm talent today**\n***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara");
     } else if (dayOfWeek === 3) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
+      msg.reply("**Characters that can farm talent today**\n***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko");
     } else if (dayOfWeek === 4) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Freedom***\n`Amber` `Barbara` `Klee` `Sucrose` `Traveler Geo/Anemo` `Childe` `Klee` `Diona`\n\n***Prosperity***\n`Yelan`, `Keqing` `Ningguang` `Qiqi` `Shenhe` `Xiao`\n\n***Transience***\n`Electro Traveler` `Kokomi` `Thoma` `Yoimiya`");
+      msg.reply("**Characters that can farm talent today**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
     } else if (dayOfWeek === 5) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Resistance***\n`Bennett` `Diluc` `Eula` `Jean` `Mona` `Noelle` `Razor`\n\n***Diligence***\n`Chongyun` `Ganyu` `Hu-Tao` `Kazuha` `Xiangling` `Yun-Jin`\n\n***Elegance***\n`Ayaka` `Ayato` `Itto` `Kujou-Sara`");
+      msg.reply("**Characters that can farm talent today**\n***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara");
     } else if (dayOfWeek === 6) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Ballad***\n`Albedo` `Fischl` `Kaeya` `Lisa` `Rosaria` `Venti`\n\n***Gold***\n`Beidou` `Xingqiu` `Xinyan` `Yanfei` `Zhongli`\n\n***Light***\n`Gorou` `Raiden Shogun` `Sayu` `Yae Miko`");
-    } else {
-      msg.reply("Semua bisa farming di hari minggu traveler :)")
+      msg.reply("**Characters that can farm talent today**\n***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko");
+    } else if (dayOfWeek === 0) {
+      msg.reply("All character can farm today traveler :)")
     }
   }
  });
