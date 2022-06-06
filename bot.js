@@ -1,13 +1,16 @@
-require('dotenv').config();
 const Discord = require("discord.js");
+const mongoose = require("mongoose");
+const User = require("./profileSchema");
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
-})
+});
+
 //-------- HELP -------------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!bantu"){ // Help Indo
     msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n");
+    
   }
   else if (msg.content === "!help"){ // Help English
     msg.reply("__**Here are some of Paimon's currently available features**__\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`\n\n**Today talent**\n***example***: `!today talent`\n\n");
@@ -43,7 +46,7 @@ client.on("message", msg =>{
  });
 // ------- TALENT ENGLISH -----------------------------------------------------------------------------------------------------------------
 client.on("message", msg =>{
-  if (msg.content === "!today talent"){ ///English
+  if (msg.content === "!talent sekarang"){ ///English
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1) { //Sening/Kamis
       msg.reply("**Characters that can farm talent today**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
@@ -460,10 +463,26 @@ client.on("message", msg => {
   else if (msg.content === "!build ") { // ZHONGLI
     msg.reply("https://drive.google.com/uc?id=11SAK6-VWgTHeZPHvutD6iNz4G1sp2u5n");
   }
-  else if (msg.content === "!build kuki shinobu") { // SHINOBU
-    msg.reply("Karakter belum rilis ya traveler mohon bersabar ^^");
-  }
-
+  else if (msg.content === "!k") { // SHINOBU
+    msg.reply("Karakter belum rilis ya traveler mohon bersabar ^^", {
 })
+//-------- TEST UNIT -------------------------------------------------------------------------------------------------------------------------
 
+  }
+});
+// KONEKSI PENGHUBUNG -------------------------------------------------------------------------------------
+const url = `mongodb+srv://paimonbot:%40Watashi1@paimonbot.plnbhmt.mongodb.net/paimondb?retryWrites=true&w=majority`;
+
+const connectionParams={
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}
+mongoose.connect(url,connectionParams)
+  .then( () => {
+      console.log('Connected to the database ')
+  })
+  .catch( (err) => {
+      console.error(`Error connecting to the database. n${err}`);
+  })
+  // --------------------------------------------------------------------------------------------------------------
 client.login("OTc4NjE1ODcwNzE4ODY5NTk0.G9lIoW.-4sg46mmtVK-8OU9nuhgtuATjptnlonZJBy2vk");
