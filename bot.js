@@ -82,6 +82,9 @@ client.on("message", msg => {
   else if (msg.content === "!tq"){
     msg.reply("Urwellcome, Sama sama traveler ^^");
   }
+  else if (msg.content === "paimon tidak boleh marah"){
+    msg.reply("Paimon tidak marah kok traveler ^^");
+  }
 })
 
 // ------ DIALOGUE INDO ------------------------------------------------------------------------------------
