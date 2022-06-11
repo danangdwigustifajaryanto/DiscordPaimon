@@ -1,11 +1,13 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const profileSchema = new mongoose.Schema({
-	username: mongoose.SchemaTypes.String,
-	discordid: {
-		type: mongoose.SchemaTypes.String,
-		required: true,
-	}
-})
+const Schema = mongoose.Schema;
+const profileSchema = new Schema({
+	_id: mongoose.Schema.Types.ObjectId,
+	userID: String,
+	nickname: String,
+	ar: Number,
+	server: String,
+	uid: Number,
+});
 
-module.export = mongoose.model("User", profileSchema);
+module.exports = mongoose.model("User", profileSchema);
