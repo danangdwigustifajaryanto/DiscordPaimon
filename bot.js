@@ -6,6 +6,139 @@ client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
 });
 
+// ---- REGISTRASI ------
+// const subregis = "!reg ign:";
+// client.on("message", msg => {
+//   if (msg.content.includes(subregis)){ 
+//       const user = new User({
+//         _id: mongoose.Types.ObjectId(),
+//         userID: msg.author.id,
+//         nickname: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
+//       });
+//       user.save().then(result => console.log(result)).catch(err => console.log(err));
+//       msg.reply("Data has been submitted successfully") 
+//   }
+// });
+
+
+// ---- REGISTRASI ----
+const subnick = "!reg nickname:";
+const subar = "!reg ar:";
+const subserv = "!reg server:";
+const subuid = "!reg uid:";
+client.on("message", async msg => { //NICKNAME
+  if (msg.content.includes(subnick)) {
+    userData = await User.findOne({userID : msg.author.id});
+  if (userData) { //If data Exist
+    const updatedUser = await User.findOneAndUpdate(
+      { userID: msg.author.id },
+      {
+        nickname: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
+      }, {
+        new: true,
+      }
+    );
+    console.log(updatedUser);
+    msg.reply('Data kamu telah diperbarui traveler :)');
+  } else if (!userData){ // If data didn't exist then create new one
+    const user = new User({
+      _id: mongoose.Types.ObjectId(),
+      userID: msg.author.id,
+      nickname: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
+    });
+    user.save().then(result => console.log(result)).catch(err => console.log(err));
+    msg.reply("Terimakasih, data telah paimon terima ^^") 
+  }
+  }
+}) //AR
+client.on("message", async msg => {
+  if (msg.content.includes(subar)) {
+    userData = await User.findOne({userID : msg.author.id});
+  if (userData) { //If data Exist
+    const updatedUser = await User.findOneAndUpdate(
+      { userID: msg.author.id },
+      {
+        ar: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
+      }, {
+        new: true,
+      }
+    );
+    console.log(updatedUser);
+    msg.reply('Data kamu telah diperbarui traveler :)');
+  } else if (!userData){ // If data didn't exist then create new one
+    const user = new User({
+      _id: mongoose.Types.ObjectId(),
+      userID: msg.author.id,
+      ar: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
+    });
+    user.save().then(result => console.log(result)).catch(err => console.log(err));
+    msg.reply("Terimakasih, data telah paimon terima ^^") 
+  }
+  }
+}) // SERVER
+client.on("message", async msg => { 
+  if (msg.content.includes(subserv)) {
+    userData = await User.findOne({userID : msg.author.id});
+  if (userData) { //If data Exist
+    const updatedUser = await User.findOneAndUpdate(
+      { userID: msg.author.id },
+      {
+        server: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
+      }, {
+        new: true,
+      }
+    );
+    console.log(updatedUser);
+    msg.reply('Data kamu telah diperbarui traveler :)');
+  } else if (!userData){ // If data didn't exist then create new one
+    const user = new User({
+      _id: mongoose.Types.ObjectId(),
+      userID: msg.author.id,
+      server: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
+    });
+    user.save().then(result => console.log(result)).catch(err => console.log(err));
+    msg.reply("Terimakasih, data telah paimon terima ^^") 
+  }
+  }
+}) //UID
+client.on("message", async msg => {
+  if (msg.content.includes(subuid)) {
+    userData = await User.findOne({userID : msg.author.id});
+  if (userData) { //If data Exist
+    const updatedUser = await User.findOneAndUpdate(
+      { userID: msg.author.id },
+      {
+        nickname: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
+      }, {
+        new: true,
+      }
+    );
+    console.log(updatedUser);
+    msg.reply('Data kamu telah diperbarui traveler :)');
+  } else if (!userData){ // If data didn't exist then create new one
+    const user = new User({
+      _id: mongoose.Types.ObjectId(),
+      userID: msg.author.id,
+      nickname: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
+    });
+    user.save().then(result => console.log(result)).catch(err => console.log(err));
+    msg.reply("Terimakasih, data telah paimon terima ^^") 
+  }
+  }
+})
+
+// ---- PENCARIAN UID ------
+client.on("message", async msg => {
+  if (msg.content === "!myinfo"){ 
+    userData = await User.findOne({userID : msg.author.id});
+     if (userData) {
+      msg.reply(`Nickname: ${userData.nickname}\nAR: ${userData.ar}\nServer: ${userData.server}\nUID: ${userData.uid}`);
+     } else{
+      msg.reply("Yah kamu belum registrasi :(")
+     }
+  }
+}
+);
 //-------- HELP -------------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!bantu"){ // Help Indo
@@ -476,7 +609,18 @@ client.on("message", msg => {
     msg.reply("Karakter belum rilis ya traveler mohon bersabar ^^", {
 })
 //-------- TEST UNIT -------------------------------------------------------------------------------------------------------------------------
-
+// client.on("message", msg => {
+//   if (msg.content === "!submit"){
+//       const user = new User({
+//         _id: mongoose.Types.ObjectId(),
+//         userID: msg.author.id,
+//         Nickname: msg.author.username
+//       });
+//       user.save().then(result => console.log(result)).catch(err => console.log(err));
+//       msg.reply("Data already submited")
+//   }
+// })
+ 
   }
 });
 // KONEKSI PENGHUBUNG -------------------------------------------------------------------------------------
