@@ -121,7 +121,7 @@ client.on("message", async msg => {
   const exampleEmbed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Data Member Genshination')
-	.setDescription(`Nickname : ${userData.nickname}\nAdventure Rank : ${userData.ar}\nServer: ${userData.server}\nUser ID : ${userData.uid}`)
+	.setDescription(`**Nickname :** ${userData.nickname}\n**Adventure Rank :** ${userData.ar}\nServer: ${userData.server}\n**User ID :** ${userData.uid}`)
 	.setThumbnail(msg.author.avatarURL())
 msg.reply({ embeds: [exampleEmbed] });
 
