@@ -119,7 +119,7 @@ client.on("message", async msg => {
     userData = await User.findOne({userID : msg.author.id});
      if (userData) {
   const exampleEmbed = new MessageEmbed()
-	.setColor('#0099ff')
+	.setColor('#808080')
 	.setTitle('Data Member Genshination')
 	.setDescription(`**Nickname :** ${userData.nickname}\n**Adv-Rank :** ${userData.ar}\n**server   :** ${userData.server}\n**User ID  :** ${userData.uid}`)
 	.setThumbnail(msg.author.avatarURL())
