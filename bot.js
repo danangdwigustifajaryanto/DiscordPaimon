@@ -14,7 +14,7 @@ const subuid = "!reg uid:";
 client.on("message", async msg => { //NICKNAME
   if (msg.content.includes(subnick)) {
     userData = await User.findOne({userID : msg.author.id});
-  if (userData !== "978615870718869594") { //If data Exist
+  if (userData) { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
@@ -39,7 +39,7 @@ client.on("message", async msg => { //NICKNAME
 client.on("message", async msg => {
   if (msg.content.includes(subar)) {
     userData = await User.findOne({userID : msg.author.id});
-  if (userData !== "978615870718869594") { //If data Exist
+  if (userData) { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
@@ -64,7 +64,7 @@ client.on("message", async msg => {
 client.on("message", async msg => { 
   if (msg.content.includes(subserv)) {
     userData = await User.findOne({userID : msg.author.id});
-  if (userData !== "978615870718869594") { //If data Exist
+  if (userData) { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
@@ -89,7 +89,7 @@ client.on("message", async msg => {
 client.on("message", async msg => {
   if (msg.content.includes(subuid)) {
     userData = await User.findOne({userID : msg.author.id});
-  if (userData !== "978615870718869594") { //If data Exist
+  if (userData) { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
@@ -119,7 +119,7 @@ client.on("message", async msg => {
      if (userData) {
       msg.reply(`Nickname: ${userData.nickname}\nAR: ${userData.ar}\nServer: ${userData.server}\nUID: ${userData.uid}`);
      } else{
-      msg.reply("Yah kamu belum registrasi :(")
+      msg.reply("Registrasi dulu yuk ^_^")
      }
   }
 }
