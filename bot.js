@@ -6,21 +6,6 @@ client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
 });
 
-// ---- REGISTRASI ------
-// const subregis = "!reg ign:";
-// client.on("message", msg => {
-//   if (msg.content.includes(subregis)){ 
-//       const user = new User({
-//         _id: mongoose.Types.ObjectId(),
-//         userID: msg.author.id,
-//         nickname: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
-//       });
-//       user.save().then(result => console.log(result)).catch(err => console.log(err));
-//       msg.reply("Data has been submitted successfully") 
-//   }
-// });
-
-
 // ---- REGISTRASI ----
 const subnick = "!reg nickname:";
 const subar = "!reg ar:";
@@ -29,7 +14,7 @@ const subuid = "!reg uid:";
 client.on("message", async msg => { //NICKNAME
   if (msg.content.includes(subnick)) {
     userData = await User.findOne({userID : msg.author.id});
-  if (userData) { //If data Exist
+  if (userData !== "978615870718869594") { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
@@ -54,7 +39,7 @@ client.on("message", async msg => { //NICKNAME
 client.on("message", async msg => {
   if (msg.content.includes(subar)) {
     userData = await User.findOne({userID : msg.author.id});
-  if (userData) { //If data Exist
+  if (userData !== "978615870718869594") { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
@@ -79,7 +64,7 @@ client.on("message", async msg => {
 client.on("message", async msg => { 
   if (msg.content.includes(subserv)) {
     userData = await User.findOne({userID : msg.author.id});
-  if (userData) { //If data Exist
+  if (userData !== "978615870718869594") { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
@@ -104,7 +89,7 @@ client.on("message", async msg => {
 client.on("message", async msg => {
   if (msg.content.includes(subuid)) {
     userData = await User.findOne({userID : msg.author.id});
-  if (userData) { //If data Exist
+  if (userData !== "978615870718869594") { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
@@ -142,7 +127,7 @@ client.on("message", async msg => {
 //-------- HELP -------------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!bantu"){ // Help Indo
-    msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n");
+    msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n**Registrasi** \n***contoh***: `!reg uid:paimon` \n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n");
     
   }
   else if (msg.content === "!help"){ // Help English
