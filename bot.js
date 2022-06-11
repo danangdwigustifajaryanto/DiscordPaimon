@@ -94,7 +94,7 @@ client.on("message", async msg => {
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
-        nickname: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
+        uid: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
       }, {
         new: true,
       }
