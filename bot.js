@@ -127,11 +127,11 @@ client.on("message", async msg => {
 //-------- HELP -------------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!bantu"){ // Help Indo
-    msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Check your information***\n***example***: `!myinfo` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n");
+    msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***example***: `!myinfo` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n");
     
   }
   else if (msg.content === "!help"){ // Help English
-    msg.reply("__**Here are some of Paimon's currently available features**__\n**Registrasi** \n***Example***: `!reg nickname/ar/server/uid:<Insert Here>` \n\n**Check your information***\n***example***: `!myinfo` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`\n\n**Today talent**\n***example***: `!today talent`\n\n");
+    msg.reply("__**Here are some of Paimon's currently available features**__\n**Registrasi** \n***Example***: `!reg nickname/ar/server/uid:<Insert Here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`\n\n**Today talent**\n***example***: `!today talent`\n\n");
   }
 })
 //-------- DOMAIN ARTI ---------------------------------------------------------------------------------------------------------------------
