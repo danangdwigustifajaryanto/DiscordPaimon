@@ -119,9 +119,10 @@ client.on("message", async msg => {
     userData = await User.findOne({userID : msg.author.id});
      if (userData) {
   const exampleEmbed = new MessageEmbed()
-	.setColor('#808080')
-	.setAuthor({ iconURL: msg.author.avatarURL(), name: 'Member Genshination'})
-	.setDescription(`**Nickname :** ${userData.nickname}\n**Adv-Rank :** ${userData.ar}\n**server   :** ${userData.server}\n**User ID  :** ${userData.uid}`)
+	.setColor('#0099ff')
+	.setTitle('Data Member Genshination')
+	.setDescription(`Nickname : ${userData.nickname}\nAdventure Rank : ${userData.ar}\nServer: ${userData.server}\nUser ID : ${userData.uid}`)
+	.setThumbnail(msg.author.avatarURL())
 msg.reply({ embeds: [exampleEmbed] });
 
      } else{
