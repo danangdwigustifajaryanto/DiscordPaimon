@@ -119,26 +119,56 @@ client.on("message", async msg => {
     userData = await User.findOne({userID : msg.author.id});
      if (userData) {
   const exampleEmbed = new MessageEmbed()
-	.setColor('#808080')
-	.setTitle('Data Member Genshination')
+	.setColor('#1F1F1F')
+	.setTitle(':ticket: Data Member Genshination :ticket:')
 	.setDescription(`**Nickname :** ${userData.nickname}\n**Adv-Rank :** ${userData.ar}\n**Server   :** ${userData.server}\n**User ID  :** ${userData.uid}`)
 	.setThumbnail(msg.author.avatarURL())
 msg.reply({ embeds: [exampleEmbed] });
-
      } else{
       msg.reply("Registrasi dulu yuk ^_^")
      }
   }
 }
 );
+//  ------ PENCARIAN UID ORANG -------
+// client.on("message", async msg => {
+//   let member = msg.mentions.members.first().username
+//   if (msg.content === `!info @${member}`){ 
+//     User.findOne({userID : member.id}, async (err, userData) => {
+//      if (userData) {
+//         const exampleEmbed = new MessageEmbed()
+//         .setColor('#808080')
+//         .setTitle('Data Member')
+//         .setDescription(`**Nickname :** ${userData.nickname}\n**Adventure Rank :** ${userData.ar}\nServer: ${userData.server}\n**User ID :** ${userData.uid}`)
+//         .setThumbnail(msg.author.avatarURL())
+//         msg.reply({ embeds: [exampleEmbed] });
+//      } else{
+//       msg.reply("Please registration first")
+//      }
+//   }
+// )}})
 //-------- HELP -------------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!bantu"){ // Help Indo
-    msg.reply("__**Berikut adalah beberapa fitur paimon yang tersedia saat ini**__\n**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***example***: `!myinfo` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n");
-    
-  }
-  else if (msg.content === "!help"){ // Help English
-    msg.reply("__**Here are some of Paimon's currently available features**__\n**Registrasi** \n***Example***: `!reg nickname/ar/server/uid:<Insert Here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact Information**\n***example***: `!arti shimenawa`\n\n**Today talent**\n***example***: `!today talent`\n\n");
+    const exampleEmbed = new MessageEmbed()
+    .setColor('#1F1F1F')
+    .setTitle('✨ Daftar Fitur Paimon ✨')
+    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n\n")
+    .setThumbnail(msg.author.avatarURL())
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    msg.reply({ embeds: [exampleEmbed] });
+  } else if (msg.content === "!help"){ // Help Indo
+    const exampleEmbed = new MessageEmbed()
+    .setColor('#1F1F1F')
+    .setTitle("✨ Paimon's Feature ✨")
+    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n\n")
+    .setThumbnail(msg.author.avatarURL())
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    msg.reply({ embeds: [exampleEmbed] });
   }
 })
 //-------- DOMAIN ARTI ---------------------------------------------------------------------------------------------------------------------
@@ -153,40 +183,143 @@ client.on("message", msg =>{
   if (msg.content === "!talent sekarang"){ ///Indo 
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Farming Talent Hari Ini :white_sun_cloud: ')
+      .setDescription("***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya")
+      .setThumbnail(msg.author.avatarURL())
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 2) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Farming Talent Hari Ini :white_sun_cloud: ')
+      .setDescription("***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara")
+      .setThumbnail(msg.author.avatarURL())
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 3) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Farming Talent Hari Ini :white_sun_cloud: ')
+      .setDescription("***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko")
+      .setThumbnail(msg.author.avatarURL())
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 4) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Farming Talent Hari Ini :white_sun_cloud: ')
+      .setDescription("***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya")
+      .setThumbnail(msg.author.avatarURL())
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 5) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Farming Talent Hari Ini :white_sun_cloud: ')
+      .setDescription("***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara")
+      .setThumbnail(msg.author.avatarURL())
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 6) { //Sening/Kamis
-      msg.reply("**Farming Talent Hari Ini**\n***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Farming Talent Hari Ini :white_sun_cloud: ')
+      .setDescription("***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko")
+      .setThumbnail(msg.author.avatarURL())
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 0) {
-      msg.reply("Semua bisa farming di hari minggu traveler :)")
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Farming Talent Hari Ini :white_sun_cloud: ')
+      .setDescription("Semua bisa farming di hari minggu traveler :)")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     }
   }
  });
 // ------- TALENT ENGLISH -----------------------------------------------------------------------------------------------------------------
 client.on("message", msg =>{
-  if (msg.content === "!today talent"){ ///English
+  if (msg.content === "!talent today"){ ///Indo 
     const dayOfWeek = new Date().getDay();
     if (dayOfWeek === 1) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Today Farming Talent :white_sun_cloud: ')
+      .setDescription("***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya")
+      .setThumbnail(msg.author.avatarURL())
+      .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 2) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Today Farming Talent :white_sun_cloud: ')
+      .setDescription("***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara")
+      .setThumbnail(msg.author.avatarURL())
+      .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 3) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Today Farming Talent :white_sun_cloud: ')
+      .setDescription("***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko")
+      .setThumbnail(msg.author.avatarURL())
+      .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 4) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Today Farming Talent :white_sun_cloud: ')
+      .setDescription("***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya")
+      .setThumbnail(msg.author.avatarURL())
+      .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 5) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Today Farming Talent :white_sun_cloud: ')
+      .setDescription("***Resistance***\n> Bennett \n> Diluc \n> Eula \n> Jean \n> Mona \n> Noelle \n> Razor\n\n***Diligence***\n> Chongyun \n> Ganyu \n> Hu-Tao \n> Kazuha \n> Xiangling \n> Yun-Jin\n\n***Elegance***\n> Ayaka \n> Ayato \n> Itto \n> Kujou-Sara")
+      .setThumbnail(msg.author.avatarURL())
+      .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 6) { //Sening/Kamis
-      msg.reply("**Characters that can farm talent today**\n***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko");
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Today Farming Talent :white_sun_cloud: ')
+      .setDescription("***Ballad***\n> Albedo \n> Fischl \n> Kaeya \n> Lisa \n> Rosaria \n> Venti\n\n***Gold***\n> Beidou \n> Xingqiu \n> Xinyan \n> Yanfei \n> Zhongli\n\n***Light***\n> Gorou\n> Raiden Shogun\n> Sayu \n> Yae Miko")
+      .setThumbnail(msg.author.avatarURL())
+      .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     } else if (dayOfWeek === 0) {
-      msg.reply("All character can farm today traveler :)")
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':white_sun_cloud: Today Farming Talent :white_sun_cloud: ')
+      .setDescription("All characters can  do farm today traveler :)")
+      .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
     }
   }
  });
@@ -231,7 +364,13 @@ client.on("message", msg => {
 //------- ARTIFACT ------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!arti adventurer") {
-    msg.reply("https://drive.google.com/uc?id=1OH3frvEP42nvQtm9A1C5RIVEW9Zy3Krw");
+    const exampleEmbed = new MessageEmbed()
+    .addField(":trident: Artifact Information :trident:", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1OH3frvEP42nvQtm9A1C5RIVEW9Zy3Krw')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti archaic") {
     msg.reply("https://drive.google.com/uc?id=1vYyFoVj5ZOgnfDs9H0a-6IbzTxOOT2rX");
