@@ -1,3 +1,4 @@
+const { MessageEmbed } = require('discord.js');
 const Discord = require("discord.js");
 const mongoose = require("mongoose");
 const User = require("./profileSchema");
@@ -93,7 +94,7 @@ client.on("message", async msg => {
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
       {
-        uid: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
+        nickname: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
       }, {
         new: true,
       }
@@ -117,7 +118,13 @@ client.on("message", async msg => {
   if (msg.content === "!myinfo"){ 
     userData = await User.findOne({userID : msg.author.id});
      if (userData) {
-      msg.reply(`Nickname: ${userData.nickname}\nAR: ${userData.ar}\nServer: ${userData.server}\nUID: ${userData.uid}`);
+  const exampleEmbed = new MessageEmbed()
+	.setColor('#808080')
+	.setTitle('Data Member Genshination')
+	.setDescription(`**Nickname :** ${userData.nickname}\n**Adventure Rank :** ${userData.ar}\nServer: ${userData.server}\n**User ID :** ${userData.uid}`)
+	.setThumbnail(msg.author.avatarURL())
+msg.reply({ embeds: [exampleEmbed] });
+
      } else{
       msg.reply("Registrasi dulu yuk ^_^")
      }
