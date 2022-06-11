@@ -105,7 +105,7 @@ client.on("message", async msg => {
     const user = new User({
       _id: mongoose.Types.ObjectId(),
       userID: msg.author.id,
-      nickname: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
+      uid: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
     });
     user.save().then(result => console.log(result)).catch(err => console.log(err));
     msg.reply("Terimakasih, data telah paimon terima ^^") 
