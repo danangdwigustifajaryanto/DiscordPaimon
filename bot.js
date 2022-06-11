@@ -121,7 +121,7 @@ client.on("message", async msg => {
   const exampleEmbed = new MessageEmbed()
 	.setColor('#808080')
 	.setAuthor({ iconURL: msg.author.avatarURL(), name: 'Member Genshination'})
-	.setDescription(`**Nickname :** ${userData.nickname}\n***Adventure Rank :*** ${userData.ar}\n***Server:*** ${userData.server}\n***User ID :*** ${userData.uid}`)
+	.setDescription(`**Nickname :** ${userData.nickname}\n**Adv-Rank :** ${userData.ar}\n**server   :** ${userData.server}\n**User ID  :** ${userData.uid}`)
 msg.reply({ embeds: [exampleEmbed] });
 
      } else{
