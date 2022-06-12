@@ -2,7 +2,6 @@ const { MessageEmbed } = require('discord.js');
 const Discord = require("discord.js");
 const mongoose = require("mongoose");
 const User = require("./profileSchema");
-const wellcome = require("./wellcome.js")
 const client = new Discord.Client({intents: ["GUILDS","GUILD_MEMBERS", "GUILD_MESSAGES", ]});
 client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
