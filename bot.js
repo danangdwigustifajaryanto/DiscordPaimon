@@ -365,7 +365,7 @@ client.on("message", msg => {
 client.on("message", msg => {
   if (msg.content === "!arti adventurer") {
     const exampleEmbed = new MessageEmbed()
-    .addField(":trident: Artifact Information :trident:", "Paimon ready for `!help` >.<", true)
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
     .setImage('https://drive.google.com/uc?id=1OH3frvEP42nvQtm9A1C5RIVEW9Zy3Krw')
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -373,371 +373,1082 @@ client.on("message", msg => {
   msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti archaic") {
-    msg.reply("https://drive.google.com/uc?id=1vYyFoVj5ZOgnfDs9H0a-6IbzTxOOT2rX");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1vYyFoVj5ZOgnfDs9H0a-6IbzTxOOT2rX')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti berseker") {
-    msg.reply("https://drive.google.com/uc?id=1pOQf4cJ3n6DTTQDtMVqFdFxqr0VvdYIp");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1pOQf4cJ3n6DTTQDtMVqFdFxqr0VvdYIp')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti blizzard") {
-    msg.reply("https://drive.google.com/uc?id=1sBlHXPYBEohmVFzXHgTdrcDVu51RYs4-");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1sBlHXPYBEohmVFzXHgTdrcDVu51RYs4-')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti bloodstained") {
-    msg.reply("https://drive.google.com/uc?id=13Ybn8kj0A1sYwUacLQ63dgLG4EB3Esen");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=13Ybn8kj0A1sYwUacLQ63dgLG4EB3Esen')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti brave") {
-    msg.reply("https://drive.google.com/uc?id=13-p4gdz3UP8NS6ysFKVl5kWEaiWakUzS");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=13-p4gdz3UP8NS6ysFKVl5kWEaiWakUzS')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti brave heart") {
-    msg.reply("https://drive.google.com/uc?id=13-p4gdz3UP8NS6ysFKVl5kWEaiWakUzS");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=13-p4gdz3UP8NS6ysFKVl5kWEaiWakUzS')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti crimson") {
-    msg.reply("https://drive.google.com/uc?id=1ffXrl64aIzoEykwMt7_xoLjpxoBwSj-j");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1ffXrl64aIzoEykwMt7_xoLjpxoBwSj-j')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti defender's") {
-    msg.reply("https://drive.google.com/uc?id=1nP8k--BtcAL2mt4eJqlK97lx36umNbB0");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1nP8k--BtcAL2mt4eJqlK97lx36umNbB0')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti defender") {
-    msg.reply("https://drive.google.com/uc?id=1nP8k--BtcAL2mt4eJqlK97lx36umNbB0");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1nP8k--BtcAL2mt4eJqlK97lx36umNbB0')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti prayers to destiny") {
-    msg.reply("https://drive.google.com/uc?id=1MIqInO5YmXOSJLy9l6Pj4BTrw53taZQq");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1MIqInO5YmXOSJLy9l6Pj4BTrw53taZQq')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti destiny") {
-    msg.reply("https://drive.google.com/uc?id=1MIqInO5YmXOSJLy9l6Pj4BTrw53taZQq");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1MIqInO5YmXOSJLy9l6Pj4BTrw53taZQq')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti echoes") {
-    msg.reply("https://drive.google.com/uc?id=1y4GbCdSIAjbfBEV6ENNWbFxFzjcUAipV");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1y4GbCdSIAjbfBEV6ENNWbFxFzjcUAipV')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti emblem") {
-    msg.reply("https://drive.google.com/uc?id=1RmcAVGptJKcKBRsb5rI2J_hWfXbEyDeG");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1RmcAVGptJKcKBRsb5rI2J_hWfXbEyDeG')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti the exile") {
-    msg.reply("https://drive.google.com/uc?id=1Ba4Q5NwquPBh8CwxQ7vLwfcF5uZXVctC");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1Ba4Q5NwquPBh8CwxQ7vLwfcF5uZXVctC')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti gambler") {
-    msg.reply("https://drive.google.com/uc?id=1Wr7mw9I2VZcR5ghScs9MPEIWcgO8QehM");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1Wr7mw9I2VZcR5ghScs9MPEIWcgO8QehM')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti gladiator's finale") {
-    msg.reply("https://drive.google.com/uc?id=1pzFD-PxvqQnR8WatmRKDAFXPe5qRzZ6S");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1pzFD-PxvqQnR8WatmRKDAFXPe5qRzZ6S')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti gladi") {
-    msg.reply("https://drive.google.com/uc?id=1pzFD-PxvqQnR8WatmRKDAFXPe5qRzZ6S");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1pzFD-PxvqQnR8WatmRKDAFXPe5qRzZ6S')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti hod") {
-    msg.reply("https://drive.google.com/uc?id=1spXYCQmgYkmIDjWFECcSnhS61ar4T1Qg");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1spXYCQmgYkmIDjWFECcSnhS61ar4T1Qg')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti heart of depth") {
-    msg.reply("https://drive.google.com/uc?id=1spXYCQmgYkmIDjWFECcSnhS61ar4T1Qg");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1spXYCQmgYkmIDjWFECcSnhS61ar4T1Qg')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti husk") {
-    msg.reply("https://drive.google.com/uc?id=1FKpgcHfxuAWJLMrQ2y3kueyeWbTF_UmN");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1FKpgcHfxuAWJLMrQ2y3kueyeWbTF_UmN')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti husk of opulent dreams") {
-    msg.reply("https://drive.google.com/uc?id=1FKpgcHfxuAWJLMrQ2y3kueyeWbTF_UmN");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1FKpgcHfxuAWJLMrQ2y3kueyeWbTF_UmN')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti prayers to illumination") {
-    msg.reply("https://drive.google.com/uc?id=1PLd74r_iqH6i9XXWkY_dBxgHwyFooxvf");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1PLd74r_iqH6i9XXWkY_dBxgHwyFooxvf')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti illumination") {
-    msg.reply("https://drive.google.com/uc?id=1PLd74r_iqH6i9XXWkY_dBxgHwyFooxvf");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1PLd74r_iqH6i9XXWkY_dBxgHwyFooxvf')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti instructor") {
-    msg.reply("https://drive.google.com/uc?id=1vi6xZwMAaFC3ev5MmJcMSkFgD5OlA50P");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1vi6xZwMAaFC3ev5MmJcMSkFgD5OlA50P')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti lavawalker") {
-    msg.reply("https://drive.google.com/uc?id=1z-dohAQMyZgc6ROdLXjss2YkHbYJKogI");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1z-dohAQMyZgc6ROdLXjss2YkHbYJKogI')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti lucky dog") {
-    msg.reply("https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti lucky") {
-    msg.reply("https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti dog") {
-    msg.reply("https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1qoQQ-E2E-9B3tssd1apaGDOptX2zHlpR')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti maiden beloved") {
-    msg.reply("https://drive.google.com/uc?id=1DRecg3Pf4kdy7w_y69nZSW9dul5C5Dab");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1DRecg3Pf4kdy7w_y69nZSW9dul5C5Dab')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti maiden") {
-    msg.reply("https://drive.google.com/uc?id=1DRecg3Pf4kdy7w_y69nZSW9dul5C5Dab");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1DRecg3Pf4kdy7w_y69nZSW9dul5C5Dab')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti nobless oblige") {
-    msg.reply("https://drive.google.com/uc?id=1pWFC3lZP09TmZZqZY3km0sPIUuyOrJnr");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1pWFC3lZP09TmZZqZY3km0sPIUuyOrJnr')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti nobless") {
-    msg.reply("https://drive.google.com/uc?id=1pWFC3lZP09TmZZqZY3km0sPIUuyOrJnr");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1pWFC3lZP09TmZZqZY3km0sPIUuyOrJnr')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti ocean") {
-    msg.reply("https://drive.google.com/uc?id=13pF2-ZbU_78ZyK5wLtblPp2vRtB2PxbO");
-  }
-  else if (msg.content === "!arti ocean hued") {
-    msg.reply("https://drive.google.com/uc?id=13pF2-ZbU_78ZyK5wLtblPp2vRtB2PxbO");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=13pF2-ZbU_78ZyK5wLtblPp2vRtB2PxbO')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti ocean-hued clam") {
-    msg.reply("https://drive.google.com/uc?id=13pF2-ZbU_78ZyK5wLtblPp2vRtB2PxbO");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=13pF2-ZbU_78ZyK5wLtblPp2vRtB2PxbO')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti pale flame") {
-    msg.reply("https://drive.google.com/uc?id=17K8e26VHojJHaIq30AheeQ4yozokWAHW");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=17K8e26VHojJHaIq30AheeQ4yozokWAHW')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti resolution") {
-    msg.reply("https://drive.google.com/uc?id=1Y0nWwHBO7WWwtfVH_EYRQVF90L46PZiQ");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1Y0nWwHBO7WWwtfVH_EYRQVF90L46PZiQ')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti resolution of sojuner") {
-    msg.reply("https://drive.google.com/uc?id=1Y0nWwHBO7WWwtfVH_EYRQVF90L46PZiQ");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1Y0nWwHBO7WWwtfVH_EYRQVF90L46PZiQ')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti retracing bolide") {
-    msg.reply("https://drive.google.com/uc?id=1NdvOJD0LpAawuOzRIP8qMSG3Ebnhds6q");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1NdvOJD0LpAawuOzRIP8qMSG3Ebnhds6q')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti retracing") {
-    msg.reply("https://drive.google.com/uc?id=1NdvOJD0LpAawuOzRIP8qMSG3Ebnhds6q");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1NdvOJD0LpAawuOzRIP8qMSG3Ebnhds6q')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti scholar") {
-    msg.reply("https://drive.google.com/uc?id=1oJ76BXqTRY8ZOM-Sdk1Y9-RtMmvSEe03");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1oJ76BXqTRY8ZOM-Sdk1Y9-RtMmvSEe03')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti shimenawa") {
-    msg.reply("https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti shimenawa's") {
-    msg.reply("https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti shimenawa's reminiscence") {
-    msg.reply("https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1A44LZUgxRi3ses7LD9M9kDgYSyvbYVwt')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti prayers to springtime") {
-    msg.reply("https://drive.google.com/uc?id=1v6iyFUxW6DlA6aXfeIYAOV81-YvNNTP2");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1v6iyFUxW6DlA6aXfeIYAOV81-YvNNTP2')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti springtime") {
-    msg.reply("https://drive.google.com/uc?id=1v6iyFUxW6DlA6aXfeIYAOV81-YvNNTP2");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1v6iyFUxW6DlA6aXfeIYAOV81-YvNNTP2')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti tenacity") {
-    msg.reply("https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti tenacity of millelith") {
-    msg.reply("https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN");
-  }
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
+}
   else if (msg.content === "!arti millelith") {
-    msg.reply("https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1yxedkUecsbUGxDN4qp40kOUFbdnrREvN')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti thundering") {
-    msg.reply("https://drive.google.com/uc?id=1GPxLu2bY187pckM9CvSq-2o3JJ2mDxSM");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1GPxLu2bY187pckM9CvSq-2o3JJ2mDxSM')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti thundering fury") {
-    msg.reply("https://drive.google.com/uc?id=1GPxLu2bY187pckM9CvSq-2o3JJ2mDxSM");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1GPxLu2bY187pckM9CvSq-2o3JJ2mDxSM')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti thundershooter") {
-    msg.reply("https://drive.google.com/uc?id=1OjQrARzgo1z3jxQrLuV9Dwb7s3Y2tojN");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1OjQrARzgo1z3jxQrLuV9Dwb7s3Y2tojN')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti tiny miracle") {
-    msg.reply("https://drive.google.com/uc?id=1PQqRzB4lf46PqYITqx1_zkcF9kleI9SH");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1PQqRzB4lf46PqYITqx1_zkcF9kleI9SH')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti traveling doctor") {
-    msg.reply("https://drive.google.com/uc?id=1uLGceJXoqhtmgso3U4rg9PS0wqYBWYe7");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1uLGceJXoqhtmgso3U4rg9PS0wqYBWYe7')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti vermillion") {
-    msg.reply("https://drive.google.com/uc?id=17Zdsny5fB-jB7rlH3pkGg7LJN-6zoDt-");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=17Zdsny5fB-jB7rlH3pkGg7LJN-6zoDt-')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti vermillion hereafter") {
-    msg.reply("https://drive.google.com/uc?id=17Zdsny5fB-jB7rlH3pkGg7LJN-6zoDt-");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=17Zdsny5fB-jB7rlH3pkGg7LJN-6zoDt-')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti viri") {
-    msg.reply("https://drive.google.com/uc?id=1tMHQFGVugDPkx4A_LjKSoHuKMpYAwiB-");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1tMHQFGVugDPkx4A_LjKSoHuKMpYAwiB-')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti viridescent venerer") {
-    msg.reply("https://drive.google.com/uc?id=1tMHQFGVugDPkx4A_LjKSoHuKMpYAwiB-");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1tMHQFGVugDPkx4A_LjKSoHuKMpYAwiB-')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti wanderer's troupe") {
-    msg.reply("https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti wanderer") {
-    msg.reply("https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti wanderer's") {
-    msg.reply("https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1GXRW3n9KQYL-9XJdue5f2fJ2W83Yb8d_')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti prayers to wisdom") {
-    msg.reply("https://drive.google.com/uc?id=15RKtqYQBB5dUNyzH4bCrrrO2ZCDkGxqJ");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage("https://drive.google.com/uc?id=15RKtqYQBB5dUNyzH4bCrrrO2ZCDkGxqJ")
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!arti prayers to wisdom") {
-    msg.reply("https://drive.google.com/uc?id=15RKtqYQBB5dUNyzH4bCrrrO2ZCDkGxqJ");
+    const exampleEmbed = new MessageEmbed()
+    .addField("🏺 Artifact Information 🏺", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=15RKtqYQBB5dUNyzH4bCrrrO2ZCDkGxqJ')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
 })
 
 //Build charcter
 client.on("message", msg => {
   if (msg.content === "!build albedo") { //albedo
-    msg.reply("https://drive.google.com/uc?id=1KMSHvMqen-VFdXMU9FYFz8LjZrIiqbI3");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1KMSHvMqen-VFdXMU9FYFz8LjZrIiqbI3')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build aloy") { //aloy
-    msg.reply("https://drive.google.com/uc?id=154StRKmWsW5YyZWSYL_oY8nIfUwV90rv");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=154StRKmWsW5YyZWSYL_oY8nIfUwV90rv')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build amber") { //amber
-    msg.reply("https://drive.google.com/uc?id=1ZzXHwQYoXZih9O9Q4u9tsSZK6pLVXKuO");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1ZzXHwQYoXZih9O9Q4u9tsSZK6pLVXKuO')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build ayaka") { // AYAKA
-    msg.reply("https://drive.google.com/uc?id=10sMjnlUwLjym9VG5ZQSzbojwA78QGxg0");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=10sMjnlUwLjym9VG5ZQSzbojwA78QGxg0')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build ayato") { // AYATO
-    msg.reply("https://drive.google.com/uc?id=1RTLLXDbN9jK6sqOoo6A34pIC_f1jBZ6P");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1RTLLXDbN9jK6sqOoo6A34pIC_f1jBZ6P')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build barbara") { // BARBARA
-    msg.reply("https://drive.google.com/uc?id=1NXWL4hDseCd84VSch4CFYqa3kyNWJaz5");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1NXWL4hDseCd84VSch4CFYqa3kyNWJaz5')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build beidou") { // BEIDOU
-    msg.reply("https://drive.google.com/uc?id=1MZIqDKZW8Gzra7R-fOaRh6wLH9QBtQr0");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1MZIqDKZW8Gzra7R-fOaRh6wLH9QBtQr0')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build bennett") { // BENNET
-    msg.reply("https://drive.google.com/uc?id=1ysv6Mj34MMnRvjfON92ixJmh7fJFqXqo");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1ysv6Mj34MMnRvjfON92ixJmh7fJFqXqo')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build childe") { // ChHILDE
-    msg.reply("https://drive.google.com/uc?id=1eYcLUOkCRCfZ1vpAcdMxmYoVxTNuLqcx");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1eYcLUOkCRCfZ1vpAcdMxmYoVxTNuLqcx')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build chongyun") { // CHONGYUN
-    msg.reply("https://drive.google.com/uc?id=1HA2TkFCdKQLIAfxAi7IQIb9MZY4SQVv5");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1HA2TkFCdKQLIAfxAi7IQIb9MZY4SQVv5')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build diona") { // DILUC
-    msg.reply("https://drive.google.com/uc?id=18CDNh9qB49XikoTFjUCRsPPR7uFtAkiV");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=18CDNh9qB49XikoTFjUCRsPPR7uFtAkiV')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build diluc") { // DIONA
-    msg.reply("https://drive.google.com/uc?id=1RQICYq5P2jxOxuHyCoqmAtLHRSeP54el");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1RQICYq5P2jxOxuHyCoqmAtLHRSeP54el')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build eula") { // EULA
-    msg.reply("https://drive.google.com/uc?id=1Cnul4kQVrGZG-i3BcCyNM4ofF-Ba_5FX");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1Cnul4kQVrGZG-i3BcCyNM4ofF-Ba_5FX')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build fischl") { // FISCHL
-    msg.reply("https://drive.google.com/uc?id=1qDE-r33aIuVVQ_Am0PFbocs2dhYU2IXI");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1qDE-r33aIuVVQ_Am0PFbocs2dhYU2IXI')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build ganyu") { // GANYU
-    msg.reply("https://drive.google.com/uc?id=1B34o8n5EHdjQao3CusT5GUg2rtVV4vgg");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1B34o8n5EHdjQao3CusT5GUg2rtVV4vgg')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build gorou") { // GOROU
-    msg.reply("https://drive.google.com/uc?id=13FPcfsQv2FViMVumNBFicO5cL5NPvq5t");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=13FPcfsQv2FViMVumNBFicO5cL5NPvq5t')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build hutao") { // HUTAO
-    msg.reply("https://drive.google.com/uc?id=122I8wg-piMxuUwhBJ_jrM_LuTvAwIhh-");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=122I8wg-piMxuUwhBJ_jrM_LuTvAwIhh-')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build itto") { // ITTO
-    msg.reply("https://drive.google.com/uc?id=1MACcxXD9ta5iMUPNIE28ch1rN5Nej0mi");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1MACcxXD9ta5iMUPNIE28ch1rN5Nej0mi')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build jean") { // JEAN
-    msg.reply("https://drive.google.com/uc?id=1qqs_xmTnjoFJHoJ9yZswhvGem5k5ByrS");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1qqs_xmTnjoFJHoJ9yZswhvGem5k5ByrS')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build kaeya") { // KAEYA
-    msg.reply("https://drive.google.com/uc?id=16RHKggrKPK49exEV1qVvBx2zQiVZCozu");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=16RHKggrKPK49exEV1qVvBx2zQiVZCozu')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build kazuha") { // KAZUHA
-    msg.reply("https://drive.google.com/uc?id=13vmEJTjP1Vct9qVf7aUEg50aH9JDd3o_");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=13vmEJTjP1Vct9qVf7aUEg50aH9JDd3o_')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build keqing") { // KEQING
-    msg.reply("https://drive.google.com/uc?id=1uuqaD5JPgJ6Jq3ATgLAz775LPcpgiEgR");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1uuqaD5JPgJ6Jq3ATgLAz775LPcpgiEgR')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build klee") { // KLEE
-    msg.reply("https://drive.google.com/uc?id=1C4xbsemiqctwxFQskn7HdTEIxLNT7dQw");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1C4xbsemiqctwxFQskn7HdTEIxLNT7dQw')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build kokomi") { // KOKOMI 
-    msg.reply("https://drive.google.com/uc?id=1PgwQXo6EvcEBC5-ILjB0HAJKgPYdCh_W");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1PgwQXo6EvcEBC5-ILjB0HAJKgPYdCh_W')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build kujou sara") { // KUJOU
-    msg.reply("https://drive.google.com/uc?id=1BRlOBockwkk4szHwu7YsJgZokMNH6EhN");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1BRlOBockwkk4szHwu7YsJgZokMNH6EhN')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build lisa") { // LISA
-    msg.reply("https://drive.google.com/uc?id=1rMoJE4nW0ernU9wYR-x2n7_eQYfpSAED");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1rMoJE4nW0ernU9wYR-x2n7_eQYfpSAED')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build mona") { // MONA
-    msg.reply("https://drive.google.com/uc?id=18Gkt2cKCAA_hevjoW3rO1JaEnUbjl5sR");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=18Gkt2cKCAA_hevjoW3rO1JaEnUbjl5sR')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build ningguang") { // NINGGUANG
-    msg.reply("https://drive.google.com/uc?id=1bkOf-z18qC9WaoCxRjfeqDFG9efNfIaY");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1bkOf-z18qC9WaoCxRjfeqDFG9efNfIaY')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build noelle") { // NOELLE
-    msg.reply("https://drive.google.com/uc?id=1z2c-jI34tqv1k8lLJduVOsKyIRqFa9DD");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1z2c-jI34tqv1k8lLJduVOsKyIRqFa9DD')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build paimon") { // PAIMON
-    msg.reply("https://drive.google.com/uc?id=1X_Eo_nwLWBVHylFTE7oxQTr2IOUZSWe6");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1X_Eo_nwLWBVHylFTE7oxQTr2IOUZSWe6')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build qiqi") { // QIQI
-    msg.reply("https://drive.google.com/uc?id=1JZIMukYwAAuDyv_nT_BA6RYWMvFBrzvr");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1JZIMukYwAAuDyv_nT_BA6RYWMvFBrzvr')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   } 
   else if (msg.content === "!build razor") { // RAZOR
-    msg.reply("https://drive.google.com/uc?id=1T9te3RorXZXVn4C95L0uy0oqvgZYbanU");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1T9te3RorXZXVn4C95L0uy0oqvgZYbanU')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build rosaria") { // ROSARIA
-    msg.reply("https://drive.google.com/uc?id=1h8v-VxOvCU7J4q6pM4RyBY0Tz7KRJIgz");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1h8v-VxOvCU7J4q6pM4RyBY0Tz7KRJIgz')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build sayu") { // SAYU
-    msg.reply("https://drive.google.com/uc?id=17hurOitj-Aov_73zT7C3fFQ1N1HvSJzR");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=17hurOitj-Aov_73zT7C3fFQ1N1HvSJzR')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build shenhe") { // SHENHE
-    msg.reply("https://drive.google.com/uc?id=1QOTbw7MJd2rbxu67lliemLAscGIB8Hi2");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1QOTbw7MJd2rbxu67lliemLAscGIB8Hi2')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build raiden shogun") { // SHOGUN
-    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build raiden") { // SHOGUN
-    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build mami baal") { // SHOGUN
-    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build baal") { // SHOGUN
-    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build ei") { // SHOGUN
-    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build raiden ei") { // SHOGUN
-    msg.reply("https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1g8Hy5c8on7RQ_VM9diUkVcdKRQGIWsSX')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build sucrose") { // SUCROSE
-    msg.reply("https://drive.google.com/uc?id=1jEgbODYHgFDs-bqhKZXFwRv9nTBmQmM4");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1jEgbODYHgFDs-bqhKZXFwRv9nTBmQmM4')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build thoma") { // THOMA
-    msg.reply("https://drive.google.com/uc?id=1s_Wb2zYiPUHkfdpmCKD2Jlcztw1ULOt5");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1s_Wb2zYiPUHkfdpmCKD2Jlcztw1ULOt5')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build venti") { // VENTI
-    msg.reply("https://drive.google.com/uc?id=1CS42wlVeuhXbyEjBaQeq72s2wjp0qASx");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1CS42wlVeuhXbyEjBaQeq72s2wjp0qASx')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build barbatos") { // VENTI
-    msg.reply("https://drive.google.com/uc?id=1CS42wlVeuhXbyEjBaQeq72s2wjp0qASx");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1CS42wlVeuhXbyEjBaQeq72s2wjp0qASx')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build xiangling") { // XIANGLING
-    msg.reply("https://drive.google.com/uc?id=1WbbXZoBXef95Ye2NGkX78ahagG6iZWuE");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1WbbXZoBXef95Ye2NGkX78ahagG6iZWuE')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build xiao") { // XIAO
-    msg.reply("https://drive.google.com/uc?id=1m8iOVa7_CHnR51Jw2fv3k0OR0M1PcL55");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1m8iOVa7_CHnR51Jw2fv3k0OR0M1PcL55')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build xingqiu") { // XINQIU
-    msg.reply("https://drive.google.com/uc?id=1kLTFhtVx4dLgnm2UvG--txAGgE2x8g3h");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1kLTFhtVx4dLgnm2UvG--txAGgE2x8g3h')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build xinyan") { // XINYAN
-    msg.reply("https://drive.google.com/uc?id=1ANmrXD6jJ0hehvwzPv-smO5-vEsutaSj");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1ANmrXD6jJ0hehvwzPv-smO5-vEsutaSj')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build yae miko") { // YAE
-    msg.reply("https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build yae") { // YAE
-    msg.reply("https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build yaemiko") { // YAE
-    msg.reply("https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=14wJkA-MWWkZ81ozwkCMx8tzz6-vw7Yag')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build yanfei") { // YANFEI
-    msg.reply("https://drive.google.com/uc?id=1yoB3GKw6PY4r2S0Ude84AUVOzQxvsqwG");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1yoB3GKw6PY4r2S0Ude84AUVOzQxvsqwG')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build yelan") { // YELAN
-    msg.reply("https://drive.google.com/uc?id=1WH5Kdyf4lOdzlH8sTvdiJHvykMdeI-RP");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1WH5Kdyf4lOdzlH8sTvdiJHvykMdeI-RP')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build yoimiya") { // YOIMIYA
-    msg.reply("https://drive.google.com/uc?id=1Le9UJ9Eb8d5HKK9wGcWTjsFh6H-pnVif");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1Le9UJ9Eb8d5HKK9wGcWTjsFh6H-pnVif')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build yunjin") { // YUNJIN
-    msg.reply("https://drive.google.com/uc?id=1BfudeuJbQld6H8LirlPWWTReSJn1L1FF");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1BfudeuJbQld6H8LirlPWWTReSJn1L1FF')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "!build ") { // ZHONGLI
-    msg.reply("https://drive.google.com/uc?id=11SAK6-VWgTHeZPHvutD6iNz4G1sp2u5n");
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=11SAK6-VWgTHeZPHvutD6iNz4G1sp2u5n')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
   }
-  else if (msg.content === "!k") { // SHINOBU
-    msg.reply("Karakter belum rilis ya traveler mohon bersabar ^^", {
+  else if (msg.content === "!kuki shinobu") { // SHINOBU
+    msg.reply("Paimon akan di update secepatnya untuk karakter ini traveler, sabar ya ^_^", {
 })
 //-------- TEST UNIT -------------------------------------------------------------------------------------------------------------------------
 // client.on("message", msg => {
