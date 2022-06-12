@@ -2,11 +2,23 @@ const { MessageEmbed } = require('discord.js');
 const Discord = require("discord.js");
 const mongoose = require("mongoose");
 const User = require("./profileSchema");
-const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
+const wellcome = require("./wellcome.js")
+const client = new Discord.Client({intents: ["GUILDS","GUILD_MEMBERS", "GUILD_MESSAGES", ]});
 client.on("ready", () => {
   console.log(` ---- ${client.user.tag} Sudah Login! ----`)
 });
 
+
+client.on('guildMemberAdd', member => {
+    const exampleEmbed = new MessageEmbed()
+    .setTitle('Wellcome to the server :hatching_chick: ')
+    .setDescription(`Hello <@${member.id}> don't forget to register ^^`)
+    .setFooter({ text: "Please read pinned messages",
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    member.guild.channels.cache.get('981582630317338656').send({ embeds: [exampleEmbed] });
+});
+//Welcome & goodbye messages\\
+//Welcome & goodbye messages end\\
 // ---- REGISTRASI ----
 const subnick = "!reg nickname:";
 const subar = "!reg ar:";
@@ -497,6 +509,9 @@ client.on("message", msg => {
     msg.reply("Paimon bukan emergency food >:(");
   }
   else if (msg.content === "ehe"){
+    msg.reply("Ehetttenadayo >////:(");
+  }
+  else if (msg.content === "paimon di sin"){
     msg.reply("Ehetttenadayo >////:(");
   }
 })
