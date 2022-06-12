@@ -153,17 +153,17 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle('✨ Daftar Fitur Paimon ✨')
-    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n\n")
+    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n**Weapon hari ini**\n***example***: `!weapon sekarang`\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
     iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
     msg.reply({ embeds: [exampleEmbed] });
-  } else if (msg.content === "!help"){ // Help Indo
+  } else if (msg.content === "!help"){ // Help English
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle("✨ Paimon's Feature ✨")
-    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n\n")
+    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n**Today Weapon farm**\n***example***: `!weapon today`\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -178,6 +178,146 @@ client.on("message", msg => {
   }
 
 })
+// ------- WEAPON INDO -----------------------------------------------------------------------------------------------------------------
+client.on("message", msg =>{
+  if (msg.content === "!weapon sekarang"){ ///Indo 
+    const dayOfWeek = new Date().getDay();
+    if (dayOfWeek === 1) { //Sening
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Farming Accension Material Hari Ini :crossed_swords:')
+      .setDescription("***Decarabian's***\n> Apprentices Notes \n> Aquila Favonia \n> Cinnabar Spindle \n> Cool Stell \n> Dull Blade \n> Favonious Codex \n> Favonious Sword \n> Ferrous Shadow\n> Magic Guide\n> Mitternachts Waltz\n> Pocket Grimoire\n> Raven Bow\n> Royal Grimoire\n> Royal Longsword\n> Silver Sword\n> Snow-Tombed Starsilver\n> Song of Broken Pines\n> The Alley Flash\n> The Bell\n> The Stringless\n> Viridescent Hunt\n\n***Luminous***\n> Aqua Simulacra\n> Blackliff Agate \n> Blackliff Longsword \n> Blackliff Warbow \n> Cresent Pike \n> Dark Iron Sword\n> Emerald Orb\n> Lion's Roar\n> Lithic Blade\n> Primordial Jade Winged Spear\n> Rust\n> Slingshot\n> Solar Pearl\n> Summit Shaper\n> White Tassel\n> Whiteblind\n\n***Branch of a Distant Sea***\n> Aukomaru \n> Amenoma Kageuchi \n> Everlasting Moonglow \n> Mistsplitter Reforged\n> Oathsworn Eye")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 2) { //Selasa
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Farming Accension Material Hari Ini :crossed_swords:')
+      .setDescription("***Boreal Wolf's***\n> Bloodtained Greatsword \n> Deathmatch \n> Dodoco Tales \n> Dragonspine Spear \n> Elegy for the End \n> Harbringer of Dawn \n> Hunter's Bow \n> Old Merc's Pal\n> Sacrificial Bow\n> Sacrificial Greatsword\n> Seasoned Hunter\n> Sharp Shooter\n> Skyward Atlas\n> Skyward Blade\n> Skyward Harp\n> Skyward Pride\n> Sword of Decension\n> The Black Sword\n> The Flute\n> Widsith\n> Thrilling Tales\n> Water Greatsword\n> Wine and Song\n\n***Mist Veiled***\n> Blackliff Pole\n> Blackliff Slasher \n> Clamity Queller \n> Debate Club \n> Dragon's Bane \n> Eye of perception\n> Fillet Blade\n> Halberd\n> Messenger\n> Primordial Jade Cutter\n> Prototype Amber\n> Prototype Cresent\n> The Unforged\n> Twin Nephriten\n\n***Narukami's***\n> Hamayumi \n> Haran Geppaku Futsu \n> Katsuragikiri Nagamasa \n> Mouun's Moon\n> Predator\n> Redhorn Stonethreser\n> Thundering Pulse")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 3) { //Rabu
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Farming Accension Material Hari Ini :crossed_swords:')
+      .setDescription("***Fetther's of The dandelion***\n> Alley Hunter \n> Amos Bow \n> Protector \n> Favonious Greatsword \n> Favonious Lance \n> Favonious Warbow \n> Festering Desire \n> Freedom Sworn\n> Frostbrearer\n> Iron Point\n> Otherwordly Story\n> Recurve Bow\n> Royal Bow\n> Royal Greatsword\n> Sacrificial Fragment\n> Sacrificial Sword\n> Skyward Spine\n> Traveler's Handy\n> White Iron Greatsword\n> Windblume Ode\n> Wolf's Gravestone\n\n***Aerosiderite***\n> Black Tassel\n> Compound Bow \n> Fadding Twilight \n> Iron Sting \n> Lithic Spear \n> Luxurious Sealord\n> Mappa Mare\n> Memorry of Dust\n> Prototype Archaic\n> Prototype Starglitter\n> Serpent Spine\n> Skyrider Greatsword\n> Skyrider Sword\n> Staff of Homa\n> Vortex Vanquisher\n\n***Mask***\n> The Catch \n> Engulfing Lightning\n> Kagura's Verity \n> Kitain Cross Spear\n> Polar Star\n> Wavebreaker's Fin")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 4) { //Kamis
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Farming Accension Material Hari Ini :crossed_swords:')
+      .setDescription("***Decarabian's***\n> Apprentices Notes \n> Aquila Favonia \n> Cinnabar Spindle \n> Cool Stell \n> Dull Blade \n> Favonious Codex \n> Favonious Sword \n> Ferrous Shadow\n> Magic Guide\n> Mitternachts Waltz\n> Pocket Grimoire\n> Raven Bow\n> Royal Grimoire\n> Royal Longsword\n> Silver Sword\n> Snow-Tombed Starsilver\n> Song of Broken Pines\n> The Alley Flash\n> The Bell\n> The Stringless\n> Viridescent Hunt\n\n***Luminous***\n> Aqua Simulacra\n> Blackliff Agate \n> Blackliff Longsword \n> Blackliff Warbow \n> Cresent Pike \n> Dark Iron Sword\n> Emerald Orb\n> Lion's Roar\n> Lithic Blade\n> Primordial Jade Winged Spear\n> Rust\n> Slingshot\n> Solar Pearl\n> Summit Shaper\n> White Tassel\n> Whiteblind\n\n***Branch of a Distant Sea***\n> Aukomaru \n> Amenoma Kageuchi \n> Everlasting Moonglow \n> Mistsplitter Reforged\n> Oathsworn Eye")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 5) { //Jumat
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Farming Accension Material Hari Ini :crossed_swords:')
+      .setDescription("***Boreal Wolf's***\n> Bloodtained Greatsword \n> Deathmatch \n> Dodoco Tales \n> Dragonspine Spear \n> Elegy for the End \n> Harbringer of Dawn \n> Hunter's Bow \n> Old Merc's Pal\n> Sacrificial Bow\n> Sacrificial Greatsword\n> Seasoned Hunter\n> Sharp Shooter\n> Skyward Atlas\n> Skyward Blade\n> Skyward Harp\n> Skyward Pride\n> Sword of Decension\n> The Black Sword\n> The Flute\n> Widsith\n> Thrilling Tales\n> Water Greatsword\n> Wine and Song\n\n***Mist Veiled***\n> Blackliff Pole\n> Blackliff Slasher \n> Clamity Queller \n> Debate Club \n> Dragon's Bane \n> Eye of perception\n> Fillet Blade\n> Halberd\n> Messenger\n> Primordial Jade Cutter\n> Prototype Amber\n> Prototype Cresent\n> The Unforged\n> Twin Nephriten\n\n***Narukami's***\n> Hamayumi \n> Haran Geppaku Futsu \n> Katsuragikiri Nagamasa \n> Mouun's Moon\n> Predator\n> Redhorn Stonethreser\n> Thundering Pulse")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 6) { //Sabtu
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Farming Accension Material Hari Ini :crossed_swords:')
+      .setDescription("***Fetther's of The dandelion***\n> Alley Hunter \n> Amos Bow \n> Protector \n> Favonious Greatsword \n> Favonious Lance \n> Favonious Warbow \n> Festering Desire \n> Freedom Sworn\n> Frostbrearer\n> Iron Point\n> Otherwordly Story\n> Recurve Bow\n> Royal Bow\n> Royal Greatsword\n> Sacrificial Fragment\n> Sacrificial Sword\n> Skyward Spine\n> Traveler's Handy\n> White Iron Greatsword\n> Windblume Ode\n> Wolf's Gravestone\n\n***Aerosiderite***\n> Black Tassel\n> Compound Bow \n> Fadding Twilight \n> Iron Sting \n> Lithic Spear \n> Luxurious Sealord\n> Mappa Mare\n> Memorry of Dust\n> Prototype Archaic\n> Prototype Starglitter\n> Serpent Spine\n> Skyrider Greatsword\n> Skyrider Sword\n> Staff of Homa\n> Vortex Vanquisher\n\n***Mask***\n> The Catch \n> Engulfing Lightning\n> Kagura's Verity \n> Kitain Cross Spear\n> Polar Star\n> Wavebreaker's Fin")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 0) { //Minggu
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Farming Accension Material Hari Ini :crossed_swords:')
+      .setDescription("Semua bisa farming di hari minggu traveler :)")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    }
+  }
+ });
+      // ------- WEAPON ENGLISH -----------------------------------------------------------------------------------------------------------------
+client.on("message", msg =>{
+  if (msg.content === "!weapon today"){ ///Indo 
+    const dayOfWeek = new Date().getDay();
+    if (dayOfWeek === 1) { //Sening
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Today Farming Accension Material :crossed_swords:')
+      .setDescription("***Decarabian's***\n> Apprentices Notes \n> Aquila Favonia \n> Cinnabar Spindle \n> Cool Stell \n> Dull Blade \n> Favonious Codex \n> Favonious Sword \n> Ferrous Shadow\n> Magic Guide\n> Mitternachts Waltz\n> Pocket Grimoire\n> Raven Bow\n> Royal Grimoire\n> Royal Longsword\n> Silver Sword\n> Snow-Tombed Starsilver\n> Song of Broken Pines\n> The Alley Flash\n> The Bell\n> The Stringless\n> Viridescent Hunt\n\n***Luminous***\n> Aqua Simulacra\n> Blackliff Agate \n> Blackliff Longsword \n> Blackliff Warbow \n> Cresent Pike \n> Dark Iron Sword\n> Emerald Orb\n> Lion's Roar\n> Lithic Blade\n> Primordial Jade Winged Spear\n> Rust\n> Slingshot\n> Solar Pearl\n> Summit Shaper\n> White Tassel\n> Whiteblind\n\n***Branch of a Distant Sea***\n> Aukomaru \n> Amenoma Kageuchi \n> Everlasting Moonglow \n> Mistsplitter Reforged\n> Oathsworn Eye")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 2) { //Selasa
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Today Farming Accension Material :crossed_swords:')
+      .setDescription("***Boreal Wolf's***\n> Bloodtained Greatsword \n> Deathmatch \n> Dodoco Tales \n> Dragonspine Spear \n> Elegy for the End \n> Harbringer of Dawn \n> Hunter's Bow \n> Old Merc's Pal\n> Sacrificial Bow\n> Sacrificial Greatsword\n> Seasoned Hunter\n> Sharp Shooter\n> Skyward Atlas\n> Skyward Blade\n> Skyward Harp\n> Skyward Pride\n> Sword of Decension\n> The Black Sword\n> The Flute\n> Widsith\n> Thrilling Tales\n> Water Greatsword\n> Wine and Song\n\n***Mist Veiled***\n> Blackliff Pole\n> Blackliff Slasher \n> Clamity Queller \n> Debate Club \n> Dragon's Bane \n> Eye of perception\n> Fillet Blade\n> Halberd\n> Messenger\n> Primordial Jade Cutter\n> Prototype Amber\n> Prototype Cresent\n> The Unforged\n> Twin Nephriten\n\n***Narukami's***\n> Hamayumi \n> Haran Geppaku Futsu \n> Katsuragikiri Nagamasa \n> Mouun's Moon\n> Predator\n> Redhorn Stonethreser\n> Thundering Pulse")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 3) { //Rabu
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Today Farming Accension Material :crossed_swords:')
+      .setDescription("***Fetther's of The dandelion***\n> Alley Hunter \n> Amos Bow \n> Protector \n> Favonious Greatsword \n> Favonious Lance \n> Favonious Warbow \n> Festering Desire \n> Freedom Sworn\n> Frostbrearer\n> Iron Point\n> Otherwordly Story\n> Recurve Bow\n> Royal Bow\n> Royal Greatsword\n> Sacrificial Fragment\n> Sacrificial Sword\n> Skyward Spine\n> Traveler's Handy\n> White Iron Greatsword\n> Windblume Ode\n> Wolf's Gravestone\n\n***Aerosiderite***\n> Black Tassel\n> Compound Bow \n> Fadding Twilight \n> Iron Sting \n> Lithic Spear \n> Luxurious Sealord\n> Mappa Mare\n> Memorry of Dust\n> Prototype Archaic\n> Prototype Starglitter\n> Serpent Spine\n> Skyrider Greatsword\n> Skyrider Sword\n> Staff of Homa\n> Vortex Vanquisher\n\n***Mask***\n> The Catch \n> Engulfing Lightning\n> Kagura's Verity \n> Kitain Cross Spear\n> Polar Star\n> Wavebreaker's Fin")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 4) { //Kamis
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Today Farming Accension Material :crossed_swords:')
+      .setDescription("***Decarabian's***\n> Apprentices Notes \n> Aquila Favonia \n> Cinnabar Spindle \n> Cool Stell \n> Dull Blade \n> Favonious Codex \n> Favonious Sword \n> Ferrous Shadow\n> Magic Guide\n> Mitternachts Waltz\n> Pocket Grimoire\n> Raven Bow\n> Royal Grimoire\n> Royal Longsword\n> Silver Sword\n> Snow-Tombed Starsilver\n> Song of Broken Pines\n> The Alley Flash\n> The Bell\n> The Stringless\n> Viridescent Hunt\n\n***Luminous***\n> Aqua Simulacra\n> Blackliff Agate \n> Blackliff Longsword \n> Blackliff Warbow \n> Cresent Pike \n> Dark Iron Sword\n> Emerald Orb\n> Lion's Roar\n> Lithic Blade\n> Primordial Jade Winged Spear\n> Rust\n> Slingshot\n> Solar Pearl\n> Summit Shaper\n> White Tassel\n> Whiteblind\n\n***Branch of a Distant Sea***\n> Aukomaru \n> Amenoma Kageuchi \n> Everlasting Moonglow \n> Mistsplitter Reforged\n> Oathsworn Eye")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 5) { //Jumat
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Today Farming Accension Material :crossed_swords:')
+      .setDescription("***Boreal Wolf's***\n> Bloodtained Greatsword \n> Deathmatch \n> Dodoco Tales \n> Dragonspine Spear \n> Elegy for the End \n> Harbringer of Dawn \n> Hunter's Bow \n> Old Merc's Pal\n> Sacrificial Bow\n> Sacrificial Greatsword\n> Seasoned Hunter\n> Sharp Shooter\n> Skyward Atlas\n> Skyward Blade\n> Skyward Harp\n> Skyward Pride\n> Sword of Decension\n> The Black Sword\n> The Flute\n> Widsith\n> Thrilling Tales\n> Water Greatsword\n> Wine and Song\n\n***Mist Veiled***\n> Blackliff Pole\n> Blackliff Slasher \n> Clamity Queller \n> Debate Club \n> Dragon's Bane \n> Eye of perception\n> Fillet Blade\n> Halberd\n> Messenger\n> Primordial Jade Cutter\n> Prototype Amber\n> Prototype Cresent\n> The Unforged\n> Twin Nephriten\n\n***Narukami's***\n> Hamayumi \n> Haran Geppaku Futsu \n> Katsuragikiri Nagamasa \n> Mouun's Moon\n> Predator\n> Redhorn Stonethreser\n> Thundering Pulse")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 6) { //Sabtu
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Today Farming Accension Material :crossed_swords:')
+      .setDescription("***Fetther's of The dandelion***\n> Alley Hunter \n> Amos Bow \n> Protector \n> Favonious Greatsword \n> Favonious Lance \n> Favonious Warbow \n> Festering Desire \n> Freedom Sworn\n> Frostbrearer\n> Iron Point\n> Otherwordly Story\n> Recurve Bow\n> Royal Bow\n> Royal Greatsword\n> Sacrificial Fragment\n> Sacrificial Sword\n> Skyward Spine\n> Traveler's Handy\n> White Iron Greatsword\n> Windblume Ode\n> Wolf's Gravestone\n\n***Aerosiderite***\n> Black Tassel\n> Compound Bow \n> Fadding Twilight \n> Iron Sting \n> Lithic Spear \n> Luxurious Sealord\n> Mappa Mare\n> Memorry of Dust\n> Prototype Archaic\n> Prototype Starglitter\n> Serpent Spine\n> Skyrider Greatsword\n> Skyrider Sword\n> Staff of Homa\n> Vortex Vanquisher\n\n***Mask***\n> The Catch \n> Engulfing Lightning\n> Kagura's Verity \n> Kitain Cross Spear\n> Polar Star\n> Wavebreaker's Fin")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    } else if (dayOfWeek === 0) { //Minggu
+      const exampleEmbed = new MessageEmbed()
+      .setColor('#1F1F1F')
+      .setTitle(':crossed_swords: Today Farming Accension Material :crossed_swords:')
+      .setDescription("All Weapon can do farm today traveler :)")
+      .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+      msg.reply({ embeds: [exampleEmbed] });
+    }
+  }
+ });
 // ------- TALENT INDO -----------------------------------------------------------------------------------------------------------------
 client.on("message", msg =>{
   if (msg.content === "!talent sekarang"){ ///Indo 
@@ -316,7 +456,7 @@ client.on("message", msg =>{
       const exampleEmbed = new MessageEmbed()
       .setColor('#1F1F1F')
       .setTitle(':white_sun_cloud: Today Farming Talent :white_sun_cloud: ')
-      .setDescription("All characters can  do farm today traveler :)")
+      .setDescription("All characters can do farm today traveler :)")
       .setFooter({ text: 'Genshination',
     iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
       msg.reply({ embeds: [exampleEmbed] });
