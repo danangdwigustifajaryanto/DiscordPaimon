@@ -165,7 +165,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle('✨ Daftar Fitur Paimon ✨')
-    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n**Weapon hari ini**\n***example***: `!weapon sekarang`\n\n\n")
+    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Tentang Server**\n***contoh***: `!tentang server` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n**Weapon hari ini**\n***contoh***: `!weapon sekarang`\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -175,7 +175,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle("✨ Paimon's Feature ✨")
-    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n**Today Weapon farm**\n***example***: `!weapon today`\n\n\n")
+    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**About Server**\n***example***: `!about server` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n**Today Weapon farm**\n***example***: `!weapon today`\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -513,6 +513,22 @@ client.on("message", msg => {
   }
   else if (msg.content === "paimon di sin"){
     msg.reply("Ehetttenadayo >////:(");
+  }
+  else if (msg.content === "!tentang server"){
+    const exampleEmbed = new MessageEmbed()
+    .setTitle(':thought_balloon: Tentang server Genshination :thought_balloon: ')
+    .setDescription("Genshination adalah server tempat berkumpulnya para traveler, disini para traveler dapat berbagi pengalaman bermain, belajar seputar dunia teyvat dan bermain bersama traveler lain, server ini juga dijaga oleh paimon loh, jagi jangan aneh-aneh ya, harus sopan antar sesama traveler atau nanti paimon bisa mengeluarkan kalian hehe, tapi paimon baik kok, paimon menyediakan berbagai fitur menarik bagi traveler hanya dengan menggunakan command `!bantu`. Semoga betah traveler jangan sungkan untuk bertanya ya ^^")
+    .setFooter({ text: "Genshination",
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    msg.reply({ embeds: [exampleEmbed] });
+  }
+  else if (msg.content === "!about server"){
+    const exampleEmbed = new MessageEmbed()
+    .setTitle(':thought_balloon: About this server :thought_balloon: ')
+    .setDescription("Genshination is a server where travelers can gather, share playing experiences, learn about the world of Teyvat and play with other travelers, this server is also monitored by Paimon, so you have to be polite between fellow travelers or Paimon will kick you hehe, but paimon provides a variety of interesting features for travelers just by using the command `!help`. Hopefully travelers feel comfortable, don't hesitate to ask ^^")
+    .setFooter({ text: "Genshination",
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    msg.reply({ embeds: [exampleEmbed] });
   }
 })
 
