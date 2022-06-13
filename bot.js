@@ -336,7 +336,7 @@ client.on("message", msg =>{
       const exampleEmbed = new MessageEmbed()
       .setColor('#1F1F1F')
       .setTitle(':white_sun_cloud: Farming Talent Hari Ini :white_sun_cloud: ')
-      .setDescription("***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n >Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya")
+      .setDescription("***Freedom***\n> Amber \n> Barbara \n> Klee \n> Sucrose \n> Traveler Geo/Anemo \n > Childe \n> Klee \n> Diona\n\n***Prosperity***\n> Yelan \n> Keqing \n> Ningguang \n> Qiqi \n> Shenhe \n> Xiao\n\n***Transience***\n> Electro Traveler \n> Kokomi \n> Thoma \n> Yoimiya")
       .setThumbnail(msg.author.avatarURL())
       .setTimestamp()
     .setFooter({ text: 'Genshination',
