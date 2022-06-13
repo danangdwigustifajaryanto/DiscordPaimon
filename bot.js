@@ -162,7 +162,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle('✨ Daftar Fitur Paimon ✨')
-    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Tentang Server**\n***contoh***: `!tentang server` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n**Credit Paimon**\n***contoh***: `!credit`\n**Support Paimon**\n\n***contoh***: `!donate`\n\n\n")
+    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Tentang Server**\n***contoh***: `!tentang server` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n**Credit Paimon**\n***contoh***: `!credit`\n\n**Support Paimon**\n***contoh***: `!support`\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -172,7 +172,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle("✨ Paimon's Feature ✨")
-    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**About Server**\n***example***: `!about server` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n**Today Weapon farm**\n***example***: `!weapon today`\n\n**Support Paimon**\n***example***: `!credit\n\n**Jade Parcel for Paimon**\n***example***: `!donate`\n\n\n")
+    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**About Server**\n***example***: `!about server` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n**Today Weapon farm**\n***example***: `!weapon today`\n\n**Support Paimon**\n***example***: `!credit\n\n**Support Paimon**\n***example***: `!support`\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
