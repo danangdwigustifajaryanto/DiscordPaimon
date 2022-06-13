@@ -162,7 +162,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle('✨ Daftar Fitur Paimon ✨')
-    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Tentang Server**\n***contoh***: `!tentang server` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n**Credit Paimon**\n***contoh***: `!credit`\n\n**Support Paimon**\n***contoh***: `!support`\n\n\n")
+    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Tentang Server**\n***contoh***: `!tentang server` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***contoh***: `!talent sekarang`\n\n**Credit Paimon**\n***contoh***: `!credit`\n\n**Support Paimon**\n***contoh***: `!support`\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -187,7 +187,7 @@ client.on("messages", msg => {
 client.on("message", msg => {
   if (msg.content === "!support"){ // Help Indo
     const exampleEmbed = new MessageEmbed()
-    .addField(":stew: Support Paimon :stew:", "Apakah kamu ingin membelikan paimon Miso Soup traveler >//< ?\n\n***Link :***https://trakteer.id/paimonbot/tip", true)
+    .addField(":stew: Support Paimon :stew:", "Sweet Madame itu terlihat sangat lezat.\nApakah kamu ingin memberiku 1 >< ?\n\n***Link :***https://trakteer.id/paimonbot/tip", true)
     .setImage('https://drive.google.com/uc?id=1aaJIsML-iBmkvau2EB-URng_C25OMhCJ')
     .setTimestamp()
     .setFooter({ text: 'Genshination',
