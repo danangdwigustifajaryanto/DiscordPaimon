@@ -1,8 +1,11 @@
 const { MessageEmbed } = require('discord.js');
+const ytdl = require("ytdl-core");
+const Youtube = require(`simple-youtube-api`);
 const Discord = require("discord.js");
 const mongoose = require("mongoose");
 const User = require("./profileSchema");
 const client = new Discord.Client({intents: ["GUILDS","GUILD_MEMBERS", "GUILD_MESSAGES", ]});
+const prefix = "!";
 
 client.on("ready", async ()=>{
     console.log(` ---- ${client.user.tag} Sudah Login! ----`);
@@ -12,17 +15,82 @@ client.on("ready", async ()=>{
     });
  });
 
+// ------ MUSIC BOT ------
+// const youtube = new Youtube("AIzaSyAGmpS9qDMwLgOU1qhSlfwTaJUPFP0NBfY")
+// const queue = new Map()
 
+// client.on("message", async => {
+//   if (msg.author.client) return
+//   if (!msg.content.startsWith(prefix)) return
+
+//   const args = msg.content.substring(prefix.length).split(" ")
+//   const searchString = args.slice(1).join(' ')
+//   const url = args [1] ? args[1].replace(/<(.+)>/g, '$1') : ''
+//   const serverQueue = queue.get(msg.guild.id)
+
+//   if (msg.content.startsWith(`${prefix}play`)) {
+//     const voiceChannel = msg.member.voice.channel
+//     if (!voiceChannel) return msg.channel.send("Please join voice channel first traveler ^^")
+//     const permission = voiceChannel.permission(msg.client.user)
+//     if (!permission.has(`CONNECT`)) return msg.channel.send("Paimon gabisa gabung voicechat min T.T")
+//     if (!permission.has(`SPEAK`)) return msg.channel.send("Paimon gapunya ijin buat nyalain mic min T.T")
+
+//     try {
+//       var video = await youtube.getVideoByID(url)
+//     } catch {
+//       try {
+//         var videos = await youtube.searchVideos(searchString, 1)
+//         var video = await youtube.getVideoByID(videos[0].id)
+//       } catch {
+//         return msg.channel.send("Maaf paimon tidak tau T.T")
+//       }
+//     }
+
+//     const song = {
+//       id: video.id,
+//       title: video.title
+//       url: `https://www.youtube.com/watch?v=${video.id}`
+//     }
+
+//     if(!serverQueue) {
+//       const queueConstruct = {
+//         textchannel: msg.channel,
+//         voiceChannel: voiceChannel,
+//         Connection: null,
+//         songs: [],
+//         volume: 5,
+//         playing: true
+//       }
+//       queue.set(msg.guild.id, queueConstruct)
+//       queueConstruct.songs.push(song)
+//       try {
+//         var connection = await voiceChannel.join()
+//         queueConstruct.connection = connection
+//         play(msg.guild, queueConstruct.song[0])
+//       } catch (error){
+//         console.log(`Error ngab gabisa join voice channel: ${error}`)
+//         queue.delete(msg.guild.id)
+//         return msg.channel.send(`Error ngab gabisa join voice channel: ${error}`)
+//       }
+//     } else {
+//       serverQueue.song.push(song)
+//       return msg.channel ///Nyampe sini
+//     }
+//   }
+// })
+
+
+
+// ---- GREETINGS ----
 client.on('guildMemberAdd', member => {
     const exampleEmbed = new MessageEmbed()
     .setTitle('Wellcome to the server :hatching_chick: ')
     .setDescription(`Hello <@${member.id}> don't forget to register ^^`)
+    .setThumbnail(member.displayAvatarURL())
     .setFooter({ text: "Please read pinned messages",
     iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
     member.guild.channels.cache.get('981582630317338656').send({ embeds: [exampleEmbed] });
 });
-//Welcome & goodbye messages\\
-//Welcome & goodbye messages end\\
 // ---- REGISTRASI ----
 const subnick = "!reg nickname:";
 const subar = "!reg ar:";
