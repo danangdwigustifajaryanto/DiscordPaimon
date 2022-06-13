@@ -2,10 +2,16 @@ const { MessageEmbed } = require('discord.js');
 const Discord = require("discord.js");
 const mongoose = require("mongoose");
 const User = require("./profileSchema");
+const wellcome = require("./wellcome.js")
 const client = new Discord.Client({intents: ["GUILDS","GUILD_MEMBERS", "GUILD_MESSAGES", ]});
-client.on("ready", () => {
-  console.log(` ---- ${client.user.tag} Sudah Login! ----`)
-});
+
+client.on("ready", async ()=>{
+    console.log(` ---- ${client.user.tag} Sudah Login! ----`);
+        client.user.setActivity("Zhongli got Prank", {
+        type: "WATCHING",
+        url: "https://www.twitch.tv/monstercat"
+    });
+ });
 
 
 client.on('guildMemberAdd', member => {
@@ -141,30 +147,23 @@ msg.reply({ embeds: [exampleEmbed] });
   }
 }
 );
-//  ------ PENCARIAN UID ORANG -------
-// client.on("message", async msg => {
-//   let member = msg.mentions.members.first().username
-//   if (msg.content === `!info @${member}`){ 
-//     User.findOne({userID : member.id}, async (err, userData) => {
-//      if (userData) {
-//         const exampleEmbed = new MessageEmbed()
-//         .setColor('#808080')
-//         .setTitle('Data Member')
-//         .setDescription(`**Nickname :** ${userData.nickname}\n**Adventure Rank :** ${userData.ar}\nServer: ${userData.server}\n**User ID :** ${userData.uid}`)
-//         .setThumbnail(msg.author.avatarURL())
-//         msg.reply({ embeds: [exampleEmbed] });
-//      } else{
-//       msg.reply("Please registration first")
-//      }
-//   }
-// )}})
+
+// ------ PENYEBUTAN UID ORANG -------
+// const member = msg.mentions.users.first();
+// if (msg.content === `!info ${member}`){ 
+//     User.findOne({ userID: member.id }, (err, user) => {
+//         if (err) return console.error(err);
+//         if (!user) return msg.reply("User not found");
+//         console.log(user);
+//     });
+// }
 //-------- HELP -------------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!bantu"){ // Help Indo
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle('✨ Daftar Fitur Paimon ✨')
-    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Tentang Server**\n***contoh***: `!tentang server` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n**Weapon hari ini**\n***contoh***: `!weapon sekarang`\n\n\n")
+    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Tentang Server**\n***contoh***: `!tentang server` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***example***: `!talent sekarang`\n\n**Credit Paimon**\n***contoh***: `!credit`\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -174,7 +173,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle("✨ Paimon's Feature ✨")
-    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**About Server**\n***example***: `!about server` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n**Today Weapon farm**\n***example***: `!weapon today`\n\n\n")
+    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**About Server**\n***example***: `!about server` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n**Today Weapon farm**\n***example***: `!weapon today`\n\n**Credit Paimon**\n***example***: `!credit\n\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -477,7 +476,14 @@ client.on("message", msg =>{
 // ------- DOMAIN INDO ---------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!credit"){
-    msg.reply(" \u00A9 Nevada 2022");
+    const exampleEmbed = new MessageEmbed()
+    .setColor('#1F1F1F')
+    .setTitle(':compass: Paimon Credit :compass:')
+    .setDescription("Paimon special only for Genshination server. All image content or information that Paimon provides in this server is the copyright work of ***Hoyoverse***. \n\n***Programmer :*** Nevada\n***Designer :*** Nevada")
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    msg.reply({ embeds: [exampleEmbed] });
   }
   else if (msg.content === "Terimakasih paimon"){
     msg.reply(" Sama sama Traveer ^^");
