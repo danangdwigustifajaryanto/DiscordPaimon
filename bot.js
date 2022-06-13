@@ -183,12 +183,13 @@ client.on("message", msg => {
 client.on("messages", msg => {
 
 })
+
 //-------- JADE PARCEL ---------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!support"){ // Help Indo
     const exampleEmbed = new MessageEmbed()
-    .addField(":stew: Support Paimon :stew:", "Sweet Madame itu terlihat sangat lezat.\nApakah kamu ingin memberiku 1 >< ?\n\n***Link :***https://trakteer.id/paimonbot/tip", true)
-    .setImage('https://drive.google.com/uc?id=1ouga2fJ-hH7d7pkTv3bq-i7_7HnGZ6n5')
+    .addField(":stew: Support Paimon :stew:", "Sweet madame terlihat sangat lezat. Apa traveler mau mentraktir paimon makan >< ?\n\n***Link :***https://trakteer.id/paimonbot/tip", true)
+    .setImage('https://drive.google.com/uc?id=1OnUKFOHIRxgYybsVr5dd1LBaLrCoxbgy')
     .setTimestamp()
     .setFooter({ text: 'Genshination',
     iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
