@@ -188,8 +188,8 @@ client.on("messages", msg => {
 client.on("message", msg => {
   if (msg.content === "!support"){ // Help Indo
     const exampleEmbed = new MessageEmbed()
-    .addField(":stew: Support Paimon :stew:", "Sweet madame terlihat sangat lezat. Apa traveler mau mentraktir paimon makan >< ?\n\n***Link :***https://trakteer.id/paimonbot/tip", true)
-    .setImage('https://drive.google.com/uc?id=1OnUKFOHIRxgYybsVr5dd1LBaLrCoxbgy')
+    .addField(":stew: Support Paimon :stew:", "Sweet madame terlihat sangat lezat. Apakah traveler mau\nmentraktir paimon makan >< ?\n\n***Link :***https://trakteer.id/paimonbot/tip", true)
+    .setImage('https://drive.google.com/uc?id=15q6vXpaKKfo4MXcJUZswiRPjHrthOJCY')
     .setTimestamp()
     .setFooter({ text: 'Genshination',
     iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
