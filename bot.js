@@ -392,9 +392,9 @@ client.on('guildMemberAdd', member => {
     iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
     member.guild.channels.cache.get('981582630317338656').send({ embeds: [exampleEmbed] });
 });
-// ---- REGISTRASI ----
-
+// ----------------------- REGISTRASI ------------------------
 client.on("message", msg => {
+
     if(msg.content === "!reg") {
     const exampleEmbed = new MessageEmbed()
     .addField(":hatching_chick: Tutorial Registrasi :hatching_chick:", "Halo traveler, berikut adalah cara register^^ \nBagaimana ? mudah bukan ><", true)
@@ -405,11 +405,58 @@ client.on("message", msg => {
     msg.reply({ embeds: [exampleEmbed] });
     }
 })
+const paimon = "tavern bot";
+const paimon2 = "bot tavern";
+const paimon3 = "Bot tavern";
+const paimon4 = "Tavern bot";
+const kickpaimon = "kick paimon"
+const kickpaimon2 = "Kick paimon"
 
 const subnick = "!reg nickname:";
 const subar = "!reg ar:";
 const subserv = "!reg server:";
 const subuid = "!reg uid:";
+
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimon)) {
+    await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(kickpaimon)) {
+    await msg.reply("masih gw liatin")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(kickpaimon2)) {
+    await msg.reply("masih gw liatin")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimon2)) {
+    await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimon3)) {
+    await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimon4)) {
+    await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
+  }
+})
+client.on("message", msg => { //PAIMON
+  if (msg.content === "dih paimon gaboleh marah") {
+    msg.reply("Y")
+  }
+})
+
+
+
+
+
 client.on("message", async msg => { //NICKNAME
   if (msg.content.includes(subnick)) {
     userData = await User.findOne({userID : msg.author.id});
@@ -432,7 +479,7 @@ client.on("message", async msg => { //NICKNAME
     });
     user.save().then(result => console.log(result)).catch(err => console.log(err));
     msg.reply("Terimakasih, data telah paimon terima ^^") 
-  }
+  } 
   }
 }) //AR
 client.on("message", async msg => {
