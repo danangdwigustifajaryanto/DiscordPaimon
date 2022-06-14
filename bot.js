@@ -405,6 +405,8 @@ client.on("message", msg => {
     msg.reply({ embeds: [exampleEmbed] });
     }
 })
+const paimonlain = "bot lain";
+const paimonlain2 = "Bot lain";
 const paimon = "tavern bot";
 const paimon2 = "bot tavern";
 const paimon3 = "Bot tavern";
@@ -412,8 +414,6 @@ const paimon4 = "Tavern bot";
 const paimon5 = "Tavern bot";
 const paimon6 = "halo sayang";
 const paimon7 = "Halo sayang";
-const paimon6 = "Paimon sayang";
-const paimon7 = "paimon sayang";
 const kickpaimon = "kick paimon"
 const kickpaimon2 = "Kick paimon"
 
@@ -430,6 +430,16 @@ client.on("message", async msg => { //PAIMON
 client.on("message", async msg => { //PAIMON
   if (msg.content.includes(kickpaimon)) {
     await msg.reply("masih gw liatin")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimonlain)) {
+    await msg.reply("Gaboleh >( cuma paimon yang boleh jadi bot disini")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimonlain2)) {
+    await msg.reply("Gaboleh >:( cuma paimon yang boleh jadi bot disini")
   }
 })
 client.on("message", async msg => { //PAIMON
