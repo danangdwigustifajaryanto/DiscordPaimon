@@ -576,11 +576,11 @@ client.on("message", msg => {
     msg.reply({ embeds: [exampleEmbed] });
   }
 })
-//-------- JADE PARCEL ---------------------------------------------------------------------------------------------------------------------
+//-------- SWEET MADAME ---------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!support"){ // Help Indo
     const exampleEmbed = new MessageEmbed()
-    .addField(":stew: Support Paimon :stew:", "Sweet madame terlihat sangat lezat. Apakah traveler mau\nmentraktir paimon makan >< ?\n\n***Link :*** https://trakteer.id/paimonbot/tip", true)
+    .addField(":stew: Support Paimon :stew:", "sweet madame terlihat lezat! Apa traveler mau traktir paimon makan ><?\n\n***Link :*** https://trakteer.id/paimonbot/tip", true)
     .setImage('https://drive.google.com/uc?id=15q6vXpaKKfo4MXcJUZswiRPjHrthOJCY')
     .setTimestamp()
     .setFooter({ text: 'Genshination',
