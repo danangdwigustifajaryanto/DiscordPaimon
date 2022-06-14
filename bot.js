@@ -393,6 +393,19 @@ client.on('guildMemberAdd', member => {
     member.guild.channels.cache.get('981582630317338656').send({ embeds: [exampleEmbed] });
 });
 // ---- REGISTRASI ----
+
+client.on("message", msg => {
+    if(msg.content === "!reg") {
+    const exampleEmbed = new MessageEmbed()
+    .addField(":hatching_chick: Tutorial Registrasi :hatching_chick:", "Halo traveler, berikut adalah cara register^^ \nBagaimana ? mudah bukan ><", true)
+    .setImage('https://drive.google.com/uc?id=18stgEscuuv0j2fZMHkQpadjJasMWhIF6')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    msg.reply({ embeds: [exampleEmbed] });
+    }
+})
+
 const subnick = "!reg nickname:";
 const subar = "!reg ar:";
 const subserv = "!reg server:";
@@ -531,7 +544,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle('✨ Daftar Fitur Paimon ✨')
-    .setDescription("**Registrasi** \n***contoh***: `!reg nickname/ar/server/uid:<isi disini>` \n\n**Cek data diri**\n***contoh***: `!myinfo` \n\n**Tentang Server**\n***contoh***: `!tentang server` \n\n**Build Karakter** \n***contoh***: `!build amber` \n\n**Informasi Artefak**\n***contoh***: `!arti shimenawa`\n\n**Talent hari ini**\n***contoh***: `!talent sekarang`\n\n**Credit Paimon**\n***contoh***: `!credit`\n\n**Support Paimon**\n***contoh***: `!support`\n\n\n")
+    .setDescription("***Informasi Fitur***\n> **Registrasi** \n> ***contoh***: `!reg` \n> \n> **Cek data diri**\n> ***contoh***: `!myinfo`\n> \n> **Music**\n> ***contoh***: `!music`\n\n***Informasi Game***\n> **Build Karakter** \n> ***contoh***: `!build amber`\n> \n> **Informasi Artefak**\n> ***contoh***: `!arti shimenawa`\n> \n> **Talent hari ini**\n> ***contoh***: `!talent sekarang`\n> \n> **Weapon hari ini**\n> ***example***: `!talent today`\n\n***Tentang***\n> **Tentang Server**\n> ***contoh***: `!tentang server`\n> \n> **Credit Paimon**\n> ***contoh***: `!credit`\n> \n> **Support Paimon**\n> ***contoh***: `!support`\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -541,7 +554,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle("✨ Paimon's Feature ✨")
-    .setDescription("**Registration** \n***example***: `!reg nickname/ar/server/uid:<insert here>` \n\n**Check your information**\n***example***: `!myinfo` \n\n**About Server**\n***example***: `!about server` \n\n**Build Character** \n***example***: `!build amber` \n\n**Artifact's Information**\n***example***: `!arti shimenawa`\n\n**Today talent farm**\n***example***: `!talent today`\n\n**Today Weapon farm**\n***example***: `!weapon today`\n\n**Credit Paimon**\n***example***: `!credit`\n\n**Support Paimon**\n***example***: `!support`\n\n\n")
+    .setDescription("***Feature Information***\n> **Registration** \n> ***example***: `!reg` \n> \n> **Your Information**\n> ***example***: `!myinfo`\n> \n> **Music**\n> ***example***: `!music`\n\n***Game Information***\n> **Build Character** \n> ***example***: `!build amber`\n> \n> **Artifact Information**\n> ***example***: `!arti shimenawa`\n> \n> **Talent Farm Today**\n> ***example***: `!talent today`\n> \n> **Weapon Farm Today**\n> ***example***: `!weapon today`\n\n***About***\n> **About Server**\n> ***example***: `!about server`\n> \n> **Credit Paimon**\n> ***example***: `!credit`\n> \n> **Support Paimon**\n> ***example***: `!support`\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -549,8 +562,20 @@ client.on("message", msg => {
     msg.reply({ embeds: [exampleEmbed] });
   }
 })
-
-
+// ---- MUSIC ----
+client.on("message", msg => {
+  if (msg.content === "!music"){ // Help Indo
+    const exampleEmbed = new MessageEmbed()
+    .setColor('#1F1F1F')
+    .setTitle(':musical_note: Paimon Music Bot :musical_note:')
+    .setDescription("***List command***\n> **Info diputar** \n> ***example***: `/info` \n> \n> **Pause**\n> ***contoh***: `/pause`\n> \n> **Play menggunakan link**\n> ***contoh***: `/play song`\n> \n> **Play link playlist**\n> ***contoh***: `/play playlist`\n> \n> **Play menggunakan pencarian**\n> ***contoh***: `/play search`\n> \n> **Tampilkan antrian**\n> ***contoh***: `/queue`\n> \n> **Berhenti dan keluar**\n> ***contoh***: `/quit`\n> \n> **Resume**\n> ***contoh***: `/resume`\n> \n> **Acak antrian**\n> ***contoh***: `/shuffle`\n> \n> **Skip**\n> ***contoh***: `/skip`\n> \n> **Skip ke lagu lain**\n> ***contoh***: `/skip to`")
+    .setThumbnail(msg.author.avatarURL())
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    msg.reply({ embeds: [exampleEmbed] });
+  }
+})
 //-------- JADE PARCEL ---------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
   if (msg.content === "!support"){ // Help Indo
