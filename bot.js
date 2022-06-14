@@ -1007,6 +1007,12 @@ client.on("message", msg => {
   else if (msg.content === "Hello paimon"){
     msg.reply("Paimon Here traveler :)");
   }
+  else if (msg.content === "Paimon"){
+    msg.reply("Passwordnya ?");
+  }
+  else if (msg.content === "paimon"){
+    msg.reply("Passwordnya ?");
+  }
   else if (msg.content === "dasar emergency food"){
     msg.reply("Paimon bukan emergency food >:(");
   }
