@@ -1,10 +1,15 @@
 const { MessageEmbed } = require('discord.js');
 const ytdl = require("ytdl-core");
-const Youtube = require(`simple-youtube-api`);
+const ytSearch = require('yt-search');
+const { Routes } = require("discord-api-types/v9")
 const Discord = require("discord.js");
+const { REST } = require("@discordjs/rest")
+const fs = require("fs")
+const { Player } = require("discord-player")
 const mongoose = require("mongoose");
 const User = require("./profileSchema");
-const client = new Discord.Client({intents: ["GUILDS","GUILD_MEMBERS", "GUILD_MESSAGES", ]});
+const {isUndefined} = require(`util`);
+const client = new Discord.Client({intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", ]});
 const prefix = "!";
 
 client.on("ready", async ()=>{
@@ -15,7 +20,64 @@ client.on("ready", async ()=>{
     });
  });
 
-// ------ MUSIC BOT ------
+
+// Music bot 2 slah comand ------
+const LOAD_SLASH = process.argv[2] == "load"
+const CLIENT_ID = "978615870718869594"
+const GUILD_ID = "981210961014829167"
+
+client.slashcommands = new Discord.Collection()
+client.player = new Player(client, {
+    ytdlOptions: {
+        quality: "highestaudio",
+        highWaterMark: 1 << 25
+    }
+})
+
+let commands = []
+
+const slashFiles = fs.readdirSync("./slash").filter(file => file.endsWith(".js"))
+for (const file of slashFiles){
+    const slashcmd = require(`./slash/${file}`)
+    client.slashcommands.set(slashcmd.data.name, slashcmd)
+    if (LOAD_SLASH) commands.push(slashcmd.data.toJSON())
+}
+
+if (LOAD_SLASH) {
+    const rest = new REST({ version: "9" }).setToken("OTc4NjE1ODcwNzE4ODY5NTk0.G9lIoW.-4sg46mmtVK-8OU9nuhgtuATjptnlonZJBy2vk")
+    console.log("Deploying slash commands")
+    rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), {body: commands})
+    .then(() => {
+        console.log("Successfully loaded")
+        process.exit(0)
+    })
+    .catch((err) => {
+        if (err){
+            console.log(err)
+            process.exit(1)
+        }
+    })
+}
+else {
+    client.on("ready", () => {
+        console.log(`Logged in as ${client.user.tag}`)
+    })
+    client.on("interactionCreate", (interaction) => {
+        async function handleCommand() {
+            if (!interaction.isCommand()) return
+
+            const slashcmd = client.slashcommands.get(interaction.commandName)
+            if (!slashcmd) interaction.reply("Not a valid slash command")
+
+            await interaction.deferReply()
+            await slashcmd.run({ client, interaction })
+        }
+        handleCommand()
+    })
+}
+
+
+// // ------ MUSIC BOT 1 ------
 // const youtube = new Youtube("AIzaSyAGmpS9qDMwLgOU1qhSlfwTaJUPFP0NBfY")
 // const queue = new Map()
 
@@ -35,12 +97,45 @@ client.on("ready", async ()=>{
 //     if (!permission.has(`CONNECT`)) return msg.channel.send("Paimon gabisa gabung voicechat min T.T")
 //     if (!permission.has(`SPEAK`)) return msg.channel.send("Paimon gapunya ijin buat nyalain mic min T.T")
 
+
+
+
+
 //     try {
-//       var video = await youtube.getVideoByID(url)
+//       async function video()
+//     {
+//     var video = await youtube.getVideoByID(url)
+//     // do your stuff with data
+    
+//     temp = video;
+
+//     console.log(temp) // at this point you have something in.
+//     return true
+//     }
 //     } catch {
 //       try {
-//         var videos = await youtube.searchVideos(searchString, 1)
-//         var video = await youtube.getVideoByID(videos[0].id)
+// async function videos()
+// {
+//     var videos = await youtube.searchVideos(searchString, 1)
+//     // do your stuff with data
+    
+//     temp = videos;
+
+//     console.log(temp) // at this point you have something in.
+//     return true
+// }
+//   videos();
+// async function video()
+// {
+//     var video = await youtube.getVideoByID(videos[0].id)
+//     // do your stuff with data
+    
+//     temp = video;
+
+//     console.log(temp) // at this point you have something in.
+//     return true
+// }
+//       video();       
 //       } catch {
 //         return msg.channel.send("Maaf paimon tidak tau T.T")
 //       }
@@ -48,7 +143,7 @@ client.on("ready", async ()=>{
 
 //     const song = {
 //       id: video.id,
-//       title: video.title
+//       title: video.title,
 //       url: `https://www.youtube.com/watch?v=${video.id}`
 //     }
 
@@ -64,7 +159,19 @@ client.on("ready", async ()=>{
 //       queue.set(msg.guild.id, queueConstruct)
 //       queueConstruct.songs.push(song)
 //       try {
-//         var connection = await voiceChannel.join()
+//         async function cinnection()
+// {
+//     const data = await CSVtoJSON().fromFile('./input.csv')
+//     // do your stuff with data
+    
+//     temp = data;
+
+//     console.log(temp) // at this point you have something in.
+//     return true
+// }
+
+// test();
+//         connection();
 //         queueConstruct.connection = connection
 //         play(msg.guild, queueConstruct.song[0])
 //       } catch (error){
@@ -74,10 +181,204 @@ client.on("ready", async ()=>{
 //       }
 //     } else {
 //       serverQueue.song.push(song)
-//       return msg.channel ///Nyampe sini
+//       return msg.channel.send(`***${song.title} Telah ditambah ke dalam antrian`)
+//     }
+//     return undefined
+//   }
+//   else {
+//     if (msg.content.startsWith(`${prefix}stop`)) {
+//       if(!msg.member.voice.channel) return msg.channel.send("Gabung ke voicechannel yang sama untuk melakukan stop")
+//       if(!serverQueue) return msg.channel.send("Tidak ada musik yang dimainkan")
+//         serverQueue.songs = []
+//         serverQueue.connection.dispatcher.end()
+//         msg.channel.send("Musik telah berhenti")
+//         return undefined
+//     }
+//     else if (msg.content.startsWith(`${prefix}skip`)){
+//       if(!msg.member.voice.channel) return msg.channel.send("Gabung ke voicechannel yang sama untuk melakukan skip")
+//       if(!serverQueue) return msg.channel.send("Tidak ada musik yang dimainkan")
+//       serverQueue.connection.dispatcher.end()
+//       msg.channel.send("Musik telah di skip ^^")
+//       return undefined
+//     } else if (msg.content.startsWith(`${prefix}volume`)){
+//       if(!msg.member.voice.channel) return msg.channel.send("Gabung ke voicechannel yang sama untuk mengatur volume")
+//       if(!serverQueue) return msg.channel.send("Tidak ada musik yang dimainkan")
+//       if (args([1])) return msg.channel.send("Aturnya yang bener woi >:(")
+//       serverQueue.connection.dispatcher.setVolumeLogarithmic(args[1]/ 5)
+//       msg.channel.send(`Volume telah diatur menjadi **${args[1]}**`)
+//       return undefined
+//     } else if (msg.content.startsWith(`${prefix}now playing`)){
+//       if(!serverQueue) return msg.channel.send("Tidak ada musik yang dimainkan")
+//       msg.channel.send(`Now playing ${serverQueue.songs[0].title}`)
+//       return undefined
+//     } else if (msg.content.startsWith(`${prefix}queue`)){
+//       if(!serverQueue) return msg.channel.send("Tidak ada musik yang dimainkan")
+//       msg.channel.send(`__Antrian__\n${serverQueue.songs.map(song => `**-** ${song.title}`).join(`\n`)} \n**Now Playing:**${serverQueue.songs[0].title}`, { split: true})
+//       return undefined
+//     } else if (msg.content.startsWith(`${prefix}pause`)){
+//       if (msg.voice.channel) return msg.channel.send("Gabung ke voicechannel yang sama untuk melakukan pause")
+//       if(!serverQueue) return msg.channel.send("Tidak ada musik yang dimainkan")
+//       if(!serverQueue.playing) return msg.channel.send("Music sedang dalam keadaan pause")
+//       serverQueue.playing = flase
+//       serverQueue.connection.dispatcher.pause("Music sudah di pause")
+//       return undefined
+//     } else if (msg.content.startsWith(`${prefix}resume`)){
+//       if (msg.voice.channel) return msg.channel.send("Gabung ke voicechannel yang sama untuk melakukan resume")
+//       if(!serverQueue) return msg.channel.send("Tidak ada musik yang dimainkan")
+//       if(!serverQueue.playing) return msg.channel.send("Music sedang dalam keadaan pause")
+//       serverQueue.playing = true
+//       serverQueue.connection.dispatcher.resume("Music sudah di pause")
+//       return undefined
 //     }
 //   }
 // })
+
+// function play(guild, song) {
+//   const serverQueue = queue.get(guild.id)
+
+//   if (!song) {
+//     serverQueue.voiceChannel.leave()
+//     queue.delete(guild.id)
+//     return
+//   }
+//   const dispatcher = serverQueue.connection.play(ytdl(song.url, {highWaterMark: 1 << 25})).on(`finish`, () => {
+//     play(guild.serverQueue.songs[0])
+//   }).on(`error`, error => {
+//     console.log(error)
+//   })
+//   dispatcher.setVolumeLogarithmic(serverQueue.volume / $)
+//   serverQueue.textchannel.send(`Start playing: **${song.title}`)
+// }
+
+
+// ------ music bot 2 ------
+// Global queue for your bot. Every server will have a key and value pair in this map. { guild.id, queue_constructor{} }
+//Global queue for your bot. Every server will have a key and value pair in this map. { guild.id, queue_constructor{} }
+
+
+//Global queue for your bot. Every server will have a key and value pair in this map. { guild.id, queue_constructor{} }
+// const queue = new Map();
+
+// module.exports = {
+//     name: 'play',
+//     aliases: ['skip', 'stop'], //We are using aliases to run the skip and stop command follow this tutorial if lost: https://www.youtube.com/watch?v=QBUJ3cdofqc
+//     cooldown: 0,
+//     description: 'Advanced music bot',
+//     async execute(client, message, cmd, args, Discord){
+
+
+//         //Checking for the voicechannel and permissions (you can add more permissions if you like).
+//         const voice_channel = msg.member.voice.channel;
+//         if (!voice_channel) return msg.channel.send('You need to be in a channel to execute this command!');
+//         const permissions = voice_channel.permissionsFor(msg.client.user);
+//         if (!permissions.has('CONNECT')) return msg.channel.send('You dont have the correct permissins');
+//         if (!permissions.has('SPEAK')) return msg.channel.send('You dont have the correct permissins');
+
+//         //This is our server queue. We are getting this server queue from the global queue.
+//         const server_queue = queue.get(msg.guild.id);
+
+//         //If the user has used the play command
+//         if (cmd === 'play'){
+//             if (!args.length) return msg.channel.send('You need to send the second argument!');
+//             let song = {};
+
+//             //If the first argument is a link. Set the song object to have two keys. Title and URl.
+//             if (ytdl.validateURL(args[0])) {
+//                 const song_info = await ytdl.getInfo(args[0]);
+//                 song = { title: song_info.videoDetails.title, url: song_info.videoDetails.video_url }
+//             } else {
+//                 //If there was no link, we use keywords to search for a video. Set the song object to have two keys. Title and URl.
+//                 const video_finder = async (query) =>{
+//                     const video_result = await ytSearch(query);
+//                     return (video_result.videos.length > 1) ? video_result.videos[0] : null;
+//                 }
+
+//                 const video = await video_finder(args.join(' '));
+//                 if (video){
+//                     song = { title: video.title, url: video.url }
+//                 } else {
+//                      msg.channel.send('Error finding video.');
+//                 }
+//             }
+
+//             //If the server queue does not exist (which doesn't for the first video queued) then create a constructor to be added to our global queue.
+//             if (!server_queue){
+
+//                 const queue_constructor = {
+//                     voice_channel: voice_channel,
+//                     text_channel: msg.channel,
+//                     connection: null,
+//                     songs: []
+//                 }
+                
+//                 //Add our key and value pair into the global queue. We then use this to get our server queue.
+//                 queue.set(msg.guild.id, queue_constructor);
+//                 queue_constructor.songs.push(song);
+    
+//                 //Establish a connection and play the song with the vide_player function.
+//                 try {
+//                     const connection = await voice_channel.join();
+//                     queue_constructor.connection = connection;
+//                     video_player(msg.guild, queue_constructor.songs[0]);
+//                 } catch (err) {
+//                     queue.delete(msg.guild.id);
+//                     msg.channel.send('There was an error connecting!');
+//                     throw err;
+//                 }
+//             } else{
+//                 server_queue.songs.push(song);
+//                 return msg.channel.send(`👍 **${song.title}** added to queue!`);
+//             }
+//         }
+
+//         else if(cmd === 'skip') skip_song(msg, server_queue);
+//         else if(cmd === 'stop') stop_song(msg, server_queue);
+//     }
+    
+// }
+
+// const video_player = async (guild, song) => {
+//     const song_queue = queue.get(guild.id);
+
+//     //If no song is left in the server queue. Leave the voice channel and delete the key and value pair from the global queue.
+//     if (!song) {
+//         song_queue.voice_channel.leave();
+//         queue.delete(guild.id);
+//         return;
+//     }
+//     const stream = ytdl(song.url, { filter: 'audioonly' });
+//     song_queue.connection.play(stream, { seek: 0, volume: 0.5 })
+//     .on('finish', () => {
+//         song_queue.songs.shift();
+//         video_player(guild, song_queue.songs[0]);
+//     });
+//     await song_queue.text_channel.send(`🎶 Now playing **${song.title}**`)
+// }
+
+// const skip_song = (message, server_queue) => {
+//     if (!msg.member.voice.channel) return msg.channel.send('You need to be in a channel to execute this command!');
+//     if(!server_queue){
+//         return msg.channel.send(`There are no songs in queue 😔`);
+//     }
+//     server_queue.connection.dispatcher.end();
+// }
+
+// const stop_song = (message, server_queue) => {
+//     if (!msg.member.voice.channel) return msg.channel.send('You need to be in a channel to execute this command!');
+//     server_queue.songs = [];
+//     server_queue.connection.dispatcher.end();
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,9 +549,7 @@ client.on("message", msg => {
     msg.reply({ embeds: [exampleEmbed] });
   }
 })
-client.on("messages", msg => {
 
-})
 
 //-------- JADE PARCEL ---------------------------------------------------------------------------------------------------------------------
 client.on("message", msg => {
@@ -1732,5 +2031,5 @@ mongoose.connect(url,connectionParams)
   .catch( (err) => {
       console.error(`Error connecting to the database. n${err}`);
   })
-  // -------------------------------------------------------------------------------------------------------------
+  // --------------------------------------------------------------------------------------------------------------
 client.login("OTc4NjE1ODcwNzE4ODY5NTk0.G9lIoW.-4sg46mmtVK-8OU9nuhgtuATjptnlonZJBy2vk");
