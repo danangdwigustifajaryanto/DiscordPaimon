@@ -405,6 +405,8 @@ client.on("message", msg => {
     msg.reply({ embeds: [exampleEmbed] });
     }
 })
+const paimonbodoh = "paimon bodoh";
+const paimonbodoh2 = "Paimon bodoh";
 const paimonlain = "bot lain";
 const paimonlain2 = "Bot lain";
 const paimon = "tavern bot";
@@ -425,6 +427,16 @@ const subuid = "!reg uid:";
 client.on("message", async msg => { //PAIMON
   if (msg.content.includes(paimon)) {
     await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimonbodoh)) {
+    await msg.send("galiat kok, gw galiat. ekhem")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimonbodoh2)) {
+    await msg.send("galiat kok, gw galiat. ekhem")
   }
 })
 client.on("message", async msg => { //PAIMON
