@@ -24,7 +24,7 @@ client.on("ready", async ()=>{
 // Music bot 2 slah comand ------
 const LOAD_SLASH = process.argv[2] == "load"
 const CLIENT_ID = "978615870718869594"
-const GUILD_ID = "981210961014829167"
+const GUILD_ID = "978619701322211378"
 
 client.slashcommands = new Discord.Collection()
 client.player = new Player(client, {
