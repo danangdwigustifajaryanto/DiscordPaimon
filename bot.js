@@ -409,6 +409,11 @@ const paimon = "tavern bot";
 const paimon2 = "bot tavern";
 const paimon3 = "Bot tavern";
 const paimon4 = "Tavern bot";
+const paimon5 = "Tavern bot";
+const paimon6 = "halo sayang";
+const paimon7 = "Halo sayang";
+const paimon6 = "Paimon sayang";
+const paimon7 = "paimon sayang";
 const kickpaimon = "kick paimon"
 const kickpaimon2 = "Kick paimon"
 
@@ -445,6 +450,16 @@ client.on("message", async msg => { //PAIMON
 client.on("message", async msg => { //PAIMON
   if (msg.content.includes(paimon4)) {
     await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimon7)) {
+    await msg.reply("Iya sayang >////<")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(paimon6)) {
+    await msg.reply("Iya sayang >////<")
   }
 })
 client.on("message", msg => { //PAIMON
