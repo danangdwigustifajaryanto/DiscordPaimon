@@ -416,8 +416,10 @@ const paimon4 = "Tavern bot";
 const paimon5 = "Tavern bot";
 const paimon6 = "halo sayang";
 const paimon7 = "Halo sayang";
-const kickpaimon = "kick paimon"
-const kickpaimon2 = "Kick paimon"
+const kickpaimon = "kick paimon";
+const kickpaimon2 = "Kick paimon";
+const candasayang = "canda sayang";
+const candasayang2 = "Canda sayang";
 
 const subnick = "!reg nickname:";
 const subar = "!reg ar:";
@@ -430,13 +432,23 @@ client.on("message", async msg => { //PAIMON
   }
 })
 client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(candasayang)) {
+    await msg.reply("/////////")
+  }
+})
+client.on("message", async msg => { //PAIMON
+  if (msg.content.includes(candasayang2)) {
+    await msg.reply("/////////")
+  }
+})
+client.on("message", async msg => { //PAIMON
   if (msg.content.includes(paimonbodoh)) {
-    await msg.send("galiat kok, gw galiat. ekhem")
+    await msg.reply("galiat kok, gw galiat. ekhem")
   }
 })
 client.on("message", async msg => { //PAIMON
   if (msg.content.includes(paimonbodoh2)) {
-    await msg.send("galiat kok, gw galiat. ekhem")
+    await msg.reply("galiat kok, gw galiat. ekhem")
   }
 })
 client.on("message", async msg => { //PAIMON
