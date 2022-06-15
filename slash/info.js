@@ -6,7 +6,7 @@ module.exports = {
 	run: async ({ client, interaction }) => {
 		const queue = client.player.getQueue(interaction.guildId)
 
-		if (!queue) return await interaction.editReply("Tidak ada info lagu saat ini")
+		if (!queue) return await interaction.editReply("There are no songs in the queue")
 
 		let bar = queue.createProgressBar({
 			queue: false,
@@ -18,7 +18,7 @@ module.exports = {
 		await interaction.editReply({
 			embeds: [new MessageEmbed()
             .setThumbnail(song.thumbnail)
-            .setDescription(`Sekarang dimainkan [${song.title}](${song.url})\n\n` + bar)
+            .setDescription(`Currently Playing [${song.title}](${song.url})\n\n` + bar)
         ],
 		})
 	},
