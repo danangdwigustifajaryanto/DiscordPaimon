@@ -1,9 +1,9 @@
-const { MessageEmbed } = require('discord.js');  
+const { MessageEmbed } = require('discord.js');
 const ytdl = require("ytdl-core");
 const ytSearch = require('yt-search');
 const { Routes } = require("discord-api-types/v9")
-const Discord = require("discord.js"); 
-const { REST } = require("@discordjs/rest") 
+const Discord = require("discord.js");
+const { REST } = require("@discordjs/rest")
 const fs = require("fs")
 const { Player } = require("discord-player")
 const mongoose = require("mongoose");
@@ -24,7 +24,7 @@ client.on("ready", async ()=>{
 // Music bot 2 slah comand ------
 const LOAD_SLASH = process.argv[2] == "load"
 const CLIENT_ID = "978615870718869594"
-const GUILD_ID = "978619701322211378"
+const GUILD_ID = "731469937335599145"
 
 client.slashcommands = new Discord.Collection()
 client.player = new Player(client, {
@@ -371,17 +371,24 @@ else {
 
 
 
+//Tiktok Youtube : 986314375075864636
+//Announcement   : 986877650930909225
 
 
 
+//Fun Replies
+// client.on("message", msg => {
+//     if(msg.content === ".") { //Get : Channel @User https://drive.google.com/file/d//view?usp=sharing
+//     msg.guild.channels.cache.get('986314375075864636').send(`Permisi bang <@${`689739659613700124`}> ikut dong`);
+//     //Images
+//     msg.guild.channels.cache.get('986314375075864636').send(`https://drive.google.com/uc?id=1PhXRBDFJUcbnxMtf_cC3ixeGTQ49DvSG`);
+// }});
 
-
-
-
-
-
-
-
+// ///Everyone
+// client.on("message", msg => {
+//     if(msg.content === "dih siape lu") {
+//     msg.guild.channels.cache.get('986314375075864636').send(`btw guys @everyone kick admin pada setuju ga ?`);
+// }});
 // ---- GREETINGS ----
 client.on('guildMemberAdd', member => {
     const exampleEmbed = new MessageEmbed()
@@ -640,7 +647,7 @@ client.on("message", msg => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle('✨ Daftar Fitur Paimon ✨')
-    .setDescription("***Informasi Fitur***\n> **Registrasi** \n> ***contoh***: `!reg` \n> \n> **Cek data diri**\n> ***contoh***: `!myinfo`\n> \n> **Music**\n> ***contoh***: `!music`\n\n***Informasi Game***\n> **Build Karakter** \n> ***contoh***: `!build amber`\n> \n> **Informasi Artefak**\n> ***contoh***: `!arti shimenawa`\n> \n> **Talent hari ini**\n> ***contoh***: `!talent sekarang`\n> \n> **Weapon hari ini**\n> ***contoh***: `!weapon sekarang`\n\n***Tentang***\n> **Tentang Server**\n> ***contoh***: `!tentang server`\n> \n> **Credit Paimon**\n> ***contoh***: `!credit`\n> \n> **Support Paimon**\n> ***contoh***: `!support`\n\n")
+    .setDescription("***Informasi Fitur***\n> **Registrasi** \n> ***contoh***: `!reg` \n> \n> **Cek data diri**\n> ***contoh***: `!myinfo`\n> \n> **Music**\n> ***contoh***: `!music`\n\n***Informasi Game***\n> **Build Karakter** \n> ***contoh***: `!build amber`\n> \n> **Informasi Artefak**\n> ***contoh***: `!arti shimenawa`\n> \n> **Talent hari ini**\n> ***contoh***: `!talent sekarang`\n> \n> **Weapon hari ini**\n> ***example***: `!talent today`\n\n***Tentang***\n> **Tentang Server**\n> ***contoh***: `!tentang server`\n> \n> **Credit Paimon**\n> ***contoh***: `!credit`\n> \n> **Support Paimon**\n> ***contoh***: `!support`\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
@@ -1611,12 +1618,35 @@ client.on("message", msg => {
   }
 })
 
+
+//Weapon
+client.on("message", msg => {
+  if (msg.content === "!weapon sacrificial sword") { //albedo
+    const exampleEmbed = new MessageEmbed()
+    .addField(":crossed_swords:  Weapon Information :crossed_swords:", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1_XR15reSJfxbZRmYYD8AzUjFbJdNfKsy')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
+  }
+})
+
 //Build charcter
 client.on("message", msg => {
   if (msg.content === "!build albedo") { //albedo
     const exampleEmbed = new MessageEmbed()
     .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
     .setImage('https://drive.google.com/uc?id=1KMSHvMqen-VFdXMU9FYFz8LjZrIiqbI3')
+    .setTimestamp()
+    .setFooter({ text: 'Genshination',
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+  msg.reply({ embeds: [exampleEmbed] });
+  }
+    else if (msg.content === "!build kuki shinobu") { //Kuki   //Kuki shinobu https://drive.google.com/file/d//view?usp=sharing
+    const exampleEmbed = new MessageEmbed()
+    .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
+    .setImage('https://drive.google.com/uc?id=1PX-at5mfK_QyTCkRJtH82NyJ53WMq7LH')
     .setTimestamp()
     .setFooter({ text: 'Genshination',
     iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
