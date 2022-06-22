@@ -33,7 +33,7 @@ client.on("ready", async ()=>{
       url: "https://www.twitch.tv/monstercat"
   });
 });
-
+process.on('warning', e => console.warn(e.stack));
 // ---- Folder About -----
 const commandsabout = fs.readdirSync("./Command/aboutf").filter(file => file.endsWith(".js"))
 for (file of commandsabout){
