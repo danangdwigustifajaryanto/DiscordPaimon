@@ -17,6 +17,16 @@ const prefixmyinfo = "!myinfo";
 client.commands = new Discord.Collection();
 
 client.on("ready", async ()=>{
+
+
+    // // Getting the channel from client.channels Collection.
+    // const Channel = client.channels.cache.get("986877650930909225");
+    // // Checking if the channel exists.
+    // if (!Channel) return console.error("Couldn't find the channel.");
+    // // Sending "!d bump" to the channel.
+    // Channel.send("Halo @everyone karena telah dilakukan optimasi kode program pada paimon, maka terdapat beberapa command yang berubah, silahkan gunakan `!bantu` untuk info selengkapnya ^^").catch(e => console.log(e));
+
+
   console.log(` ---- ${client.user.tag} Sudah Login! ----`);
       client.user.setActivity("Zhongli got Prank", {
       type: "WATCHING",
@@ -151,7 +161,7 @@ const subar = "!reg ar:";
 const subserv = "!reg server:";
 const subuid = "!reg uid:";
 
-client.on("message", async msg => { //NICKNAME
+client.on("messageCreate", async msg => { //NICKNAME
   if (msg.content.includes(subnick)) {
     userData = await User.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
@@ -176,7 +186,7 @@ client.on("message", async msg => { //NICKNAME
   } 
   }
 }) //AR
-client.on("message", async msg => {
+client.on("messageCreate", async msg => {
   if (msg.content.includes(subar)) {
     userData = await User.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
@@ -201,7 +211,7 @@ client.on("message", async msg => {
   }
   }
 }) // SERVER
-client.on("message", async msg => { 
+client.on("messageCreate", async msg => { 
   if (msg.content.includes(subserv)) {
     userData = await User.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
@@ -226,7 +236,7 @@ client.on("message", async msg => {
   }
   }
 }) //UID
-client.on("message", async msg => {
+client.on("messageCreate", async msg => {
   if (msg.content.includes(subuid)) {
     userData = await User.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
@@ -252,7 +262,7 @@ client.on("message", async msg => {
   }
 })
 // ------ DIALOGUE INDO ------------------------------------------------------------------------------------
-client.on("message", msg => {
+client.on("messageCreate", msg => {
   if (msg.content === "Thank you paimon"){
     msg.reply(" Urwellcome Traveler ^^");
   }
@@ -294,96 +304,81 @@ const kickpaimon2 = "Kick paimon";
 const candasayang = "canda sayang";
 const candasayang2 = "Canda sayang";
 
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimon)) {
     await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(candasayang)) {
     await msg.reply("/////////")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(candasayang2)) {
     await msg.reply("/////////")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimonbodoh)) {
     await msg.reply("paimon yang baik hati tidak akan marah ^^")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimonbodoh2)) {
     await msg.reply("paimon yang baik hati tidak akan marah ^^")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(kickpaimon)) {
     await msg.reply("masih gw liatin")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimonlain)) {
     await msg.reply("Gaboleh >( cuma paimon yang boleh jadi bot disini")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimonlain2)) {
     await msg.reply("Gaboleh >:( cuma paimon yang boleh jadi bot disini")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(kickpaimon2)) {
     await msg.reply("masih gw liatin")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimon2)) {
     await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimon3)) {
     await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimon4)) {
     await msg.reply("Apa ini kok ngomong tavern >:( Cuma paimon yang boleh jadi bot disini !!!")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimon7)) {
     await msg.reply("Iya sayang >////<")
   }
 })
-client.on("message", async msg => { //PAIMON
+client.on("messageCreate", async msg => { //PAIMON
   if (msg.content.includes(paimon6)) {
     await msg.reply("Iya sayang >////<")
   }
 })
-client.on("message", msg => { //PAIMON
+client.on("messageCreate", msg => { //PAIMON
   if (msg.content === "dih paimon gaboleh marah") {
     msg.reply("Y")
   }
 })
-// //Fun Replies
-// client.on("message", msg => {
-//     if(msg.content === ".") { //Get : Channel @User https://drive.google.com/file/d//view?usp=sharing
-//     msg.guild.channels.cache.get('986314375075864636').send(`Permisi bang <@${`689739659613700124`}> ikut dong`);
-//     //Images
-//     msg.guild.channels.cache.get('986314375075864636').send(`https://drive.google.com/uc?id=1PhXRBDFJUcbnxMtf_cC3ixeGTQ49DvSG`);
-// }});
-
-// ///Everyone
-// client.on("message", msg => {
-//     if(msg.content === "dih siape lu") {
-//     msg.guild.channels.cache.get('986314375075864636').send(`btw guys @everyone kick admin pada setuju ga ?`);
-// }});
-
-
 
 // KONEKSI PENGHUBUNG -------------------------------------------------------------------------------------
 const url = `mongodb+srv://paimonbot:%40Watashi1@paimonbot.plnbhmt.mongodb.net/paimondb?retryWrites=true&w=majority`;
