@@ -11,7 +11,7 @@ exports.run = (client, msg, args) => {
     iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
   msg.reply({ embeds: [exampleEmbed] });
   }
-    else if (msg.content === "!build kuki shinobu") { //Kuki   //Kuki shinobu https://drive.google.com/file/d//view?usp=sharing
+    else if (msg.content === "!build kuki shinobu") {
     const exampleEmbed = new MessageEmbed()
     .addField("💫  Character Build 💫", "Paimon ready for `!help` >.<", true)
     .setImage('https://drive.google.com/uc?id=1PX-at5mfK_QyTCkRJtH82NyJ53WMq7LH')
