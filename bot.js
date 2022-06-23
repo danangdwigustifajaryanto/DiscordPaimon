@@ -20,12 +20,12 @@ client.commands = new Discord.Collection();
 client.on("ready", async ()=>{
 
 
-    // Getting the channel from client.channels Collection.
-    const Channel = client.channels.cache.get("987993929804812352");
-    // Checking if the channel exists.
-    if (!Channel) return console.error("Couldn't find the channel.");
-    // Sending "!d bump" to the channel.
-    Channel.send("Paimon sudah login @everyone").catch(e => console.log(e));
+    // // Getting the channel from client.channels Collection.
+    // const Channel = client.channels.cache.get("986877650930909225");
+    // // Checking if the channel exists.
+    // if (!Channel) return console.error("Couldn't find the channel.");
+    // // Sending "!d bump" to the channel.
+    // Channel.send("Halo @everyone karena telah dilakukan optimasi kode program pada paimon, maka terdapat beberapa command yang berubah, silahkan gunakan `!bantu` untuk info selengkapnya ^^").catch(e => console.log(e));
 
 
   console.log(` ---- ${client.user.tag} Sudah Login! ----`);
@@ -34,18 +34,6 @@ client.on("ready", async ()=>{
       url: "https://www.twitch.tv/monstercat"
   });
 });
-
-// Greetings
-client.on('guildMemberAdd', member => {
-    const exampleEmbed = new MessageEmbed()
-    .setTitle('Wellcome to the server :hatching_chick: ')
-    .setDescription(`Hello <@${member.id}> don't forget to register ^^`)
-    .setThumbnail(member.displayAvatarURL())
-    .setFooter({ text: "Please read pinned messages",
-    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
-    member.guild.channels.cache.get('981582630317338656').send({ embeds: [exampleEmbed] });
-});
-
 process.on('warning', e => console.warn(e.stack));
 // ---- Folder About -----
 const commandsabout = fs.readdirSync("./Command/aboutf").filter(file => file.endsWith(".js"))
@@ -117,7 +105,7 @@ client.on("messageCreate", msg => {
 //---- Fungsi Musik --------------------------
 const LOAD_SLASH = process.argv[2] == "load" //Load Slash
 const CLIENT_ID = "978615870718869594"
-const GUILD_ID = "731469937335599145"
+const GUILD_ID = "981210961014829167"
 
 client.slashcommands = new Discord.Collection()
 client.player = new Player(client, {
@@ -127,16 +115,17 @@ client.player = new Player(client, {
     }
 })
 
-let commands = [] //Load Slash
-const slashFiles = fs.readdirSync("./music").filter(file => file.endsWith(".js"))
+let commands = []
+
+const slashFiles = fs.readdirSync("./slash").filter(file => file.endsWith(".js"))
 for (const file of slashFiles){
-    const slashcmd = require(`./music/${file}`)
+    const slashcmd = require(`./slash/${file}`)
     client.slashcommands.set(slashcmd.data.name, slashcmd)
     if (LOAD_SLASH) commands.push(slashcmd.data.toJSON())
 }
 
 if (LOAD_SLASH) {
-    const rest = new REST({ version: "9" }).setToken("OTc4NjE1ODcwNzE4ODY5NTk0.G9lIoW.-4sg46mmtVK-8OU9nuhgtuATjptnlonZJBy2vk")
+    const rest = new REST({ version: "9" }).setToken(TOKEN)
     console.log("Deploying slash commands")
     rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), {body: commands})
     .then(() => {
@@ -307,12 +296,6 @@ client.on("messageCreate", msg => {
   }
   else if (msg.content === "Halo paimon"){
     msg.reply("Iya traveler ada apa ?");
-  }
-  else if (msg.content === "Jangan nakal ya paimon"){
-    msg.reply("Paimon tidak nakal :(");
-  }
-  else if (msg.content === "Bagus paimon"){
-    msg.reply("Hihihi");
   }
   else if (msg.content === "!tq"){
     msg.reply("Urwellcome, Sama sama traveler ^^");
