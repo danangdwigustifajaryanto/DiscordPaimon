@@ -308,6 +308,12 @@ client.on("messageCreate", msg => {
   else if (msg.content === "Halo paimon"){
     msg.reply("Iya traveler ada apa ?");
   }
+  else if (msg.content === "Jangan nakal ya paimon"){
+    msg.reply("Paimon tidak nakal :(");
+  }
+  else if (msg.content === "Bagus paimon"){
+    msg.reply("Hihihi");
+  }
   else if (msg.content === "!tq"){
     msg.reply("Urwellcome, Sama sama traveler ^^");
   }
