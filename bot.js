@@ -53,6 +53,17 @@ client.on("messageCreate", msg => {
   }
 })
 
+client.on('guildMemberAdd', member => {
+    const exampleEmbed = new MessageEmbed()
+    .setTitle('Wellcome to the server :hatching_chick: ')
+    .setDescription(`Hello <@${member.id}> don't forget to register ^^`)
+    .setThumbnail(member.displayAvatarURL())
+    .setFooter({ text: "Please read pinned messages",
+    iconURL: 'https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-paimon-2/tray_large.png?41ad332a85dc0a0fbe8c0f922eae5097'});
+    member.guild.channels.cache.get('981582630317338656').send({ embeds: [exampleEmbed] });
+});
+
+
 // ---- Folder Gamef --------------------------
 const commandsgamef = fs.readdirSync("./Command/gamef").filter(file => file.endsWith(".js"))
 for (file of commandsgamef){
