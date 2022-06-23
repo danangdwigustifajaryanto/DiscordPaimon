@@ -1,9 +1,9 @@
 const { MessageEmbed } = require('discord.js');
 const { Routes } = require("discord-api-types/v9")
-const { REST } = require("@discordjs/rest")  
+const { REST } = require("@discordjs/rest")
 const { Player } = require("discord-player")
+const Userchm = require("./profileSchema");
 const mongoose = require("mongoose");
-const User = require("./profileSchema");
 const Discord = require("discord.js");
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", ]});
 
@@ -177,7 +177,7 @@ client.on("messageCreate", async msg => { //NICKNAME
     console.log(updatedUser);
     msg.reply('Data kamu telah diperbarui traveler :)');
   } else if (!userData){ // If data didn't exist then create new one
-    const user = new User({
+    const user = new Userchm({
       _id: mongoose.Types.ObjectId(),
       userID: msg.author.id,
       nickname: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
@@ -202,7 +202,7 @@ client.on("messageCreate", async msg => {
     console.log(updatedUser);
     msg.reply('Data kamu telah diperbarui traveler :)');
   } else if (!userData){ // If data didn't exist then create new one
-    const user = new User({
+    const user = new Userchm({
       _id: mongoose.Types.ObjectId(),
       userID: msg.author.id,
       ar: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
@@ -227,7 +227,7 @@ client.on("messageCreate", async msg => {
     console.log(updatedUser);
     msg.reply('Data kamu telah diperbarui traveler :)');
   } else if (!userData){ // If data didn't exist then create new one
-    const user = new User({
+    const user = new Userchm({
       _id: mongoose.Types.ObjectId(),
       userID: msg.author.id,
       server: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
@@ -252,7 +252,7 @@ client.on("messageCreate", async msg => {
     console.log(updatedUser);
     msg.reply('Data kamu telah diperbarui traveler :)');
   } else if (!userData){ // If data didn't exist then create new one
-    const user = new User({
+    const user = new Userchm({
       _id: mongoose.Types.ObjectId(),
       userID: msg.author.id,
       uid: msg.content.substring(msg.content.indexOf(":") + 1) // so basically anything after the : will be the username
