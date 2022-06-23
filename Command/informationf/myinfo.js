@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require('discord.js');
-const User = require("./reg-schema");
 exports.run = async (client, msg, args) => {
     userData = await User.findOne({userID : msg.author.id});
     if (userData) {
