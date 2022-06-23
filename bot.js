@@ -166,7 +166,7 @@ client.on("messageCreate", async msg => { //NICKNAME
   if (msg.content.includes(subnick)) {
     userData = await User.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
-    const updatedUser = await User.findOneAndUpdate(
+    const updatedUser = await Userchm.findOneAndUpdate(
       { userID: msg.author.id },
       {
         nickname: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
@@ -191,7 +191,7 @@ client.on("messageCreate", async msg => {
   if (msg.content.includes(subar)) {
     userData = await User.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
-    const updatedUser = await User.findOneAndUpdate(
+    const updatedUser = await Userchm.findOneAndUpdate(
       { userID: msg.author.id },
       {
         ar: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
@@ -214,7 +214,7 @@ client.on("messageCreate", async msg => {
 }) // SERVER
 client.on("messageCreate", async msg => { 
   if (msg.content.includes(subserv)) {
-    userData = await User.findOne({userID : msg.author.id});
+    userData = await Userchm.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
@@ -239,7 +239,7 @@ client.on("messageCreate", async msg => {
 }) //UID
 client.on("messageCreate", async msg => {
   if (msg.content.includes(subuid)) {
-    userData = await User.findOne({userID : msg.author.id});
+    userData = await Userchm.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
     const updatedUser = await User.findOneAndUpdate(
       { userID: msg.author.id },
