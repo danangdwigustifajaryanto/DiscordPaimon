@@ -3,6 +3,7 @@ const { Routes } = require("discord-api-types/v9")
 const { REST } = require("@discordjs/rest")  
 const { Player } = require("discord-player")
 const mongoose = require("mongoose");
+const User = require("./profileSchema");
 const Discord = require("discord.js");
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", ]});
 
