@@ -164,7 +164,7 @@ const subuid = "!reg uid:";
 
 client.on("messageCreate", async msg => { //NICKNAME
   if (msg.content.includes(subnick)) {
-    userData = await User.findOne({userID : msg.author.id});
+    userData = await Userchm.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
     const updatedUser = await Userchm.findOneAndUpdate(
       { userID: msg.author.id },
