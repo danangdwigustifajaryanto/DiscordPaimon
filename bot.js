@@ -287,7 +287,22 @@ client.on("messageCreate", msg => {
   }
   else if (msg.content === "P"){
     msg.reply("Paimon disini ><");
+  } else if (msg.content === "Terimakasih paimon"){
+    msg.reply(" Sama sama Traveer ^^");
   }
+   else if (msg.content === "P"){
+    msg.reply("Paimon here >.<");
+  }
+  else if (msg.content === "Halo paimon"){
+    msg.reply("Iya traveler ada apa ?");
+  }
+  else if (msg.content === "!tq"){
+    msg.reply("Urwellcome, Sama sama traveler ^^");
+  }
+  else if (msg.content === "paimon tidak boleh marah"){
+    msg.reply("Paimon tidak marah kok traveler ^^");
+  }
+}
 })
 
 const paimonbodoh = "paimon bodoh";
