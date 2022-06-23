@@ -216,7 +216,7 @@ client.on("messageCreate", async msg => {
   if (msg.content.includes(subserv)) {
     userData = await Userchm.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
-    const updatedUser = await User.findOneAndUpdate(
+    const updatedUser = await Userchm.findOneAndUpdate(
       { userID: msg.author.id },
       {
         server: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
@@ -241,7 +241,7 @@ client.on("messageCreate", async msg => {
   if (msg.content.includes(subuid)) {
     userData = await Userchm.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
-    const updatedUser = await User.findOneAndUpdate(
+    const updatedUser = await Userchm.findOneAndUpdate(
       { userID: msg.author.id },
       {
         uid: msg.content.substring(msg.content.indexOf(':') + 1), // so basically anything after the : will be the username
