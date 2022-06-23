@@ -5,7 +5,7 @@ exports.run = (client, msg, args) => {
     const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle('✨ Daftar Fitur Paimon ✨')
-    .setDescription("***Informasi Fitur***\n> **Registrasi** \n> ***contoh***: `!reg` \n> \n> **Cek data diri**\n> ***contoh***: `!myinfo`\n> \n> **Music**\n> ***contoh***: `!music`\n\n***Informasi Game***\n> **Build Karakter** \n> ***contoh***: `!build amber`\n> \n> **Informasi Artefak**\n> ***contoh***: `!arti shimenawa`\n> \n> **Talent hari ini**\n> ***contoh***: `!today talent`\n> \n> **Weapon hari ini**\n> ***example***: `!today weapon`\n\n***Tentang***\n> **Tentang Server**\n> ***contoh***: `!tentang server`\n> \n> **Credit Paimon**\n> ***contoh***: `!credit`\n> \n> **Support Paimon**\n> ***contoh***: `!support`\n\n")
+    .setDescription("***Informasi Fitur***\n> **Registrasi** \n> ***contoh***: `!reghelp` \n> \n> **Cek data diri**\n> ***contoh***: `!myinfo`\n> \n> **Music**\n> ***contoh***: `!music`\n\n***Informasi Game***\n> **Build Karakter** \n> ***contoh***: `!build amber`\n> \n> **Informasi Artefak**\n> ***contoh***: `!arti shimenawa`\n> \n> **Talent hari ini**\n> ***contoh***: `!today talent`\n> \n> **Weapon hari ini**\n> ***example***: `!today weapon`\n\n***Tentang***\n> **Tentang Server**\n> ***contoh***: `!tentang server`\n> \n> **Credit Paimon**\n> ***contoh***: `!credit`\n> \n> **Support Paimon**\n> ***contoh***: `!support`\n\n")
     .setThumbnail(msg.author.avatarURL())
     .setTimestamp()
     .setFooter({ text: 'Genshination',
