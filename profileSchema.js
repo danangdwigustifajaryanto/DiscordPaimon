@@ -10,4 +10,4 @@ const profileSchema = new Schema({
 	uid: Number,
 });
 
-module.exports = mongoose.model("User", profileSchema);
+module.exports = mongoose.model("Userchm", profileSchema);
