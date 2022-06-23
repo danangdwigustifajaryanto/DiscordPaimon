@@ -189,7 +189,7 @@ client.on("messageCreate", async msg => { //NICKNAME
 }) //AR
 client.on("messageCreate", async msg => {
   if (msg.content.includes(subar)) {
-    userData = await User.findOne({userID : msg.author.id});
+    userData = await Userchm.findOne({userID : msg.author.id});
   if (userData) { //If data Exist
     const updatedUser = await Userchm.findOneAndUpdate(
       { userID: msg.author.id },
