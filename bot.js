@@ -302,7 +302,6 @@ client.on("messageCreate", msg => {
   else if (msg.content === "paimon tidak boleh marah"){
     msg.reply("Paimon tidak marah kok traveler ^^");
   }
-}
 })
 
 const paimonbodoh = "paimon bodoh";
