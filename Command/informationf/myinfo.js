@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require('discord.js');
-const Userif = require("./reg-schema");
+const Userchm = require("./profileSchema");
 exports.run = async (client, msg, args) => {
-    userData = await Userif.findOne({userID : msg.author.id});
+    userData = await Userchm.findOne({userID : msg.author.id});
     if (userData) {
     const exampleEmbed = new MessageEmbed()
    .setColor('#1F1F1F')
