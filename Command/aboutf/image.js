@@ -1,9 +1,6 @@
 var Scraper = require('images-scraper');
 const { MessageEmbed } = require('discord.js');
-const browser = await puppeteer.launch({
-                  headless: true,
-                  args: ['--no-sandbox','--disable-setuid-sandbox']
-                })
+
 const google = new Scraper({
   puppeteer: {
     headless: true,
@@ -11,6 +8,11 @@ const google = new Scraper({
 });
 
 exports.run = async (client, msg, args) => {
+	
+const browser = await puppeteer.launch({
+                  headless: true,
+                  args: ['--no-sandbox','--disable-setuid-sandbox']
+})
 
 	const image_query = args.join(' ');
 	const image_result = await google.scrape(image_query, 1);
@@ -21,7 +23,7 @@ exports.run = async (client, msg, args) => {
 	const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle(':face_with_monocle: Pencarian Gambar :face_with_monocle:')
-    .setDescription(`Berikut adalah hasil pencarian gambar \nTentang: ${image_query}`)
+    .setDescription(`Berikut adalah hasil pencarian gambar \nTentang: `${image_query}``)
     .setImage(image_result[0].url)
     .setTimestamp()
     .setFooter({ text: 'Genshination',
