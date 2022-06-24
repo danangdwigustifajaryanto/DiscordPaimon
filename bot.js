@@ -411,8 +411,8 @@ client.on("messageCreate", msg => { //PAIMON
   }
 })
 client.on("messageCreate", msg => { //PAIMON
-  if (msg.content === "Huhu Haha") {
-    msg.reply("Dasar Prik")
+  if (msg.content === "pst") {
+    msg.reply("!!!Suara dalam hati : iya ada apa")
   }
 })
 client.on("messageCreate", msg => { //PAIMON
