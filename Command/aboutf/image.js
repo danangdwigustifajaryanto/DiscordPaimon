@@ -6,9 +6,11 @@
 //   puppeteer: {
 //     headless: true,
 //   },
+
 // });
 
-// exports.run = async (client, msg, args) => {
+
+// module.exports.run = async (client, msg, args) => {
 
 // const browser = await puppeteer.launch({
 //                   headless: true,
