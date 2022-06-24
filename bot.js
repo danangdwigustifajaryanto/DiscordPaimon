@@ -406,7 +406,16 @@ client.on("messageCreate", msg => { //PAIMON
     msg.reply("Y")
   }
 })
-
+client.on("messageCreate", msg => { //PAIMON
+  if (msg.content === "Paimon jangan nakal ya") {
+    msg.reply("Paimon Tidak Nakal :(")
+  }
+})
+client.on("messageCreate", msg => { //PAIMON
+  if (msg.content === "Bagus paimon") {
+    msg.reply("Hihihi ><")
+  }
+})
 // KONEKSI PENGHUBUNG -------------------------------------------------------------------------------------
 const url = `mongodb+srv://paimonbot:%40Watashi1@paimonbot.plnbhmt.mongodb.net/paimondb?retryWrites=true&w=majority`;
 const connectionParams={
