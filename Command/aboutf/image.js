@@ -1,6 +1,9 @@
 var Scraper = require('images-scraper');
 const { MessageEmbed } = require('discord.js');
-
+const browser = await puppeteer.launch({
+                  headless: true,
+                  args: ['--no-sandbox','--disable-setuid-sandbox']
+                })
 const google = new Scraper({
   puppeteer: {
     headless: true,
