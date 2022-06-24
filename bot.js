@@ -412,7 +412,7 @@ client.on("messageCreate", msg => { //PAIMON
 })
 client.on("messageCreate", msg => { //PAIMON
   if (msg.content === "pst") {
-    msg.reply("!!!Suara dalam hati : iya ada apa")
+    msg.reply("!!!Suara dalam hati : iya ada apa ><")
   }
 })
 client.on("messageCreate", msg => { //PAIMON
