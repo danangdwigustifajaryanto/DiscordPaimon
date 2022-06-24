@@ -19,7 +19,6 @@ client.commands = new Discord.Collection();
 
 client.on("ready", async ()=>{
 
-
     // // Getting the channel from client.channels Collection.
     // const Channel = client.channels.cache.get("986877650930909225");
     // // Checking if the channel exists.
