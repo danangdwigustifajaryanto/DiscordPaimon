@@ -26,7 +26,6 @@ client.on("ready", async ()=>{
     // // Sending "!d bump" to the channel.
     // Channel.send("Halo @everyone karena telah dilakukan optimasi kode program pada paimon, maka terdapat beberapa command yang berubah, silahkan gunakan `!bantu` untuk info selengkapnya ^^").catch(e => console.log(e));
 
-
   console.log(` ---- ${client.user.tag} Sudah Login! ----`);
       client.user.setActivity("Zhongli got Prank", {
       type: "WATCHING",
