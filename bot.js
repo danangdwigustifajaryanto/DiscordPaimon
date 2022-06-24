@@ -407,8 +407,7 @@ client.on("messageCreate", msg => { //PAIMON
   }
 })
 client.on("messageCreate", msg => { //PAIMON
-  if (msg.content === "Paimon jangan 
-      ya") {
+  if (msg.content === "Paimon jangan nakal ya") {
     msg.reply("Paimon Tidak Nakal :(")
   }
 })
