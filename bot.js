@@ -19,12 +19,13 @@ client.commands = new Discord.Collection();
 
 client.on("ready", async ()=>{
 
-    // // Getting the channel from client.channels Collection.
-    // const Channel = client.channels.cache.get("986877650930909225");
-    // // Checking if the channel exists.
-    // if (!Channel) return console.error("Couldn't find the channel.");
-    // // Sending "!d bump" to the channel.
-    // Channel.send("Halo @everyone karena telah dilakukan optimasi kode program pada paimon, maka terdapat beberapa command yang berubah, silahkan gunakan `!bantu` untuk info selengkapnya ^^").catch(e => console.log(e));
+    // Getting the channel from client.channels Collection.
+    const Channel = client.channels.cache.get("987993929804812352");
+    // Checking if the channel exists.
+    if (!Channel) return console.error("Couldn't find the channel.");
+    // Sending "!d bump" to the channel.
+    Channel.send("Paimon Telah Login").catch(e => console.log(e));
+
 
   console.log(` ---- ${client.user.tag} Sudah Login! ----`);
       client.user.setActivity("Zhongli got Prank", {
@@ -407,6 +408,11 @@ client.on("messageCreate", msg => { //PAIMON
 client.on("messageCreate", msg => { //PAIMON
   if (msg.content === "Paimon jangan nakal ya") {
     msg.reply("Paimon Tidak Nakal :(")
+  }
+})
+client.on("messageCreate", msg => { //PAIMON
+  if (msg.content === "Huhu Haha") {
+    msg.reply("Dasar Prik")
   }
 })
 client.on("messageCreate", msg => { //PAIMON
