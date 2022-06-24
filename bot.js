@@ -7,11 +7,6 @@ const mongoose = require("mongoose");
 const Discord = require("discord.js");
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", ]});
 
-const browser = await puppeteer.launch({
-                  headless: true,
-                  args: ['--no-sandbox','--disable-setuid-sandbox']
-                })
-
 const fs = require("fs");
 //Prefix Folder About
 const prefixabout = "!";
