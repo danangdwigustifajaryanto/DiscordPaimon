@@ -18,7 +18,7 @@ exports.run = async (client, msg, args) => {
 	const exampleEmbed = new MessageEmbed()
     .setColor('#1F1F1F')
     .setTitle(':face_with_monocle: Pencarian Gambar :face_with_monocle:')
-    .setDescription(`Berikut adalah hasil pencarian gambar \nTentang: `${image_query}``)
+    .setDescription(`Berikut adalah hasil pencarian gambar \nTentang: ${image_query}`)
     .setImage(image_result[0].url)
     .setTimestamp()
     .setFooter({ text: 'Genshination',
