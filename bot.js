@@ -300,6 +300,8 @@ client.on("messageCreate", msg => {
     msg.reply("Paimon disini ><");
   } else if (msg.content === "Terimakasih paimon"){
     msg.reply(" Sama sama Traveer ^^");
+  } else if (msg.content === "terimakasih paimon"){
+    msg.reply(" Sama sama Traveer ^^");
   }
    else if (msg.content === "P"){
     msg.reply("Paimon here >.<");
