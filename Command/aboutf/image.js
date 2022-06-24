@@ -1,4 +1,5 @@
 var Scraper = require('images-scraper');
+const puppeteer = require('puppeteer');
 const { MessageEmbed } = require('discord.js');
 
 const google = new Scraper({
@@ -8,7 +9,7 @@ const google = new Scraper({
 });
 
 exports.run = async (client, msg, args) => {
-	
+
 const browser = await puppeteer.launch({
                   headless: true,
                   args: ['--no-sandbox','--disable-setuid-sandbox']
