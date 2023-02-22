@@ -1,8 +1,7 @@
-
-![Bot Image](https://github.com/danangdwigustifajaryanto/paimon.js/blob/4a3b8f1b0daacfc87b333a75e299db6a024bbc89/Screenshot_13.png)
 # Nevada Impact Discord Bot
+This repository contains the source code and files for Nevada Impact Discord Bot, a bot that I created using Javascript, NodeJS and MongoDB Atlas. This bot is designed for my streaming community and fans of Genshin Impact game. The bot has features that make it easier for other players to navigate the game, such as guides and important information, as well as storing member data, like their level, status, and rank. Data is stored in a Mongo dB Atlas database that serves as the backend for this project. You can join my Discord community using this link: https://lnkd.in/dDv5QtvM.
 
-This repository contains the source code and files for Nevada Impact Discord Bot, a bot that I created using Javascript, NodeJS and MongoDB Atlas. This bot is designed for my streaming community and fans of Genshin Impact game.
+![Bot Image](https://github.com/danangdwigustifajaryanto/DiscordPaimon/blob/a266554b45404910cbcc662f310af61e3c385a23/Paimon.png)
 
 The bot has various features that can enhance the interaction and engagement of the community members. Some of these features are:
 
