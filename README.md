@@ -13,8 +13,6 @@ The bot has various features that can enhance the interaction and engagement of 
 
 ## How to use this bot
 
-To use this bot on your own server or invite it to another server, you need to have a Discord account and permission to manage servers.
-
 You can visit https://nevadaimpact.carrd.co/ to get more information about how to invite or use this bot. You can also see some screenshots and videos of how the bot works.
 
 ## Feedback and suggestions
