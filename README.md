@@ -1,23 +1,21 @@
 # Nevada Impact Discord Bot
-This repository contains the source code and files for Nevada Impact Discord Bot, a bot that I created using Javascript, NodeJS and MongoDB Atlas. This bot is designed for my streaming community and fans of Genshin Impact game. The bot has features that make it easier for other players to navigate the game, such as guides and important information, as well as storing member data, like their level, status, and rank. Data is stored in a Mongo dB Atlas database that serves as the backend for this project. You can join my Discord community using this link: https://lnkd.in/dDv5QtvM.
+This repository contains the source code and files for the Nevada Impact Discord Bot, which I built with Javascript, NodeJS, and MongoDB Atlas. This bot was created for my streaming audience and Genshin Impact game enthusiasts. The bot offers features that help other players traverse the game more easily, such as instructions and crucial information, as well as maintaining member data such as level, status, and rank. The data is kept in a Mongo dB Atlas database, which acts as the project's backend. You may join my Discord server by clicking here: https://lnkd.in/dDv5QtvM.
 
 ![Bot Image](https://github.com/danangdwigustifajaryanto/DiscordPaimon/blob/a266554b45404910cbcc662f310af61e3c385a23/Paimon.png)
 
-The bot has various features that can enhance the interaction and engagement of the community members. Some of these features are:
+The bot has several characteristics that can improve community members' involvement and participation. Among these characteristics are:
 
-- Providing information about Genshin Impact game such as characters, weapons, events, etc.
-- Accepting donations from supporters and displaying them on stream
-- Giving link information about my streaming channel, social media accounts, website and other platforms
-- Managing server settings such as roles, permissions, channels, etc.
+- Sharing information about the Genshin Impact game, such as characters, weaponry, and events.
+- Accepting and displaying donations from fans on stream - Sharing links to my streaming channel, social media profiles, website, and other platforms
+- Managing server settings like roles, permissions, channels, and so on.
 
 ## How to use this bot
+More information on how to invite or use this bot can be found at https://nevadaimpact.carrd.co/. You may also view images and videos of the bot in action.
 
-You can visit https://nevadaimpact.carrd.co/ to get more information about how to invite or use this bot. You can also see some screenshots and videos of how the bot works.
+## Suggestions and feedback
 
-## Feedback and suggestions
+Please contact me through email at [your email address] or submit an issue or pull request on github if you have any thoughts or recommendations on how to enhance this bot or my streaming experience.
 
-If you have any feedback or suggestions on how to improve this bot or my streaming experience, please feel free to contact me via email at [your email address] or leave an issue or pull request on github.
+I value any form of encouragement or constructive feedback that might help me improve as a streamer and developer.
 
-I appreciate any kind of support or constructive criticism that can help me grow as a streamer and coder.
-
-Thank you for visiting my repository and enjoy using Nevada Impact Discord Bot!
+Thank you for visiting my repository, and please have fun using the Nevada Impact Discord Bot!
